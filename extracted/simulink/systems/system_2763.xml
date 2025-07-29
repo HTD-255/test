@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="utf-8"?>
+<System>
+  <P Name="Location">[-8, -8, 1928, 1040]</P>
+  <P Name="SystemRect">[0.000000, 0.000000, 0.000000, 0.000000]</P>
+  <P Name="SetExecutionDomain">off</P>
+  <P Name="ExecutionDomainType">Deduce</P>
+  <P Name="SimulinkSubDomain">Simulink</P>
+  <Block BlockType="Inport" Name="imageRGB" SID="2764">
+    <P Name="Position">[-15, -132, 15, -118]</P>
+    <P Name="ZOrder">4482</P>
+  </Block>
+  <Block BlockType="Inport" Name="ROI" SID="2766">
+    <P Name="Position">[-30, -57, 0, -43]</P>
+    <P Name="ZOrder">4487</P>
+    <P Name="Port">2</P>
+  </Block>
+  <Block BlockType="Inport" Name="imageBinary" SID="2765">
+    <P Name="Position">[-15, -177, 15, -163]</P>
+    <P Name="ZOrder">4481</P>
+    <P Name="Port">3</P>
+  </Block>
+  <Block BlockType="Inport" Name="Nominal Lane Location" SID="2768">
+    <P Name="Position">[-30, 93, 0, 107]</P>
+    <P Name="ZOrder">4483</P>
+    <P Name="Port">4</P>
+  </Block>
+  <Block BlockType="Inport" Name="Lane Location from Image" SID="2860">
+    <P Name="Position">[-30, 213, 0, 227]</P>
+    <P Name="ZOrder">4514</P>
+    <P Name="Port">5</P>
+  </Block>
+  <Block BlockType="Constant" Name="Constant1" SID="2771">
+    <P Name="Position">[820, 360, 890, 390]</P>
+    <P Name="ZOrder">4505</P>
+    <P Name="Value">[0 255 0]</P>
+  </Block>
+  <Block BlockType="Constant" Name="Constant2" SID="2796">
+    <P Name="Position">[205, -35, 275, -5]</P>
+    <P Name="ZOrder">4508</P>
+    <P Name="Value">[255 0 0]</P>
+  </Block>
+  <Block BlockType="Constant" Name="Constant3" SID="2801">
+    <P Name="Position">[215, 115, 285, 145]</P>
+    <P Name="ZOrder">4512</P>
+    <P Name="Value">[0 255 0]</P>
+  </Block>
+  <Block BlockType="Constant" Name="Constant4" SID="2863">
+    <P Name="Position">[215, 235, 285, 265]</P>
+    <P Name="ZOrder">4517</P>
+    <P Name="Value">[255 255 0]</P>
+  </Block>
+  <Block BlockType="SubSystem" Name="Draw Lines Module1" SID="2795">
+    <P Name="Ports">[3, 1]</P>
+    <P Name="Position">[360, -92, 500, -8]</P>
+    <P Name="ZOrder">4507</P>
+    <P Name="ErrorFcn">Stateflow.Translate.translate</P>
+    <P Name="PermitHierarchicalResolution">ExplicitOnly</P>
+    <P Name="TreatAsAtomicUnit">on</P>
+    <P Name="RequestExecContextInheritance">off</P>
+    <P Name="SFBlockType">MATLAB Function</P>
+    <P Name="ContentPreviewEnabled">on</P>
+    <System Ref="system_2795"/>
+  </Block>
+  <Block BlockType="SubSystem" Name="Draw Lines Module2" SID="2862">
+    <P Name="Ports">[3, 1]</P>
+    <P Name="Position">[360, 178, 500, 262]</P>
+    <P Name="ZOrder">4516</P>
+    <P Name="ErrorFcn">Stateflow.Translate.translate</P>
+    <P Name="PermitHierarchicalResolution">ExplicitOnly</P>
+    <P Name="TreatAsAtomicUnit">on</P>
+    <P Name="RequestExecContextInheritance">off</P>
+    <P Name="SFBlockType">MATLAB Function</P>
+    <P Name="ContentPreviewEnabled">on</P>
+    <System Ref="system_2862"/>
+  </Block>
+  <Block BlockType="SubSystem" Name="Draw Lines Module3" SID="2800">
+    <P Name="Ports">[3, 1]</P>
+    <P Name="Position">[360, 58, 500, 142]</P>
+    <P Name="ZOrder">4511</P>
+    <P Name="ErrorFcn">Stateflow.Translate.translate</P>
+    <P Name="PermitHierarchicalResolution">ExplicitOnly</P>
+    <P Name="TreatAsAtomicUnit">on</P>
+    <P Name="RequestExecContextInheritance">off</P>
+    <P Name="SFBlockType">MATLAB Function</P>
+    <P Name="ContentPreviewEnabled">on</P>
+    <System Ref="system_2800"/>
+  </Block>
+  <Block BlockType="Reference" Name="Image Logic" SID="2871">
+    <P Name="Ports">[1, 1]</P>
+    <P Name="Position">[220, -261, 285, -219]</P>
+    <P Name="ZOrder">4518</P>
+    <P Name="Commented">on</P>
+    <P Name="AttributesFormatString">(%&lt;algorithm&gt;)</P>
+    <P Name="LibraryVersion">1.2129</P>
+    <P Name="SourceBlock">quarc_library/Image Processing/Generic/Image Logic</P>
+    <P Name="SourceType">Image Logic</P>
+    <P Name="SourceProductName">QUARC Targets</P>
+    <InstanceData>
+      <P Name="MultithreadedSim">auto</P>
+      <P Name="algorithm">NOT</P>
+      <P Name="source">Internal dialog parameter</P>
+      <P Name="row">0</P>
+      <P Name="column">0</P>
+    </InstanceData>
+  </Block>
+  <Block BlockType="Reference" Name="Image Logic1" SID="2872">
+    <P Name="Ports">[2, 1]</P>
+    <P Name="Position">[360, -271, 425, -229]</P>
+    <P Name="ZOrder">4519</P>
+    <P Name="Commented">on</P>
+    <P Name="AttributesFormatString">(%&lt;algorithm&gt;)</P>
+    <P Name="LibraryVersion">1.2129</P>
+    <P Name="SourceBlock">quarc_library/Image Processing/Generic/Image Logic</P>
+    <P Name="SourceType">Image Logic</P>
+    <P Name="SourceProductName">QUARC Targets</P>
+    <InstanceData>
+      <P Name="MultithreadedSim">auto</P>
+      <P Name="algorithm">AND</P>
+      <P Name="source">Internal dialog parameter</P>
+      <P Name="row">0</P>
+      <P Name="column">0</P>
+    </InstanceData>
+  </Block>
+  <Block BlockType="SubSystem" Name="MATLAB Function" SID="2803">
+    <P Name="Ports">[2, 1]</P>
+    <P Name="Position">[240, -161, 310, -114]</P>
+    <P Name="ZOrder">4513</P>
+    <P Name="ErrorFcn">Stateflow.Translate.translate</P>
+    <P Name="PermitHierarchicalResolution">ExplicitOnly</P>
+    <P Name="TreatAsAtomicUnit">on</P>
+    <P Name="RequestExecContextInheritance">off</P>
+    <P Name="SFBlockType">MATLAB Function</P>
+    <P Name="ContentPreviewEnabled">on</P>
+    <System Ref="system_2803"/>
+  </Block>
+  <Block BlockType="SubSystem" Name="MATLAB Function1" SID="2781">
+    <P Name="Ports">[1, 1]</P>
+    <P Name="Position">[50, -76, 120, -24]</P>
+    <P Name="ZOrder">4501</P>
+    <P Name="ErrorFcn">Stateflow.Translate.translate</P>
+    <P Name="PermitHierarchicalResolution">ExplicitOnly</P>
+    <P Name="TreatAsAtomicUnit">on</P>
+    <P Name="RequestExecContextInheritance">off</P>
+    <P Name="SFBlockType">MATLAB Function</P>
+    <P Name="ContentPreviewEnabled">on</P>
+    <System Ref="system_2781"/>
+  </Block>
+  <Block BlockType="SubSystem" Name="MATLAB Function2" SID="2798">
+    <P Name="Ports">[1, 1]</P>
+    <P Name="Position">[110, 74, 180, 126]</P>
+    <P Name="ZOrder">4509</P>
+    <P Name="ErrorFcn">Stateflow.Translate.translate</P>
+    <P Name="PermitHierarchicalResolution">ExplicitOnly</P>
+    <P Name="TreatAsAtomicUnit">on</P>
+    <P Name="RequestExecContextInheritance">off</P>
+    <P Name="SFBlockType">MATLAB Function</P>
+    <P Name="ContentPreviewEnabled">on</P>
+    <System Ref="system_2798"/>
+  </Block>
+  <Block BlockType="SubSystem" Name="MATLAB Function3" SID="2861">
+    <P Name="Ports">[1, 1]</P>
+    <P Name="Position">[110, 194, 180, 246]</P>
+    <P Name="ZOrder">4515</P>
+    <P Name="ErrorFcn">Stateflow.Translate.translate</P>
+    <P Name="PermitHierarchicalResolution">ExplicitOnly</P>
+    <P Name="TreatAsAtomicUnit">on</P>
+    <P Name="RequestExecContextInheritance">off</P>
+    <P Name="SFBlockType">MATLAB Function</P>
+    <P Name="ContentPreviewEnabled">on</P>
+    <System Ref="system_2861"/>
+  </Block>
+  <Block BlockType="Outport" Name="imageRGBForDisplay" SID="2789">
+    <P Name="Position">[545, 213, 575, 227]</P>
+    <P Name="ZOrder">4484</P>
+    <P Name="VectorParamsAs1DForOutWhenUnconnected">off</P>
+  </Block>
+  <Line>
+    <P Name="ZOrder">43</P>
+    <P Name="Src">2796#out:1</P>
+    <P Name="Dst">2795#in:3</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">44</P>
+    <P Name="Src">2764#out:1</P>
+    <P Name="Points">[178, 0]</P>
+    <Branch>
+      <P Name="ZOrder">77</P>
+      <P Name="Points">[0, -75; 147, 0]</P>
+      <P Name="Dst">2872#in:1</P>
+    </Branch>
+    <Branch>
+      <P Name="ZOrder">76</P>
+      <P Name="Dst">2803#in:2</P>
+    </Branch>
+  </Line>
+  <Line>
+    <P Name="ZOrder">45</P>
+    <P Name="Src">2781#out:1</P>
+    <P Name="Dst">2795#in:2</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">46</P>
+    <P Name="Src">2766#out:1</P>
+    <P Name="Dst">2781#in:1</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">48</P>
+    <P Name="Src">2800#out:1</P>
+    <P Name="Points">[11, 0; 0, 66; -180, 0; 0, 24]</P>
+    <P Name="Dst">2862#in:1</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">49</P>
+    <P Name="Src">2795#out:1</P>
+    <P Name="Points">[19, 0; 0, 81; -188, 0; 0, 39]</P>
+    <P Name="Dst">2800#in:1</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">50</P>
+    <P Name="Src">2801#out:1</P>
+    <P Name="Dst">2800#in:3</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">51</P>
+    <P Name="Src">2798#out:1</P>
+    <P Name="Dst">2800#in:2</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">52</P>
+    <P Name="Src">2768#out:1</P>
+    <P Name="Dst">2798#in:1</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">53</P>
+    <P Name="Src">2765#out:1</P>
+    <P Name="Points">[100, 0]</P>
+    <Branch>
+      <P Name="ZOrder">71</P>
+      <P Name="Points">[0, 20]</P>
+      <P Name="Dst">2803#in:1</P>
+    </Branch>
+    <Branch>
+      <P Name="ZOrder">70</P>
+      <P Name="Points">[0, -70]</P>
+      <P Name="Dst">2871#in:1</P>
+    </Branch>
+  </Line>
+  <Line>
+    <P Name="ZOrder">57</P>
+    <P Name="Src">2803#out:1</P>
+    <P Name="Points">[20, 0; 0, 55]</P>
+    <P Name="Dst">2795#in:1</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">58</P>
+    <P Name="Src">2860#out:1</P>
+    <P Name="Dst">2861#in:1</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">62</P>
+    <P Name="Src">2861#out:1</P>
+    <P Name="Dst">2862#in:2</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">63</P>
+    <P Name="Src">2863#out:1</P>
+    <P Name="Dst">2862#in:3</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">75</P>
+    <P Name="Src">2871#out:1</P>
+    <P Name="Dst">2872#in:2</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">78</P>
+    <P Name="Src">2862#out:1</P>
+    <P Name="Dst">2789#in:1</P>
+  </Line>
+</System>

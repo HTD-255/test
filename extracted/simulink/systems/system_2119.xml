@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<System>
+  <P Name="Location">[-8, -8, 1928, 1040]</P>
+  <P Name="SystemRect">[0.000000, 0.000000, 0.000000, 0.000000]</P>
+  <P Name="SetExecutionDomain">off</P>
+  <P Name="ExecutionDomainType">Deduce</P>
+  <P Name="ZoomFactor">125</P>
+  <P Name="SimulinkSubDomain">Simulink</P>
+  <Block BlockType="Scope" Name="Scope" SID="2353">
+    <P Name="Ports">[1]</P>
+    <P Name="Position">[580, 379, 610, 411]</P>
+    <P Name="ZOrder">2059</P>
+    <P Name="ScopeSpecificationString">Simulink.scopes.TimeScopeBlockCfg(&apos;CurrentConfiguration&apos;, extmgr.ConfigurationSet(extmgr.Configuration(&apos;Core&apos;,&apos;General UI&apos;,true),extmgr.Configuration(&apos;Core&apos;,&apos;Source UI&apos;,true),extmgr.Configuration(&apos;Sources&apos;,&apos;WiredSimulink&apos;,true,&apos;DataLoggingVariableName&apos;,&apos;ScopeData3&apos;),extmgr.Configuration(&apos;Visuals&apos;,&apos;Time Domain&apos;,true,&apos;SerializedDisplays&apos;,{struct(&apos;MinYLimReal&apos;,&apos;-0.125&apos;,&apos;MaxYLimReal&apos;,&apos;1.125&apos;,&apos;YLabelReal&apos;,&apos;&apos;,&apos;MinYLimMag&apos;,&apos;0.00000&apos;,&apos;MaxYLimMag&apos;,&apos;1.125&apos;,&apos;LegendVisibility&apos;,&apos;off&apos;,&apos;XGrid&apos;,true,&apos;YGrid&apos;,true,&apos;PlotMagPhase&apos;,false,&apos;AxesColor&apos;,[0 0 0],&apos;AxesTickColor&apos;,[0.686274509803922 0.686274509803922 0.686274509803922],&apos;ColorOrder&apos;,[1 1 0.0666666666666667;0.0745098039215686 0.623529411764706 1;1 0.411764705882353 0.16078431372549;0.392156862745098 0.831372549019608 0.0745098039215686;0.717647058823529 0.274509803921569 1;0.0588235294117647 1 1;1 0.0745098039215686 0.650980392156863],&apos;Title&apos;,&apos;%&lt;SignalLabel&gt;&apos;,&apos;LinePropertiesCache&apos;,{{}},&apos;UserDefinedChannelNames&apos;,{{}},&apos;NumLines&apos;,1,&apos;LineNames&apos;,{{&apos;Video Capture/2&apos;}},&apos;ShowContent&apos;,true,&apos;Placement&apos;,1)},&apos;DisplayPropertyDefaults&apos;,struct(&apos;MinYLimReal&apos;,&apos;-0.125&apos;,&apos;MaxYLimReal&apos;,&apos;1.125&apos;,&apos;YLabelReal&apos;,&apos;&apos;,&apos;MinYLimMag&apos;,&apos;0.00000&apos;,&apos;MaxYLimMag&apos;,&apos;1.125&apos;,&apos;LegendVisibility&apos;,&apos;off&apos;,&apos;XGrid&apos;,true,&apos;YGrid&apos;,true,&apos;PlotMagPhase&apos;,false,&apos;AxesColor&apos;,[0 0 0],&apos;AxesTickColor&apos;,[0.686274509803922 0.686274509803922 0.686274509803922],&apos;ColorOrder&apos;,[0.0745098039215686 0.623529411764706 1;1 0.411764705882353 0.16078431372549;1 1 0.0666666666666667;0.717647058823529 0.274509803921569 1;0.392156862745098 0.831372549019608 0.0745098039215686;0.0588235294117647 1 1;1 0.0745098039215686 0.650980392156863])),extmgr.Configuration(&apos;Tools&apos;,&apos;Plot Navigation&apos;,true,&apos;OnceAtStop&apos;,false,&apos;PreviousAutoscale&apos;,&apos;XY&apos;),extmgr.Configuration(&apos;Tools&apos;,&apos;Measurements&apos;,true,&apos;Version&apos;,&apos;2019a&apos;)),&apos;Version&apos;,&apos;2020a&apos;,&apos;Position&apos;,[1 31 1920 973])</P>
+    <P Name="NumInputPorts">1</P>
+    <P Name="Floating">off</P>
+  </Block>
+  <Block BlockType="Reference" Name="Video Capture" SID="2121">
+    <P Name="Ports">[0, 2]</P>
+    <P Name="Position">[375, 334, 475, 416]</P>
+    <P Name="ZOrder">2056</P>
+    <P Name="LibraryVersion">1.2129</P>
+    <P Name="SourceBlock">quarc_library/Multimedia/Video Capture</P>
+    <P Name="SourceType">Video Capture</P>
+    <P Name="SourceProductName">QUARC Targets</P>
+    <InstanceData>
+      <P Name="MultithreadedSim">auto</P>
+      <P Name="source">device</P>
+      <P Name="device">3</P>
+      <P Name="filename">sample_movie.mov</P>
+      <P Name="value">[0 0; 0 0]</P>
+      <P Name="resolution">820 x 410</P>
+      <P Name="width">820</P>
+      <P Name="height">410</P>
+      <P Name="output_format">MATLAB RGB (HxWx3)</P>
+      <P Name="data_type">uint8</P>
+      <P Name="sample_time">camera_rate</P>
+      <P Name="brightness_override">off</P>
+      <P Name="brightness">50.0</P>
+      <P Name="contrast_override">off</P>
+      <P Name="contrast">50.0</P>
+      <P Name="hue_override">off</P>
+      <P Name="hue">50.0</P>
+      <P Name="saturation_override">off</P>
+      <P Name="saturation">50.0</P>
+      <P Name="sharpness_override">off</P>
+      <P Name="sharpness">50.0</P>
+      <P Name="gamma_override">off</P>
+      <P Name="gamma">50.0</P>
+      <P Name="coloreffect_override">off</P>
+      <P Name="coloreffect">None</P>
+      <P Name="whitebalance_override">off</P>
+      <P Name="whitebalance">50.0</P>
+      <P Name="backlightcompensation_override">off</P>
+      <P Name="backlightcompensation">0.0</P>
+      <P Name="gain_override">off</P>
+      <P Name="gain">50.0</P>
+      <P Name="pan_override">off</P>
+      <P Name="pan">50.0</P>
+      <P Name="tilt_override">off</P>
+      <P Name="tilt">50.0</P>
+      <P Name="roll_override">off</P>
+      <P Name="roll">50.0</P>
+      <P Name="zoom_override">off</P>
+      <P Name="zoom">0.0</P>
+      <P Name="exposure_override">off</P>
+      <P Name="exposure">50.0</P>
+      <P Name="iris_override">off</P>
+      <P Name="iris">50.0</P>
+      <P Name="focus_override">off</P>
+      <P Name="focus">0.0</P>
+    </InstanceData>
+  </Block>
+  <Block BlockType="Outport" Name="imageRGB" SID="2122">
+    <P Name="Position">[580, 348, 610, 362]</P>
+    <P Name="ZOrder">2034</P>
+    <P Name="VectorParamsAs1DForOutWhenUnconnected">off</P>
+  </Block>
+  <Line>
+    <P Name="ZOrder">2</P>
+    <P Name="Src">2121#out:1</P>
+    <P Name="Dst">2122#in:1</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">3</P>
+    <P Name="Src">2121#out:2</P>
+    <P Name="Dst">2353#in:1</P>
+  </Line>
+  <Annotation SID="2219">
+    <P Name="Name">Capture CSI RGB Information at 120 fps, 820 x 410</P>
+    <P Name="Position">[350, 307, 670, 432]</P>
+    <P Name="InternalMargins">[0, 0, 0, 0]</P>
+    <P Name="FixedHeight">on</P>
+    <P Name="FixedWidth">on</P>
+    <P Name="ForegroundColor">[0.992157, 0.937255, 0.913725]</P>
+    <P Name="BackgroundColor">[0.992157, 0.937255, 0.913725]</P>
+    <P Name="DropShadow">on</P>
+    <P Name="AnnotationType">area_annotation</P>
+    <P Name="ZOrder">21</P>
+    <P Name="FontSize">12</P>
+  </Annotation>
+</System>

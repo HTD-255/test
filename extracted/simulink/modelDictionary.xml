@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MF0 version="1.1" defaultPackage="slid" packageUris="http://schema.mathworks.com/mf0/slid/R2020b_20191110">
+  <System type="System" uuid="ff61e46f-f4b6-4cd6-8ff2-968c97f2e17e">
+    <Parameter type="Parameter" uuid="c8da9720-371d-4ef1-9f96-6a2b2d958316">
+      <Identifier>camera_rate</Identifier>
+      <Name>camera_rate</Name>
+    </Parameter>
+    <Parameter type="Parameter" uuid="19128955-15a0-4e57-b9eb-0260ea436f75">
+      <Identifier>depth_rate</Identifier>
+      <Name>depth_rate</Name>
+    </Parameter>
+    <Interface type="Interface" uuid="99d7f334-4867-4468-98c3-7cb5ff966174"/>
+  </System>
+</MF0>

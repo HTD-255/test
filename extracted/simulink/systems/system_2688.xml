@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<System>
+  <P Name="Location">[-1, 6, 1388, 435]</P>
+  <P Name="SystemRect">[0.000000, 0.000000, 0.000000, 0.000000]</P>
+  <P Name="SetExecutionDomain">off</P>
+  <P Name="ExecutionDomainType">Deduce</P>
+  <P Name="SIDHighWatermark">14524</P>
+  <P Name="SimulinkSubDomain">Simulink</P>
+  <Block BlockType="Inport" Name="In1" SID="2688:14425">
+    <P Name="Position">[20, 58, 50, 72]</P>
+    <P Name="ZOrder">244</P>
+  </Block>
+  <Block BlockType="Reference" Name="Channel" SID="2688:14426">
+    <P Name="Ports">[1, 1]</P>
+    <P Name="Position">[245, 57, 285, 73]</P>
+    <P Name="ZOrder">243</P>
+    <P Name="LibraryVersion">1.2129</P>
+    <P Name="SourceBlock">quarc_library/Signal Routing/Channel</P>
+    <P Name="SourceType">Channel</P>
+    <P Name="SourceProductName">QUARC Targets</P>
+    <InstanceData>
+      <P Name="MultithreadedSim">auto</P>
+      <P Name="channel">0</P>
+      <P Name="buffer_size">1</P>
+    </InstanceData>
+  </Block>
+  <Block BlockType="Reference" Name="Image Compress" SID="2688:14427">
+    <P Name="Ports">[1, 1]</P>
+    <P Name="Position">[100, 24, 200, 106]</P>
+    <P Name="ZOrder">219</P>
+    <P Name="AttributesFormatString">(%&lt;algorithm&gt;)</P>
+    <P Name="LibraryVersion">1.2129</P>
+    <P Name="SourceBlock">quarc_library/Image Processing/Generic/Image Compress</P>
+    <P Name="SourceType">Image Compress</P>
+    <P Name="SourceProductName">QUARC Targets</P>
+    <InstanceData>
+      <P Name="MultithreadedSim">auto</P>
+      <P Name="algorithm">JPEG</P>
+      <P Name="source">Internal dialog parameter</P>
+      <P Name="quality">quality</P>
+      <P Name="output_dim">-1</P>
+    </InstanceData>
+  </Block>
+  <Block BlockType="Reference" Name="Video Display" SID="2688:14428">
+    <P Name="Tag">Final_for_running/Display Depth/Video Display</P>
+    <P Name="Ports">[1]</P>
+    <P Name="Position">[330, 24, 430, 106]</P>
+    <P Name="ZOrder">2</P>
+    <P Name="LibraryVersion">1.2129</P>
+    <P Name="UserDataPersistent">on</P>
+    <P Name="UserData" Ref="bdmxdata:UserData_2688_14428"/>
+    <P Name="SourceBlock">quarc_library/Multimedia/Video Display</P>
+    <P Name="SourceType">Video Display</P>
+    <P Name="SourceProductName">QUARC Targets</P>
+    <InstanceData>
+      <P Name="MultithreadedSim">auto</P>
+      <P Name="sample_time">sample_time</P>
+      <P Name="use_hardware">on</P>
+    </InstanceData>
+  </Block>
+  <Line>
+    <P Name="ZOrder">1</P>
+    <P Name="Src">2688:14426#out:1</P>
+    <P Name="Dst">2688:14428#in:1</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">2</P>
+    <P Name="Src">2688:14425#out:1</P>
+    <P Name="Dst">2688:14427#in:1</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">3</P>
+    <P Name="Src">2688:14427#out:1</P>
+    <P Name="Dst">2688:14426#in:1</P>
+  </Line>
+</System>

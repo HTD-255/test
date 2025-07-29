@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sltp_editor version="1.1" packageUris="http://schema.mathworks.com/mf0/DiagramEditor/R2019a_20181107 http://schema.mathworks.com/mf0/SltpSyntax/R2021b_202101212121">
+  <diagram.editor.model.Diagram type="diagram.editor.model.Diagram" uuid="d4d35d3e-ec20-403d-8b4d-2135411831f8">
+    <connections type="diagram.editor.model.Connection" uuid="f4df776e-e457-4860-af67-86255da25e9e">
+      <dstElement type="diagram.editor.model.Entity" uuid="df5daaa6-fcb1-4b00-9307-822500363820"/>
+      <srcElement type="diagram.editor.model.Entity" uuid="bdabf791-f83c-44c0-971f-3feb95ee4da8"/>
+      <position>0,0</position>
+      <size>0,0,0,0</size>
+      <syntaxElement type="sltp.mm.syntax.Edge" uuid="6087e6ae-e9cb-4add-8dfc-fad51c4181be"/>
+      <type>graph.Edge</type>
+    </connections>
+    <connections type="diagram.editor.model.Connection" uuid="79b382ba-014d-45e5-b867-7ce4de89d067">
+      <dstElement type="diagram.editor.model.Entity" uuid="df5daaa6-fcb1-4b00-9307-822500363820"/>
+      <srcElement type="diagram.editor.model.Entity" uuid="9ba89d2a-5d55-4645-a0b6-c4df7657959c"/>
+      <position>0,0</position>
+      <size>0,0,0,0</size>
+      <syntaxElement type="sltp.mm.syntax.Edge" uuid="782af912-a156-4418-8114-8dfa3194753d"/>
+      <type>graph.Edge</type>
+    </connections>
+    <connections type="diagram.editor.model.Connection" uuid="a295acc3-c768-4bc3-a72a-e3b11343b16d">
+      <dstElement type="diagram.editor.model.Entity" uuid="5e7826aa-26b1-4447-879c-01c73f91807c"/>
+      <srcElement type="diagram.editor.model.Entity" uuid="9ba89d2a-5d55-4645-a0b6-c4df7657959c"/>
+      <position>0,0</position>
+      <size>0,0,0,0</size>
+      <syntaxElement type="sltp.mm.syntax.Edge" uuid="787d8a60-0718-4aef-b458-809b245f8433"/>
+      <type>graph.Edge</type>
+    </connections>
+    <connections type="diagram.editor.model.Connection" uuid="3bf9f648-d2f2-4634-8a49-f940f9ab0067">
+      <dstElement type="diagram.editor.model.Entity" uuid="bdabf791-f83c-44c0-971f-3feb95ee4da8"/>
+      <srcElement type="diagram.editor.model.Entity" uuid="9ba89d2a-5d55-4645-a0b6-c4df7657959c"/>
+      <position>0,0</position>
+      <size>0,0,0,0</size>
+      <syntaxElement type="sltp.mm.syntax.Edge" uuid="d25c6367-8c5b-4503-97d7-af4183df8fd0"/>
+      <type>graph.Edge</type>
+    </connections>
+    <entities type="diagram.editor.model.Entity" uuid="df5daaa6-fcb1-4b00-9307-822500363820">
+      <inConnections type="diagram.editor.model.Connection" uuid="f4df776e-e457-4860-af67-86255da25e9e"/>
+      <inConnections type="diagram.editor.model.Connection" uuid="79b382ba-014d-45e5-b867-7ce4de89d067"/>
+      <position>0,0</position>
+      <size>0,0,0,0</size>
+      <syntaxElement type="sltp.mm.syntax.Node" uuid="a1d20651-c8d6-4aec-89dc-d06071335905"/>
+      <title>Cont</title>
+      <type>base</type>
+      <subDiagram type="diagram.editor.model.Diagram" uuid="3c40b1d5-6d0a-4467-bd1a-d0dcb511a153">
+        <position>0,0</position>
+        <syntaxElement type="sltp.mm.syntax.Graph" uuid="e85e8597-c487-4725-b35e-79b00e649543"/>
+        <title>Cont</title>
+        <type>graph.Graph</type>
+      </subDiagram>
+    </entities>
+    <entities type="diagram.editor.model.Entity" uuid="bdabf791-f83c-44c0-971f-3feb95ee4da8">
+      <inConnections type="diagram.editor.model.Connection" uuid="3bf9f648-d2f2-4634-8a49-f940f9ab0067"/>
+      <outConnections type="diagram.editor.model.Connection" uuid="f4df776e-e457-4860-af67-86255da25e9e"/>
+      <position>0,0</position>
+      <size>0,0,0,0</size>
+      <syntaxElement type="sltp.mm.syntax.Node" uuid="267989fe-cd5c-4c16-a57e-6e90bcae8eab"/>
+      <title>D2</title>
+      <type>implicit-periodic</type>
+      <subDiagram type="diagram.editor.model.Diagram" uuid="82a93ea4-f0e4-4904-b0cb-ec2883db4175">
+        <position>0,0</position>
+        <syntaxElement type="sltp.mm.syntax.Graph" uuid="1d9b50c0-3473-4500-bd7d-b00cd3f99920"/>
+        <title>D2</title>
+        <type>graph.Graph</type>
+      </subDiagram>
+    </entities>
+    <entities type="diagram.editor.model.Entity" uuid="9ba89d2a-5d55-4645-a0b6-c4df7657959c">
+      <outConnections type="diagram.editor.model.Connection" uuid="79b382ba-014d-45e5-b867-7ce4de89d067"/>
+      <outConnections type="diagram.editor.model.Connection" uuid="a295acc3-c768-4bc3-a72a-e3b11343b16d"/>
+      <outConnections type="diagram.editor.model.Connection" uuid="3bf9f648-d2f2-4634-8a49-f940f9ab0067"/>
+      <position>0,0</position>
+      <size>0,0,0,0</size>
+      <syntaxElement type="sltp.mm.syntax.Node" uuid="1d810ee4-161c-4fee-9b34-031efa673015"/>
+      <title>D3</title>
+      <type>implicit-periodic</type>
+      <subDiagram type="diagram.editor.model.Diagram" uuid="a48fba4f-3a84-4e83-bdb6-8e41be3f463a">
+        <position>0,0</position>
+        <syntaxElement type="sltp.mm.syntax.Graph" uuid="9d4d1543-eeb6-4e03-9e49-6032b5bb5458"/>
+        <title>D3</title>
+        <type>graph.Graph</type>
+      </subDiagram>
+    </entities>
+    <entities type="diagram.editor.model.Entity" uuid="5e7826aa-26b1-4447-879c-01c73f91807c">
+      <inConnections type="diagram.editor.model.Connection" uuid="a295acc3-c768-4bc3-a72a-e3b11343b16d"/>
+      <position>0,0</position>
+      <size>0,0,0,0</size>
+      <syntaxElement type="sltp.mm.syntax.Node" uuid="9e421d03-466d-4ac7-b104-e55868d38fed"/>
+      <title>D4</title>
+      <type>implicit-periodic</type>
+      <subDiagram type="diagram.editor.model.Diagram" uuid="5a393f90-ec6b-45cc-b6af-d66a51a29fa3">
+        <position>0,0</position>
+        <syntaxElement type="sltp.mm.syntax.Graph" uuid="2db7c88d-1f42-4c14-80c5-0432df40dee8"/>
+        <title>D4</title>
+        <type>graph.Graph</type>
+      </subDiagram>
+    </entities>
+    <syntaxElement type="sltp.mm.syntax.Graph" uuid="886f5ea4-be5d-43d3-8301-11af87c0208e"/>
+    <title>Default</title>
+    <type>graph.Graph</type>
+  </diagram.editor.model.Diagram>
+  <sltp.mm.syntax.Context type="sltp.mm.syntax.Context" uuid="0fa45516-45c0-4a43-afe6-7d8960894ab8">
+    <rootGraph type="sltp.mm.syntax.Graph" uuid="886f5ea4-be5d-43d3-8301-11af87c0208e">
+      <children type="sltp.mm.syntax.Node" uuid="a1d20651-c8d6-4aec-89dc-d06071335905">
+        <inEdges type="sltp.mm.syntax.Edge" uuid="6087e6ae-e9cb-4add-8dfc-fad51c4181be"/>
+        <inEdges type="sltp.mm.syntax.Edge" uuid="782af912-a156-4418-8114-8dfa3194753d"/>
+        <priority>40</priority>
+        <rates type="sltp.mm.syntax.RateData">
+          <color>#000000</color>
+          <hasBlocks>true</hasBlocks>
+          <rate>0</rate>
+          <title>Cont</title>
+        </rates>
+        <rates type="sltp.mm.syntax.RateData">
+          <color>#e60000</color>
+          <hasBlocks>true</hasBlocks>
+          <rate>0.001666666666666667</rate>
+          <title>D1</title>
+        </rates>
+        <title>Cont</title>
+        <type>base</type>
+        <diagramElement type="diagram.editor.model.Entity" uuid="df5daaa6-fcb1-4b00-9307-822500363820"/>
+        <subgraph type="sltp.mm.syntax.Graph" uuid="e85e8597-c487-4725-b35e-79b00e649543">
+          <priorityDirection>HighNumberFirst</priorityDirection>
+          <title>Cont</title>
+          <diagramElement type="diagram.editor.model.Diagram" uuid="3c40b1d5-6d0a-4467-bd1a-d0dcb511a153"/>
+        </subgraph>
+      </children>
+      <children type="sltp.mm.syntax.Node" uuid="267989fe-cd5c-4c16-a57e-6e90bcae8eab">
+        <inEdges type="sltp.mm.syntax.Edge" uuid="d25c6367-8c5b-4503-97d7-af4183df8fd0"/>
+        <orderIndex>1</orderIndex>
+        <outEdges type="sltp.mm.syntax.Edge" uuid="6087e6ae-e9cb-4add-8dfc-fad51c4181be"/>
+        <priority>39</priority>
+        <rates type="sltp.mm.syntax.RateData">
+          <color>#00d100</color>
+          <hasBlocks>true</hasBlocks>
+          <rate>0.01</rate>
+          <title>D2</title>
+        </rates>
+        <title>D2</title>
+        <type>implicit-periodic</type>
+        <diagramElement type="diagram.editor.model.Entity" uuid="bdabf791-f83c-44c0-971f-3feb95ee4da8"/>
+        <subgraph type="sltp.mm.syntax.Graph" uuid="1d9b50c0-3473-4500-bd7d-b00cd3f99920">
+          <priorityDirection>HighNumberFirst</priorityDirection>
+          <title>D2</title>
+          <diagramElement type="diagram.editor.model.Diagram" uuid="82a93ea4-f0e4-4904-b0cb-ec2883db4175"/>
+        </subgraph>
+      </children>
+      <children type="sltp.mm.syntax.Node" uuid="9e421d03-466d-4ac7-b104-e55868d38fed">
+        <inEdges type="sltp.mm.syntax.Edge" uuid="787d8a60-0718-4aef-b458-809b245f8433"/>
+        <orderIndex>3</orderIndex>
+        <priority>37</priority>
+        <rates type="sltp.mm.syntax.RateData">
+          <color>#61bdfc</color>
+          <hasBlocks>true</hasBlocks>
+          <rate>0.1</rate>
+          <title>D4</title>
+        </rates>
+        <title>D4</title>
+        <type>implicit-periodic</type>
+        <diagramElement type="diagram.editor.model.Entity" uuid="5e7826aa-26b1-4447-879c-01c73f91807c"/>
+        <subgraph type="sltp.mm.syntax.Graph" uuid="2db7c88d-1f42-4c14-80c5-0432df40dee8">
+          <priorityDirection>HighNumberFirst</priorityDirection>
+          <title>D4</title>
+          <diagramElement type="diagram.editor.model.Diagram" uuid="5a393f90-ec6b-45cc-b6af-d66a51a29fa3"/>
+        </subgraph>
+      </children>
+      <children type="sltp.mm.syntax.Node" uuid="1d810ee4-161c-4fee-9b34-031efa673015">
+        <orderIndex>2</orderIndex>
+        <outEdges type="sltp.mm.syntax.Edge" uuid="782af912-a156-4418-8114-8dfa3194753d"/>
+        <outEdges type="sltp.mm.syntax.Edge" uuid="787d8a60-0718-4aef-b458-809b245f8433"/>
+        <outEdges type="sltp.mm.syntax.Edge" uuid="d25c6367-8c5b-4503-97d7-af4183df8fd0"/>
+        <priority>38</priority>
+        <rates type="sltp.mm.syntax.RateData">
+          <color>#0000cc</color>
+          <hasBlocks>true</hasBlocks>
+          <rate>0.01666666666666667</rate>
+          <title>D3</title>
+        </rates>
+        <title>D3</title>
+        <type>implicit-periodic</type>
+        <diagramElement type="diagram.editor.model.Entity" uuid="9ba89d2a-5d55-4645-a0b6-c4df7657959c"/>
+        <subgraph type="sltp.mm.syntax.Graph" uuid="9d4d1543-eeb6-4e03-9e49-6032b5bb5458">
+          <priorityDirection>HighNumberFirst</priorityDirection>
+          <title>D3</title>
+          <diagramElement type="diagram.editor.model.Diagram" uuid="a48fba4f-3a84-4e83-bdb6-8e41be3f463a"/>
+        </subgraph>
+      </children>
+      <edges type="sltp.mm.syntax.Edge" uuid="6087e6ae-e9cb-4add-8dfc-fad51c4181be">
+        <dst type="sltp.mm.syntax.Node" uuid="a1d20651-c8d6-4aec-89dc-d06071335905"/>
+        <src type="sltp.mm.syntax.Node" uuid="267989fe-cd5c-4c16-a57e-6e90bcae8eab"/>
+        <type>Delay</type>
+        <diagramElement type="diagram.editor.model.Connection" uuid="f4df776e-e457-4860-af67-86255da25e9e"/>
+      </edges>
+      <edges type="sltp.mm.syntax.Edge" uuid="782af912-a156-4418-8114-8dfa3194753d">
+        <dst type="sltp.mm.syntax.Node" uuid="a1d20651-c8d6-4aec-89dc-d06071335905"/>
+        <src type="sltp.mm.syntax.Node" uuid="1d810ee4-161c-4fee-9b34-031efa673015"/>
+        <type>Delay</type>
+        <diagramElement type="diagram.editor.model.Connection" uuid="79b382ba-014d-45e5-b867-7ce4de89d067"/>
+      </edges>
+      <edges type="sltp.mm.syntax.Edge" uuid="787d8a60-0718-4aef-b458-809b245f8433">
+        <dst type="sltp.mm.syntax.Node" uuid="9e421d03-466d-4ac7-b104-e55868d38fed"/>
+        <src type="sltp.mm.syntax.Node" uuid="1d810ee4-161c-4fee-9b34-031efa673015"/>
+        <type>Dependency</type>
+        <diagramElement type="diagram.editor.model.Connection" uuid="a295acc3-c768-4bc3-a72a-e3b11343b16d"/>
+      </edges>
+      <edges type="sltp.mm.syntax.Edge" uuid="d25c6367-8c5b-4503-97d7-af4183df8fd0">
+        <dst type="sltp.mm.syntax.Node" uuid="267989fe-cd5c-4c16-a57e-6e90bcae8eab"/>
+        <src type="sltp.mm.syntax.Node" uuid="1d810ee4-161c-4fee-9b34-031efa673015"/>
+        <type>Delay</type>
+        <diagramElement type="diagram.editor.model.Connection" uuid="3bf9f648-d2f2-4634-8a49-f940f9ab0067"/>
+      </edges>
+      <priorityDirection>HighNumberFirst</priorityDirection>
+      <title>Default</title>
+      <diagramElement type="diagram.editor.model.Diagram" uuid="d4d35d3e-ec20-403d-8b4d-2135411831f8"/>
+    </rootGraph>
+  </sltp.mm.syntax.Context>
+</sltp_editor>

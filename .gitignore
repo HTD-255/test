@@ -1,0 +1,16 @@
+# Simulink extraction artifacts
+extracted/
+Final_for_running_modified.slx
+Final_for_running.zip
+
+# MATLAB temporary files
+*.asv
+*.autosave
+
+# Build artifacts
+*.mex*
+*.p
+
+# Cache directories
+slprj/
+work/

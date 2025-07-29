@@ -1,0 +1,949 @@
+<?xml version="1.0" encoding="utf-8"?>
+<System>
+  <P Name="Location">[-8, -8, 1928, 1040]</P>
+  <P Name="SystemRect">[0.000000, 0.000000, 0.000000, 0.000000]</P>
+  <P Name="Open">on</P>
+  <P Name="SetExecutionDomain">off</P>
+  <P Name="ExecutionDomainType">Deduce</P>
+  <P Name="ZoomFactor">80</P>
+  <P Name="ReportName">simulink-default.rpt</P>
+  <P Name="SIDHighWatermark">2881</P>
+  <P Name="SimulinkSubDomain">Simulink</P>
+  <Block BlockType="SubSystem" Name=" CSI Timing" SID="2315">
+    <P Name="Ports">[0, 2]</P>
+    <P Name="Position">[2305, 589, 2415, 631]</P>
+    <P Name="ZOrder">4461</P>
+    <P Name="BackgroundColor">red</P>
+    <P Name="RequestExecContextInheritance">off</P>
+    <System Ref="system_2315"/>
+  </Block>
+  <Block BlockType="SubSystem" Name=" Depth Timing" SID="2330">
+    <P Name="Ports">[0, 2]</P>
+    <P Name="Position">[2305, 654, 2415, 696]</P>
+    <P Name="ZOrder">4463</P>
+    <P Name="BackgroundColor">red</P>
+    <P Name="RequestExecContextInheritance">off</P>
+    <System Ref="system_2330"/>
+  </Block>
+  <Block BlockType="ManualSwitch" Name="1 - Arm, 0 - Disarm1" SID="2710">
+    <P Name="Position">[370, 874, 400, 916]</P>
+    <P Name="ZOrder">4588</P>
+    <P Name="BackgroundColor">yellow</P>
+    <P Name="NameLocation">top</P>
+    <P Name="CurrentSetting">0</P>
+  </Block>
+  <Block BlockType="Constant" Name="Constant1" SID="1597">
+    <P Name="Position">[1025, 994, 1045, 1016]</P>
+    <P Name="ZOrder">4179</P>
+  </Block>
+  <Block BlockType="Constant" Name="Constant10" SID="2712">
+    <P Name="Position">[325, 875, 345, 895]</P>
+    <P Name="ZOrder">4590</P>
+  </Block>
+  <Block BlockType="Constant" Name="Constant8" SID="2713">
+    <P Name="Position">[325, 895, 345, 915]</P>
+    <P Name="ZOrder">4589</P>
+    <P Name="Value">0</P>
+  </Block>
+  <Block BlockType="Constant" Name="Constant9" SID="2714">
+    <P Name="Position">[400, 1020, 425, 1040]</P>
+    <P Name="ZOrder">4585</P>
+    <P Name="Value">0</P>
+  </Block>
+  <Block BlockType="SubSystem" Name="Control Loop Timing " SID="2254">
+    <P Name="Ports">[0, 2]</P>
+    <P Name="Position">[2305, 524, 2415, 566]</P>
+    <P Name="ZOrder">4435</P>
+    <P Name="BackgroundColor">red</P>
+    <P Name="RequestExecContextInheritance">off</P>
+    <System Ref="system_2254"/>
+  </Block>
+  <Block BlockType="SubSystem" Name="Diagnostics" SID="2763">
+    <P Name="Ports">[5, 1]</P>
+    <P Name="Position">[1290, 403, 1440, 597]</P>
+    <P Name="ZOrder">4609</P>
+    <P Name="BackgroundColor">darkGreen</P>
+    <P Name="NameLocation">top</P>
+    <P Name="RequestExecContextInheritance">off</P>
+    <System Ref="system_2763"/>
+  </Block>
+  <Block BlockType="SubSystem" Name="Display Depth" SID="2688">
+    <P Name="Ports">[1]</P>
+    <P Name="Position">[2005, 546, 2100, 584]</P>
+    <P Name="ZOrder">4562</P>
+    <P Name="CopyFcn">set_param(gcbh, &apos;UserData&apos;, gcb);
+set_param(gcbh, &apos;LinkStatus&apos;, &apos;none&apos;);</P>
+    <P Name="UndoDeleteFcn">set_param(gcbh, &apos;UserData&apos;, gcb);</P>
+    <P Name="LoadFcn">set_param(gcbh, &apos;UserData&apos;, gcb);</P>
+    <P Name="StartFcn">video_display_show([gcb, &apos;/Video Display&apos;], &apos;add&apos;, gcb);</P>
+    <P Name="NameChangeFcn">video_display_show([get_param(gcbh, &apos;UserData&apos;), &apos;/Video Display&apos;], &apos;rename&apos;, [gcb, &apos;/Video Display&apos;]);
+video_display_show([gcb, &apos;/Video Display&apos;], &apos;add&apos;, gcb);
+set_param(gcbh, &apos;UserData&apos;, gcb);
+</P>
+    <P Name="OpenFcn">video_display_show([gcb, &apos;/Video Display&apos;], &apos;show&apos;, gcb);</P>
+    <P Name="PreDeleteFcn">video_display_show([gcb, &apos;/Video Display&apos;], &apos;delete&apos;);</P>
+    <P Name="RequestExecContextInheritance">off</P>
+    <P Name="ContentPreviewEnabled">on</P>
+    <Mask SelfModifiable="on">
+      <Type>Video Compressed Display</Type>
+      <Display>patch([0.98591 0.98591 0.62618 0.59072 0.56147   0.536   0.536  0.5441 0.56912 0.59207 0.60881 0.62276 0.63527 0.64364  0.6485  0.6485 0.64706 0.64499 0.63662 0.62411 0.61232 0.59837 0.58307 0.56147   0.536   0.536  0.5441  0.5747 0.60953 0.63662 0.67001  0.7034 0.72851 0.75425 0.77927 0.80294 0.82454 0.84119 0.85865 0.87395 0.88574 0.89339  0.8969 0.89969 0.89969 0.89267  0.8816 0.87044 0.85649  0.8384 0.81824 0.80294 0.78764 0.77513 0.76676 0.75776 0.76397 0.77513 0.79178 0.80987 0.82796 0.84326 0.86207 0.98528],[0.18689 0.05522 0.05522 0.05171 0.05171    0.05 0.18338 0.18338 0.19148 0.20435 0.22298 0.24863 0.28589 0.33125 0.38138 0.55139 0.59801 0.63761 0.68189 0.72149 0.74939 0.76694 0.77855 0.79367 0.79952 0.92768 0.92768 0.92768 0.92417 0.92066 0.91364  0.9032 0.89384 0.88106 0.86594 0.85073 0.82634 0.80537 0.77855 0.74363 0.70403 0.65858 0.61079 0.59099 0.41513 0.37202 0.31847 0.29048 0.25556 0.23342  0.2102 0.19382 0.18221 0.17285 0.16943 0.16124  0.1589 0.16241 0.16709 0.17168  0.1787 0.18221 0.18689 0.18689],[0.9,0.90,0.91])
+patch([0.536 0.52601 0.46823 0.44528 0.41603 0.39101 0.35555 0.33116 0.31451 0.29291  0.2804 0.26717 0.25322 0.23999 0.22406 0.20732 0.19337 0.17528 0.15935 0.14396 0.13217 0.11759 0.10922 0.10085 0.09671 0.09392 0.09041 0.08906 0.08906 0.09464  0.0995 0.10778 0.11894 0.13145 0.14675 0.16349 0.17672 0.19409 0.20732 0.22406 0.23999 0.26159 0.27833 0.29849 0.31793 0.33602 0.35411 0.37085 0.39245 0.41603   0.536   0.536 0.53159 0.46409   0.446 0.42026 0.39587 0.37571 0.36113 0.34925 0.34088 0.33809 0.33809 0.34088 0.34583 0.35627 0.36392 0.38129 0.39587 0.41117 0.42719 0.44672  0.4676 0.48353 0.48353 0.52394   0.536],[0.05 0.04829 0.04712 0.04712 0.04829 0.05063 0.05405 0.05873 0.06107 0.06692 0.07043 0.07619 0.08087 0.08672 0.09482 0.10652 0.11696 0.13325  0.1508 0.17168 0.19499 0.22415 0.25439 0.28472 0.31379 0.35456 0.38489 0.41513 0.58055 0.63878 0.68774 0.72149 0.75641 0.78089 0.80537 0.82859 0.84029 0.85658 0.86594 0.87404  0.8834 0.89267 0.90086 0.90788 0.91247 0.91832 0.92066   0.923 0.92651 0.92768 0.92768 0.79952 0.79952 0.79952 0.79718 0.78899 0.77153 0.75056 0.72149 0.68072 0.62249  0.5549 0.41396 0.37085 0.33242 0.28121 0.25205 0.22181 0.20552 0.19499 0.18572 0.18221 0.17753 0.17636 0.17753  0.1787  0.1787],[0.9,0.90,0.91])
+disp(&apos;Video\nCompressed\nDisplay&apos;);
+</Display>
+      <Description>Displays a video stream on the host, using compression to minimize bandwidth.</Description>
+      <Initialization>qc_set_display(&apos;Video\nCompressed\nDisplay&apos;);</Initialization>
+      <Help>web(qc_get_block_help_path(gcb));</Help>
+      <MaskParameter Name="algorithm" Type="promote" Tunable="off">
+        <Prompt>Compression algorithm:</Prompt>
+        <Value>JPEG</Value>
+        <TypeOptions>
+          <Option>Image Compress/algorithm</Option>
+        </TypeOptions>
+      </MaskParameter>
+      <MaskParameter Name="quality" Type="promote" Tunable="off">
+        <Prompt>Compression quality (0-100):</Prompt>
+        <Value>50</Value>
+        <TypeOptions>
+          <Option>Image Compress/quality</Option>
+        </TypeOptions>
+      </MaskParameter>
+      <MaskParameter Name="sample_time" Type="promote" Tunable="off">
+        <Prompt>Sample time (seconds):</Prompt>
+        <Value>-1</Value>
+        <TypeOptions>
+          <Option>Video Display/sample_time</Option>
+        </TypeOptions>
+      </MaskParameter>
+      <MaskParameter Name="use_hardware" Type="promote" Tunable="off">
+        <Prompt>Use hardware acceleration for video display</Prompt>
+        <Value>on</Value>
+        <TypeOptions>
+          <Option>Video Display/use_hardware</Option>
+        </TypeOptions>
+      </MaskParameter>
+    </Mask>
+    <System Ref="system_2688"/>
+  </Block>
+  <Block BlockType="SubSystem" Name="Display Tracking Diagnostics" SID="2793">
+    <P Name="Ports">[1]</P>
+    <P Name="Position">[1475, 481, 1570, 519]</P>
+    <P Name="ZOrder">4610</P>
+    <P Name="CopyFcn">set_param(gcbh, &apos;UserData&apos;, gcb);
+set_param(gcbh, &apos;LinkStatus&apos;, &apos;none&apos;);</P>
+    <P Name="UndoDeleteFcn">set_param(gcbh, &apos;UserData&apos;, gcb);</P>
+    <P Name="LoadFcn">set_param(gcbh, &apos;UserData&apos;, gcb);</P>
+    <P Name="StartFcn">video_display_show([gcb, &apos;/Video Display&apos;], &apos;add&apos;, gcb);</P>
+    <P Name="NameChangeFcn">video_display_show([get_param(gcbh, &apos;UserData&apos;), &apos;/Video Display&apos;], &apos;rename&apos;, [gcb, &apos;/Video Display&apos;]);
+video_display_show([gcb, &apos;/Video Display&apos;], &apos;add&apos;, gcb);
+set_param(gcbh, &apos;UserData&apos;, gcb);
+</P>
+    <P Name="OpenFcn">video_display_show([gcb, &apos;/Video Display&apos;], &apos;show&apos;, gcb);</P>
+    <P Name="PreDeleteFcn">video_display_show([gcb, &apos;/Video Display&apos;], &apos;delete&apos;);</P>
+    <P Name="RequestExecContextInheritance">off</P>
+    <P Name="ContentPreviewEnabled">on</P>
+    <Mask SelfModifiable="on">
+      <Type>Video Compressed Display</Type>
+      <Display>patch([0.98591 0.98591 0.62618 0.59072 0.56147   0.536   0.536  0.5441 0.56912 0.59207 0.60881 0.62276 0.63527 0.64364  0.6485  0.6485 0.64706 0.64499 0.63662 0.62411 0.61232 0.59837 0.58307 0.56147   0.536   0.536  0.5441  0.5747 0.60953 0.63662 0.67001  0.7034 0.72851 0.75425 0.77927 0.80294 0.82454 0.84119 0.85865 0.87395 0.88574 0.89339  0.8969 0.89969 0.89969 0.89267  0.8816 0.87044 0.85649  0.8384 0.81824 0.80294 0.78764 0.77513 0.76676 0.75776 0.76397 0.77513 0.79178 0.80987 0.82796 0.84326 0.86207 0.98528],[0.18689 0.05522 0.05522 0.05171 0.05171    0.05 0.18338 0.18338 0.19148 0.20435 0.22298 0.24863 0.28589 0.33125 0.38138 0.55139 0.59801 0.63761 0.68189 0.72149 0.74939 0.76694 0.77855 0.79367 0.79952 0.92768 0.92768 0.92768 0.92417 0.92066 0.91364  0.9032 0.89384 0.88106 0.86594 0.85073 0.82634 0.80537 0.77855 0.74363 0.70403 0.65858 0.61079 0.59099 0.41513 0.37202 0.31847 0.29048 0.25556 0.23342  0.2102 0.19382 0.18221 0.17285 0.16943 0.16124  0.1589 0.16241 0.16709 0.17168  0.1787 0.18221 0.18689 0.18689],[0.9,0.90,0.91])
+patch([0.536 0.52601 0.46823 0.44528 0.41603 0.39101 0.35555 0.33116 0.31451 0.29291  0.2804 0.26717 0.25322 0.23999 0.22406 0.20732 0.19337 0.17528 0.15935 0.14396 0.13217 0.11759 0.10922 0.10085 0.09671 0.09392 0.09041 0.08906 0.08906 0.09464  0.0995 0.10778 0.11894 0.13145 0.14675 0.16349 0.17672 0.19409 0.20732 0.22406 0.23999 0.26159 0.27833 0.29849 0.31793 0.33602 0.35411 0.37085 0.39245 0.41603   0.536   0.536 0.53159 0.46409   0.446 0.42026 0.39587 0.37571 0.36113 0.34925 0.34088 0.33809 0.33809 0.34088 0.34583 0.35627 0.36392 0.38129 0.39587 0.41117 0.42719 0.44672  0.4676 0.48353 0.48353 0.52394   0.536],[0.05 0.04829 0.04712 0.04712 0.04829 0.05063 0.05405 0.05873 0.06107 0.06692 0.07043 0.07619 0.08087 0.08672 0.09482 0.10652 0.11696 0.13325  0.1508 0.17168 0.19499 0.22415 0.25439 0.28472 0.31379 0.35456 0.38489 0.41513 0.58055 0.63878 0.68774 0.72149 0.75641 0.78089 0.80537 0.82859 0.84029 0.85658 0.86594 0.87404  0.8834 0.89267 0.90086 0.90788 0.91247 0.91832 0.92066   0.923 0.92651 0.92768 0.92768 0.79952 0.79952 0.79952 0.79718 0.78899 0.77153 0.75056 0.72149 0.68072 0.62249  0.5549 0.41396 0.37085 0.33242 0.28121 0.25205 0.22181 0.20552 0.19499 0.18572 0.18221 0.17753 0.17636 0.17753  0.1787  0.1787],[0.9,0.90,0.91])
+disp(&apos;Video\nCompressed\nDisplay&apos;);
+</Display>
+      <Description>Displays a video stream on the host, using compression to minimize bandwidth.</Description>
+      <Initialization>qc_set_display(&apos;Video\nCompressed\nDisplay&apos;);</Initialization>
+      <Help>web(qc_get_block_help_path(gcb));</Help>
+      <MaskParameter Name="algorithm" Type="promote" Tunable="off">
+        <Prompt>Compression algorithm:</Prompt>
+        <Value>JPEG</Value>
+        <TypeOptions>
+          <Option>Image Compress/algorithm</Option>
+        </TypeOptions>
+      </MaskParameter>
+      <MaskParameter Name="quality" Type="promote" Tunable="off">
+        <Prompt>Compression quality (0-100):</Prompt>
+        <Value>80</Value>
+        <TypeOptions>
+          <Option>Image Compress/quality</Option>
+        </TypeOptions>
+      </MaskParameter>
+      <MaskParameter Name="sample_time" Type="promote" Tunable="off">
+        <Prompt>Sample time (seconds):</Prompt>
+        <Value>-1</Value>
+        <TypeOptions>
+          <Option>Video Display/sample_time</Option>
+        </TypeOptions>
+      </MaskParameter>
+      <MaskParameter Name="use_hardware" Type="promote" Tunable="off">
+        <Prompt>Use hardware acceleration for video display</Prompt>
+        <Value>on</Value>
+        <TypeOptions>
+          <Option>Video Display/use_hardware</Option>
+        </TypeOptions>
+      </MaskParameter>
+    </Mask>
+    <System Ref="system_2793"/>
+  </Block>
+  <Block BlockType="Gain" Name="Gain1" SID="2866">
+    <P Name="Position">[1225, 675, 1255, 705]</P>
+    <P Name="ZOrder">4624</P>
+    <P Name="Gain">0.005</P>
+  </Block>
+  <Block BlockType="SubSystem" Name="Lane Location" SID="2836">
+    <P Name="Ports">[2, 2]</P>
+    <P Name="Position">[1035, 645, 1175, 705]</P>
+    <P Name="ZOrder">4620</P>
+    <P Name="BackgroundColor">darkGreen</P>
+    <P Name="RequestExecContextInheritance">off</P>
+    <P Name="ContentPreviewEnabled">on</P>
+    <System Ref="system_2836"/>
+  </Block>
+  <Block BlockType="SubSystem" Name="MATLAB Function" SID="2875">
+    <P Name="Ports">[1, 1]</P>
+    <P Name="Position">[365, 397, 435, 443]</P>
+    <P Name="ZOrder">4631</P>
+    <P Name="ErrorFcn">Stateflow.Translate.translate</P>
+    <P Name="PermitHierarchicalResolution">ExplicitOnly</P>
+    <P Name="TreatAsAtomicUnit">on</P>
+    <P Name="RequestExecContextInheritance">off</P>
+    <P Name="SFBlockType">MATLAB Function</P>
+    <P Name="ContentPreviewEnabled">on</P>
+    <System Ref="system_2875"/>
+  </Block>
+  <Block BlockType="Mux" Name="Mux" SID="1568">
+    <P Name="Ports">[2, 1]</P>
+    <P Name="Position">[1645, 976, 1650, 1014]</P>
+    <P Name="ZOrder">4173</P>
+    <P Name="ShowName">off</P>
+    <P Name="Inputs">2</P>
+    <P Name="DisplayOption">bar</P>
+  </Block>
+  <Block BlockType="Mux" Name="Mux1" SID="2359">
+    <P Name="Ports">[2, 1]</P>
+    <P Name="Position">[2440, 656, 2445, 694]</P>
+    <P Name="ZOrder">4482</P>
+    <P Name="ShowName">off</P>
+    <P Name="Inputs">2</P>
+    <P Name="DisplayOption">bar</P>
+  </Block>
+  <Block BlockType="Mux" Name="Mux2" SID="2360">
+    <P Name="Ports">[2, 1]</P>
+    <P Name="Position">[2440, 591, 2445, 629]</P>
+    <P Name="ZOrder">4483</P>
+    <P Name="ShowName">off</P>
+    <P Name="Inputs">2</P>
+    <P Name="DisplayOption">bar</P>
+  </Block>
+  <Block BlockType="Mux" Name="Mux3" SID="2361">
+    <P Name="Ports">[2, 1]</P>
+    <P Name="Position">[2440, 526, 2445, 564]</P>
+    <P Name="ZOrder">4484</P>
+    <P Name="ShowName">off</P>
+    <P Name="Inputs">2</P>
+    <P Name="DisplayOption">bar</P>
+  </Block>
+  <Block BlockType="Constant" Name="Nomimal Lane Position&#xA;(Pixel Column)" SID="2802">
+    <P Name="Position">[955, 675, 985, 705]</P>
+    <P Name="ZOrder">4612</P>
+    <P Name="BackgroundColor">cyan</P>
+    <P Name="Value">600</P>
+    <P Name="OutDataTypeStr">Inherit: Inherit via back propagation</P>
+  </Block>
+  <Block BlockType="Reference" Name="Powered by QUARC" SID="1862">
+    <P Name="Ports">[]</P>
+    <P Name="Position">[2290, 414, 2433, 464]</P>
+    <P Name="ZOrder">4336</P>
+    <P Name="ShowName">off</P>
+    <P Name="LibraryVersion">1.2129</P>
+    <P Name="SourceBlock">quarc_library/Logos/Powered by QUARC</P>
+    <P Name="SourceType">Powered by QUARC</P>
+    <P Name="SourceProductName">QUARC Targets</P>
+    <InstanceData>
+      <P Name="RTWMemSecFuncInitTerm">Inherit from model</P>
+      <P Name="RTWMemSecFuncExecute">Inherit from model</P>
+      <P Name="RTWMemSecDataConstants">Inherit from model</P>
+      <P Name="RTWMemSecDataInternal">Inherit from model</P>
+      <P Name="RTWMemSecDataParameters">Inherit from model</P>
+      <P Name="ContentPreviewEnabled">on</P>
+    </InstanceData>
+  </Block>
+  <Block BlockType="Constant" Name="ROI&#xA;[xmin xmax ymin ymax]" SID="2797">
+    <P Name="Position">[640, 660, 715, 680]</P>
+    <P Name="ZOrder">4611</P>
+    <P Name="Value">[10 800 40 180]</P>
+  </Block>
+  <Block BlockType="SubSystem" Name="ROI Mask" SID="2804">
+    <P Name="Ports">[2, 1]</P>
+    <P Name="Position">[765, 633, 895, 682]</P>
+    <P Name="ZOrder">4613</P>
+    <P Name="BackgroundColor">darkGreen</P>
+    <P Name="RequestExecContextInheritance">off</P>
+    <System Ref="system_2804"/>
+  </Block>
+  <Block BlockType="RateLimiter" Name="Rate Limiter" SID="2718">
+    <P Name="Position">[510, 1000, 535, 1030]</P>
+    <P Name="ZOrder">4586</P>
+    <P Name="FallingSlewLimit">-Inf</P>
+    <P Name="SampleTimeMode">inherited</P>
+  </Block>
+  <Block BlockType="RateTransition" Name="Rate Transition" SID="1974">
+    <P Name="Position">[610, 944, 635, 966]</P>
+    <P Name="ZOrder">4416</P>
+  </Block>
+  <Block BlockType="RateTransition" Name="Rate Transition1" SID="1992">
+    <P Name="Position">[610, 914, 635, 936]</P>
+    <P Name="ZOrder">4417</P>
+  </Block>
+  <Block BlockType="RateTransition" Name="Rate Transition10" SID="2880">
+    <P Name="Position">[1230, 566, 1255, 594]</P>
+    <P Name="ZOrder">4636</P>
+    <P Name="OutPortSampleTime">0.1</P>
+  </Block>
+  <Block BlockType="RateTransition" Name="Rate Transition2" SID="2303">
+    <P Name="Position">[1690, 594, 1715, 616]</P>
+    <P Name="ZOrder">4454</P>
+    <P Name="Deterministic">off</P>
+  </Block>
+  <Block BlockType="RateTransition" Name="Rate Transition3" SID="2362">
+    <P Name="Position">[2470, 664, 2495, 686]</P>
+    <P Name="ZOrder">4485</P>
+    <P Name="NameLocation">top</P>
+  </Block>
+  <Block BlockType="RateTransition" Name="Rate Transition4" SID="2363">
+    <P Name="Position">[2470, 599, 2495, 621]</P>
+    <P Name="ZOrder">4486</P>
+    <P Name="NameLocation">top</P>
+  </Block>
+  <Block BlockType="RateTransition" Name="Rate Transition6" SID="2876">
+    <P Name="Position">[1230, 406, 1255, 434]</P>
+    <P Name="ZOrder">4632</P>
+    <P Name="OutPortSampleTime">0.1</P>
+  </Block>
+  <Block BlockType="RateTransition" Name="Rate Transition7" SID="2877">
+    <P Name="Position">[1230, 446, 1255, 474]</P>
+    <P Name="ZOrder">4633</P>
+    <P Name="OutPortSampleTime">0.1</P>
+  </Block>
+  <Block BlockType="RateTransition" Name="Rate Transition8" SID="2878">
+    <P Name="Position">[1230, 486, 1255, 514]</P>
+    <P Name="ZOrder">4634</P>
+    <P Name="OutPortSampleTime">0.1</P>
+  </Block>
+  <Block BlockType="RateTransition" Name="Rate Transition9" SID="2879">
+    <P Name="Position">[1230, 526, 1255, 554]</P>
+    <P Name="ZOrder">4635</P>
+    <P Name="OutPortSampleTime">0.1</P>
+  </Block>
+  <Block BlockType="Saturate" Name="Saturation1" SID="2719">
+    <P Name="Position">[400, 985, 430, 1015]</P>
+    <P Name="ZOrder">4587</P>
+    <P Name="UpperLimit">1</P>
+    <P Name="LowerLimit">0</P>
+  </Block>
+  <Block BlockType="Scope" Name="Scope" SID="2358">
+    <P Name="Ports">[3]</P>
+    <P Name="Position">[2520, 509, 2570, 711]</P>
+    <P Name="ZOrder">4481</P>
+    <P Name="ScopeSpecificationString">Simulink.scopes.TimeScopeBlockCfg(&apos;CurrentConfiguration&apos;, extmgr.ConfigurationSet(extmgr.Configuration(&apos;Core&apos;,&apos;General UI&apos;,true),extmgr.Configuration(&apos;Core&apos;,&apos;Source UI&apos;,true),extmgr.Configuration(&apos;Sources&apos;,&apos;WiredSimulink&apos;,true,&apos;DataLoggingVariableName&apos;,&apos;ScopeData1&apos;),extmgr.Configuration(&apos;Visuals&apos;,&apos;Time Domain&apos;,true,&apos;SerializedDisplays&apos;,{struct(&apos;MinYLimReal&apos;,&apos;-0.14316&apos;,&apos;MaxYLimReal&apos;,&apos;1.28841&apos;,&apos;YLabelReal&apos;,&apos;s&apos;,&apos;MinYLimMag&apos;,&apos;0.00000&apos;,&apos;MaxYLimMag&apos;,&apos;1.28841&apos;,&apos;LegendVisibility&apos;,&apos;Off&apos;,&apos;XGrid&apos;,true,&apos;YGrid&apos;,true,&apos;PlotMagPhase&apos;,false,&apos;AxesColor&apos;,[0 0 0],&apos;AxesTickColor&apos;,[0.686274509803922 0.686274509803922 0.686274509803922],&apos;ColorOrder&apos;,[1 1 0.0666666666666667;0.0745098039215686 0.623529411764706 1;1 0.411764705882353 0.16078431372549;0.392156862745098 0.831372549019608 0.0745098039215686;0.717647058823529 0.274509803921569 1;0.0588235294117647 1 1;1 0.0745098039215686 0.650980392156863],&apos;Title&apos;,&apos;Timing: 500 Hz loop&apos;,&apos;LinePropertiesCache&apos;,{{}},&apos;UserDefinedChannelNames&apos;,{{}},&apos;NumLines&apos;,0,&apos;LineNames&apos;,{{[]}},&apos;ShowContent&apos;,true,&apos;Placement&apos;,1),struct(&apos;MinYLimReal&apos;,&apos;-0.00273&apos;,&apos;MaxYLimReal&apos;,&apos;0.02544&apos;,&apos;YLabelReal&apos;,&apos;s&apos;,&apos;MinYLimMag&apos;,&apos;0&apos;,&apos;MaxYLimMag&apos;,&apos;10&apos;,&apos;LegendVisibility&apos;,&apos;Off&apos;,&apos;XGrid&apos;,true,&apos;YGrid&apos;,true,&apos;PlotMagPhase&apos;,false,&apos;AxesColor&apos;,[0 0 0],&apos;AxesTickColor&apos;,[0.686274509803922 0.686274509803922 0.686274509803922],&apos;ColorOrder&apos;,[1 1 0.0666666666666667;0.0745098039215686 0.623529411764706 1;1 0.411764705882353 0.16078431372549;0.392156862745098 0.831372549019608 0.0745098039215686;0.717647058823529 0.274509803921569 1;0.0588235294117647 1 1;1 0.0745098039215686 0.650980392156863],&apos;Title&apos;,&apos;Timing: 100 Hz loop&apos;,&apos;LinePropertiesCache&apos;,{{}},&apos;UserDefinedChannelNames&apos;,{{}},&apos;NumLines&apos;,0,&apos;LineNames&apos;,{{[]}},&apos;ShowContent&apos;,true,&apos;Placement&apos;,2),struct(&apos;MinYLimReal&apos;,&apos;-0.14316&apos;,&apos;MaxYLimReal&apos;,&apos;1.28844&apos;,&apos;YLabelReal&apos;,&apos;&apos;,&apos;MinYLimMag&apos;,&apos;0.00000&apos;,&apos;MaxYLimMag&apos;,&apos;0.02708&apos;,&apos;LegendVisibility&apos;,&apos;Off&apos;,&apos;XGrid&apos;,true,&apos;YGrid&apos;,true,&apos;PlotMagPhase&apos;,false,&apos;AxesColor&apos;,[0 0 0],&apos;AxesTickColor&apos;,[0.686274509803922 0.686274509803922 0.686274509803922],&apos;ColorOrder&apos;,[1 1 0.0666666666666667;0.0745098039215686 0.623529411764706 1;1 0.411764705882353 0.16078431372549;0.392156862745098 0.831372549019608 0.0745098039215686;0.717647058823529 0.274509803921569 1;0.0588235294117647 1 1;1 0.0745098039215686 0.650980392156863],&apos;Title&apos;,&apos;Timing: 50 Hz loop&apos;,&apos;LinePropertiesCache&apos;,{{}},&apos;UserDefinedChannelNames&apos;,{{}},&apos;NumLines&apos;,0,&apos;LineNames&apos;,{{[]}},&apos;ShowContent&apos;,true,&apos;Placement&apos;,3)},&apos;ShowTimeAxisLabel&apos;,true,&apos;DisplayPropertyDefaults&apos;,struct(&apos;AxesColor&apos;,[0 0 0],&apos;AxesTickColor&apos;,[0.686274509803922 0.686274509803922 0.686274509803922],&apos;ColorOrder&apos;,[0.0745098039215686 0.623529411764706 1;1 0.411764705882353 0.16078431372549;1 1 0.0666666666666667;0.717647058823529 0.274509803921569 1;0.392156862745098 0.831372549019608 0.0745098039215686;0.0588235294117647 1 1;1 0.0745098039215686 0.650980392156863]),&apos;DisplayLayoutDimensions&apos;,[3 1],&apos;DisplayContentCache&apos;,[],&apos;TimeRangeSamples&apos;,&apos;60&apos;,&apos;TimeRangeFrames&apos;,&apos;60&apos;),extmgr.Configuration(&apos;Tools&apos;,&apos;Plot Navigation&apos;,true,&apos;OnceAtStop&apos;,false,&apos;PreviousZoomMode&apos;,&apos;ZoomY&apos;),extmgr.Configuration(&apos;Tools&apos;,&apos;Measurements&apos;,true,&apos;Version&apos;,&apos;2019a&apos;)),&apos;Version&apos;,&apos;2019a&apos;,&apos;Position&apos;,[751 -25 912 977])</P>
+    <P Name="NumInputPorts">3</P>
+    <P Name="Floating">off</P>
+  </Block>
+  <Block BlockType="Scope" Name="Scope1" SID="2868">
+    <P Name="Ports">[1]</P>
+    <P Name="Position">[1780, 849, 1810, 881]</P>
+    <P Name="ZOrder">4626</P>
+    <P Name="ScopeSpecificationString">Simulink.scopes.TimeScopeBlockCfg(&apos;CurrentConfiguration&apos;, extmgr.ConfigurationSet(extmgr.Configuration(&apos;Core&apos;,&apos;General UI&apos;,true),extmgr.Configuration(&apos;Core&apos;,&apos;Source UI&apos;,true),extmgr.Configuration(&apos;Sources&apos;,&apos;WiredSimulink&apos;,true,&apos;DataLoggingVariableName&apos;,&apos;ScopeData3&apos;),extmgr.Configuration(&apos;Visuals&apos;,&apos;Time Domain&apos;,true,&apos;SerializedDisplays&apos;,{struct(&apos;MinYLimReal&apos;,&apos;-0.00418&apos;,&apos;MaxYLimReal&apos;,&apos;0.0063&apos;,&apos;YLabelReal&apos;,&apos;&apos;,&apos;MinYLimMag&apos;,&apos;0.00000&apos;,&apos;MaxYLimMag&apos;,&apos;0.0063&apos;,&apos;LegendVisibility&apos;,&apos;off&apos;,&apos;XGrid&apos;,true,&apos;YGrid&apos;,true,&apos;PlotMagPhase&apos;,false,&apos;AxesColor&apos;,[0 0 0],&apos;AxesTickColor&apos;,[0.686274509803922 0.686274509803922 0.686274509803922],&apos;ColorOrder&apos;,[1 1 0.0666666666666667;0.0745098039215686 0.623529411764706 1;1 0.411764705882353 0.16078431372549;0.392156862745098 0.831372549019608 0.0745098039215686;0.717647058823529 0.274509803921569 1;0.0588235294117647 1 1;1 0.0745098039215686 0.650980392156863],&apos;Title&apos;,&apos;%&lt;SignalLabel&gt;&apos;,&apos;LinePropertiesCache&apos;,{{}},&apos;UserDefinedChannelNames&apos;,{{}},&apos;NumLines&apos;,1,&apos;LineNames&apos;,{{&apos;speedController&apos;}},&apos;ShowContent&apos;,true,&apos;Placement&apos;,1)},&apos;DisplayPropertyDefaults&apos;,struct(&apos;MinYLimReal&apos;,&apos;-0.00418&apos;,&apos;MaxYLimReal&apos;,&apos;0.0063&apos;,&apos;YLabelReal&apos;,&apos;&apos;,&apos;MinYLimMag&apos;,&apos;0.00000&apos;,&apos;MaxYLimMag&apos;,&apos;0.0063&apos;,&apos;LegendVisibility&apos;,&apos;off&apos;,&apos;XGrid&apos;,true,&apos;YGrid&apos;,true,&apos;PlotMagPhase&apos;,false,&apos;AxesColor&apos;,[0 0 0],&apos;AxesTickColor&apos;,[0.686274509803922 0.686274509803922 0.686274509803922],&apos;ColorOrder&apos;,[0.0745098039215686 0.623529411764706 1;1 0.411764705882353 0.16078431372549;1 1 0.0666666666666667;0.717647058823529 0.274509803921569 1;0.392156862745098 0.831372549019608 0.0745098039215686;0.0588235294117647 1 1;1 0.0745098039215686 0.650980392156863])),extmgr.Configuration(&apos;Tools&apos;,&apos;Plot Navigation&apos;,true,&apos;OnceAtStop&apos;,false,&apos;PreviousZoomMode&apos;,&apos;ZoomY&apos;),extmgr.Configuration(&apos;Tools&apos;,&apos;Measurements&apos;,true,&apos;Version&apos;,&apos;2019a&apos;)),&apos;Version&apos;,&apos;2019a&apos;,&apos;Position&apos;,[711 140 560 420])</P>
+    <P Name="NumInputPorts">1</P>
+    <P Name="Floating">off</P>
+  </Block>
+  <Block BlockType="Constant" Name="Speed Max (m/s)" SID="2728">
+    <P Name="Position">[335, 987, 360, 1013]</P>
+    <P Name="ZOrder">4599</P>
+    <P Name="BackgroundColor">cyan</P>
+    <P Name="Value">0.1</P>
+  </Block>
+  <Block BlockType="Saturate" Name="Steering&#xA;Saturation1" SID="2865">
+    <P Name="Position">[1275, 675, 1305, 705]</P>
+    <P Name="ZOrder">4623</P>
+    <P Name="NameLocation">top</P>
+  </Block>
+  <Block BlockType="Scope" Name="Steering Command" SID="2867">
+    <P Name="Ports">[1]</P>
+    <P Name="Position">[1450, 699, 1480, 731]</P>
+    <P Name="ZOrder">4625</P>
+    <P Name="ScopeSpecificationString">Simulink.scopes.TimeScopeBlockCfg(&apos;CurrentConfiguration&apos;, extmgr.ConfigurationSet(extmgr.Configuration(&apos;Core&apos;,&apos;General UI&apos;,true),extmgr.Configuration(&apos;Core&apos;,&apos;Source UI&apos;,true),extmgr.Configuration(&apos;Sources&apos;,&apos;WiredSimulink&apos;,true,&apos;DataLoggingVariableName&apos;,&apos;ScopeData2&apos;),extmgr.Configuration(&apos;Visuals&apos;,&apos;Time Domain&apos;,true,&apos;SerializedDisplays&apos;,{struct(&apos;MinYLimReal&apos;,&apos;-0.625&apos;,&apos;MaxYLimReal&apos;,&apos;0.625&apos;,&apos;YLabelReal&apos;,&apos;&apos;,&apos;MinYLimMag&apos;,&apos;0.00000&apos;,&apos;MaxYLimMag&apos;,&apos;0.625&apos;,&apos;LegendVisibility&apos;,&apos;off&apos;,&apos;XGrid&apos;,true,&apos;YGrid&apos;,true,&apos;PlotMagPhase&apos;,false,&apos;AxesColor&apos;,[0 0 0],&apos;AxesTickColor&apos;,[0.686274509803922 0.686274509803922 0.686274509803922],&apos;ColorOrder&apos;,[1 1 0.0666666666666667;0.0745098039215686 0.623529411764706 1;1 0.411764705882353 0.16078431372549;0.392156862745098 0.831372549019608 0.0745098039215686;0.717647058823529 0.274509803921569 1;0.0588235294117647 1 1;1 0.0745098039215686 0.650980392156863],&apos;Title&apos;,&apos;%&lt;SignalLabel&gt;&apos;,&apos;LinePropertiesCache&apos;,{{}},&apos;UserDefinedChannelNames&apos;,{{}},&apos;NumLines&apos;,1,&apos;LineNames&apos;,{{&apos;Steering Saturation1&apos;}},&apos;ShowContent&apos;,true,&apos;Placement&apos;,1)},&apos;DisplayPropertyDefaults&apos;,struct(&apos;MinYLimReal&apos;,&apos;-0.625&apos;,&apos;MaxYLimReal&apos;,&apos;0.625&apos;,&apos;YLabelReal&apos;,&apos;&apos;,&apos;MinYLimMag&apos;,&apos;0.00000&apos;,&apos;MaxYLimMag&apos;,&apos;0.625&apos;,&apos;LegendVisibility&apos;,&apos;off&apos;,&apos;XGrid&apos;,true,&apos;YGrid&apos;,true,&apos;PlotMagPhase&apos;,false,&apos;AxesColor&apos;,[0 0 0],&apos;AxesTickColor&apos;,[0.686274509803922 0.686274509803922 0.686274509803922],&apos;ColorOrder&apos;,[0.0745098039215686 0.623529411764706 1;1 0.411764705882353 0.16078431372549;1 1 0.0666666666666667;0.717647058823529 0.274509803921569 1;0.392156862745098 0.831372549019608 0.0745098039215686;0.0588235294117647 1 1;1 0.0745098039215686 0.650980392156863])),extmgr.Configuration(&apos;Tools&apos;,&apos;Plot Navigation&apos;,true),extmgr.Configuration(&apos;Tools&apos;,&apos;Measurements&apos;,true,&apos;Version&apos;,&apos;2019a&apos;)),&apos;Version&apos;,&apos;2019a&apos;,&apos;Position&apos;,[15 37 560 420])</P>
+    <P Name="NumInputPorts">1</P>
+    <P Name="Floating">off</P>
+  </Block>
+  <Block BlockType="Constant" Name="Stopping Distance (m)" SID="2729">
+    <P Name="Position">[1640, 642, 1665, 668]</P>
+    <P Name="ZOrder">4600</P>
+    <P Name="BackgroundColor">cyan</P>
+    <P Name="Value">0.2</P>
+  </Block>
+  <Block BlockType="Switch" Name="Switch" SID="2722">
+    <P Name="Position">[465, 995, 495, 1035]</P>
+    <P Name="ZOrder">4584</P>
+    <P Name="Criteria">u2 &gt; Threshold</P>
+    <P Name="InputSameDT">off</P>
+    <P Name="SaturateOnIntegerOverflow">off</P>
+  </Block>
+  <Block BlockType="Terminator" Name="Terminator" SID="1598">
+    <P Name="Position">[2275, 915, 2295, 935]</P>
+    <P Name="ZOrder">4180</P>
+  </Block>
+  <Block BlockType="Terminator" Name="Terminator2" SID="1599">
+    <P Name="Position">[2275, 955, 2295, 975]</P>
+    <P Name="ZOrder">4181</P>
+  </Block>
+  <Block BlockType="SubSystem" Name="automatedDriving" SID="2388">
+    <P Name="Ports">[3, 1]</P>
+    <P Name="Position">[715, 911, 955, 999]</P>
+    <P Name="ZOrder">4495</P>
+    <P Name="BackgroundColor">lightBlue</P>
+    <P Name="RequestExecContextInheritance">off</P>
+    <System Ref="system_2388"/>
+  </Block>
+  <Block BlockType="SubSystem" Name="basicQCarIO" SID="1865">
+    <P Name="Ports">[2, 3]</P>
+    <P Name="Position">[1990, 903, 2225, 1027]</P>
+    <P Name="ZOrder">4338</P>
+    <P Name="BackgroundColor">red</P>
+    <P Name="RequestExecContextInheritance">off</P>
+    <System Ref="system_1865"/>
+  </Block>
+  <Block BlockType="SubSystem" Name="basicSpeedEstimation" SID="2205">
+    <P Name="Ports">[1, 1]</P>
+    <P Name="Position">[1995, 1087, 2220, 1113]</P>
+    <P Name="ZOrder">4419</P>
+    <P Name="BlockMirror">on</P>
+    <P Name="BackgroundColor">darkGreen</P>
+    <P Name="NameLocation">top</P>
+    <P Name="RequestExecContextInheritance">off</P>
+    <System Ref="system_2205"/>
+  </Block>
+  <Block BlockType="SubSystem" Name="captureCSI" SID="2119">
+    <P Name="Ports">[0, 1]</P>
+    <P Name="Position">[150, 392, 270, 448]</P>
+    <P Name="ZOrder">4382</P>
+    <P Name="BackgroundColor">red</P>
+    <P Name="RequestExecContextInheritance">off</P>
+    <System Ref="system_2119"/>
+  </Block>
+  <Block BlockType="SubSystem" Name="captureDepth" SID="2051">
+    <P Name="Ports">[0, 2]</P>
+    <P Name="Position">[1600, 466, 1725, 584]</P>
+    <P Name="ZOrder">4394</P>
+    <P Name="BackgroundColor">red</P>
+    <P Name="RequestExecContextInheritance">off</P>
+    <System Ref="system_2051"/>
+  </Block>
+  <Block BlockType="SubSystem" Name="colorThresholdingHSV" SID="2743">
+    <P Name="Ports">[1, 1]</P>
+    <P Name="Position">[490, 621, 620, 669]</P>
+    <P Name="ZOrder">4608</P>
+    <P Name="BackgroundColor">darkGreen</P>
+    <P Name="RequestExecContextInheritance">off</P>
+    <System Ref="system_2743"/>
+  </Block>
+  <Block BlockType="SubSystem" Name="indicatorAndLamps" SID="1760">
+    <P Name="Ports">[1, 1]</P>
+    <P Name="Position">[1715, 972, 1930, 1018]</P>
+    <P Name="ZOrder">4324</P>
+    <P Name="BackgroundColor">orange</P>
+    <P Name="RequestExecContextInheritance">off</P>
+    <System Ref="system_1760"/>
+  </Block>
+  <Block BlockType="SubSystem" Name="obstacleDetection" SID="2063">
+    <P Name="Ports">[3, 2, 1]</P>
+    <P Name="Position">[1760, 526, 1955, 684]</P>
+    <P Name="ZOrder">4395</P>
+    <P Name="BackgroundColor">darkGreen</P>
+    <P Name="RequestExecContextInheritance">off</P>
+    <System Ref="system_2063"/>
+  </Block>
+  <Block BlockType="SubSystem" Name="speedController" SID="2220">
+    <P Name="Ports">[3, 1]</P>
+    <P Name="Position">[1390, 876, 1615, 974]</P>
+    <P Name="ZOrder">4420</P>
+    <P Name="BackgroundColor">lightBlue</P>
+    <P Name="RequestExecContextInheritance">off</P>
+    <System Ref="system_2220"/>
+  </Block>
+  <Block BlockType="SubSystem" Name="turnSpeedHandling" SID="1584">
+    <P Name="Ports">[2, 2]</P>
+    <P Name="Position">[1070, 931, 1305, 1029]</P>
+    <P Name="ZOrder">4178</P>
+    <P Name="BackgroundColor">lightBlue</P>
+    <P Name="RequestExecContextInheritance">off</P>
+    <System Ref="system_1584"/>
+  </Block>
+  <Line>
+    <P Name="ZOrder">204</P>
+    <P Name="Src">1568#out:1</P>
+    <P Name="Points">[30, 0]</P>
+    <Branch>
+      <P Name="ZOrder">1421</P>
+      <P Name="Points">[0, -60]</P>
+      <P Name="Dst">1865#in:1</P>
+    </Branch>
+    <Branch>
+      <P Name="ZOrder">542</P>
+      <P Name="Dst">1760#in:1</P>
+    </Branch>
+  </Line>
+  <Line>
+    <P Name="ZOrder">217</P>
+    <P Name="Src">1584#out:2</P>
+    <P Name="Dst">1568#in:2</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">904</P>
+    <P Name="Src">1865#out:3</P>
+    <P Name="Points">[30, 0; 0, 95]</P>
+    <P Name="Dst">2205#in:1</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">908</P>
+    <P Name="Src">2205#out:1</P>
+    <P Name="Points">[-621, 0; 0, -145]</P>
+    <P Name="Dst">2220#in:3</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">585</P>
+    <P Name="Src">1865#out:1</P>
+    <P Name="Dst">1598#in:1</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">586</P>
+    <P Name="Src">1865#out:2</P>
+    <P Name="Dst">1599#in:1</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">216</P>
+    <P Name="Src">1597#out:1</P>
+    <P Name="Dst">1584#in:2</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">588</P>
+    <P Name="Src">1760#out:1</P>
+    <P Name="Dst">1865#in:2</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">752</P>
+    <P Name="Src">2051#out:2</P>
+    <P Name="Dst">2063#in:1</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">1240</P>
+    <P Name="Src">2388#out:1</P>
+    <P Name="Dst">1584#in:1</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">871</P>
+    <P Name="Src">2063#out:2</P>
+    <P Name="Points">[19, 0; 0, 175; -1387, 0; 0, 105]</P>
+    <P Name="Dst">1992#in:1</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">1241</P>
+    <P Name="Src">1974#out:1</P>
+    <P Name="Dst">2388#in:2</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">1042</P>
+    <P Name="Src">2303#out:1</P>
+    <P Name="Dst">2063#in:2</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">1727</P>
+    <P Name="Src">2063#out:1</P>
+    <P Name="Dst">2688#in:1</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">1936</P>
+    <P Name="Src">2119#out:1</P>
+    <P Name="Dst">2875#in:1</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">1120</P>
+    <P Name="Src">2330#out:2</P>
+    <P Name="Dst">2359#in:2</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">1121</P>
+    <P Name="Src">2330#out:1</P>
+    <P Name="Dst">2359#in:1</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">1122</P>
+    <P Name="Src">2315#out:2</P>
+    <P Name="Dst">2360#in:2</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">1123</P>
+    <P Name="Src">2315#out:1</P>
+    <P Name="Dst">2360#in:1</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">1124</P>
+    <P Name="Src">2254#out:2</P>
+    <P Name="Dst">2361#in:2</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">1125</P>
+    <P Name="Src">2254#out:1</P>
+    <P Name="Dst">2361#in:1</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">1126</P>
+    <P Name="Src">2360#out:1</P>
+    <P Name="Dst">2363#in:1</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">1127</P>
+    <P Name="Src">2359#out:1</P>
+    <P Name="Dst">2362#in:1</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">1128</P>
+    <P Name="Src">2361#out:1</P>
+    <P Name="Dst">2358#in:1</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">1129</P>
+    <P Name="Src">2362#out:1</P>
+    <P Name="Dst">2358#in:3</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">1130</P>
+    <P Name="Src">2363#out:1</P>
+    <P Name="Dst">2358#in:2</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">1238</P>
+    <P Name="Src">2051#out:1</P>
+    <P Name="Points">[125, 0]</P>
+    <P Name="Dst">2063#enable</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">907</P>
+    <P Name="Src">1584#out:1</P>
+    <P Name="Points">[37, 0; 0, -30]</P>
+    <P Name="Dst">2220#in:2</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">1806</P>
+    <P Name="Src">2729#out:1</P>
+    <P Name="Dst">2063#in:3</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">1785</P>
+    <P Name="Src">2728#out:1</P>
+    <P Name="Dst">2719#in:1</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">1775</P>
+    <P Name="Src">2713#out:1</P>
+    <P Name="Dst">2710#in:2</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">1776</P>
+    <P Name="Src">2719#out:1</P>
+    <P Name="Dst">2722#in:1</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">1777</P>
+    <P Name="Src">2722#out:1</P>
+    <P Name="Dst">2718#in:1</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">1778</P>
+    <P Name="Src">2712#out:1</P>
+    <P Name="Dst">2710#in:1</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">1781</P>
+    <P Name="Src">2710#out:1</P>
+    <P Name="Points">[53, 0]</P>
+    <Branch>
+      <P Name="ZOrder">1805</P>
+      <P Name="Points">[0, 120]</P>
+      <P Name="Dst">2722#in:2</P>
+    </Branch>
+    <Branch>
+      <P Name="ZOrder">1803</P>
+      <P Name="Dst">2220#in:1</P>
+    </Branch>
+  </Line>
+  <Line>
+    <P Name="ZOrder">1782</P>
+    <P Name="Src">2718#out:1</P>
+    <P Name="Points">[70, 0; 0, -30]</P>
+    <P Name="Dst">2388#in:3</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">1783</P>
+    <P Name="Src">2714#out:1</P>
+    <P Name="Dst">2722#in:3</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">1870</P>
+    <P Name="Src">2865#out:1</P>
+    <P Name="Points">[115, 0]</P>
+    <Branch>
+      <P Name="ZOrder">1949</P>
+      <P Name="Points">[0, 25]</P>
+      <P Name="Dst">2867#in:1</P>
+    </Branch>
+    <Branch>
+      <P Name="ZOrder">1872</P>
+      <P Name="Points">[188, 0]</P>
+      <Branch>
+        <P Name="ZOrder">1950</P>
+        <P Name="Points">[0, 110; -1040, 0; 0, 155]</P>
+        <P Name="Dst">1974#in:1</P>
+      </Branch>
+      <Branch>
+        <P Name="ZOrder">1946</P>
+        <P Name="Points">[0, -85]</P>
+        <P Name="Dst">2303#in:1</P>
+      </Branch>
+    </Branch>
+  </Line>
+  <Line>
+    <P Name="ZOrder">1822</P>
+    <P Name="Src">2763#out:1</P>
+    <P Name="Dst">2793#in:1</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">1824</P>
+    <P Name="Src">2797#out:1</P>
+    <P Name="Points">[19, 0]</P>
+    <Branch>
+      <P Name="ZOrder">1996</P>
+      <P Name="Points">[0, -210]</P>
+      <P Name="Dst">2877#in:1</P>
+    </Branch>
+    <Branch>
+      <P Name="ZOrder">1839</P>
+      <P Name="Dst">2804#in:2</P>
+    </Branch>
+  </Line>
+  <Line>
+    <P Name="ZOrder">1825</P>
+    <P Name="Src">2802#out:1</P>
+    <P Name="Points">[11, 0]</P>
+    <Branch>
+      <P Name="ZOrder">1858</P>
+      <P Name="Points">[0, -150]</P>
+      <P Name="Dst">2879#in:1</P>
+    </Branch>
+    <Branch>
+      <P Name="ZOrder">1852</P>
+      <P Name="Dst">2836#in:2</P>
+    </Branch>
+  </Line>
+  <Line>
+    <P Name="ZOrder">1826</P>
+    <P Name="Src">2743#out:1</P>
+    <P Name="Dst">2804#in:1</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">1827</P>
+    <P Name="Src">2804#out:1</P>
+    <P Name="Points">[31, 0]</P>
+    <Branch>
+      <P Name="ZOrder">1995</P>
+      <P Name="Points">[0, -160]</P>
+      <P Name="Dst">2878#in:1</P>
+    </Branch>
+    <Branch>
+      <P Name="ZOrder">1992</P>
+      <P Name="Dst">2836#in:1</P>
+    </Branch>
+  </Line>
+  <Line>
+    <P Name="ZOrder">1869</P>
+    <P Name="Src">2866#out:1</P>
+    <P Name="Dst">2865#in:1</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">905</P>
+    <P Name="Src">2220#out:1</P>
+    <P Name="Points">[10, 0]</P>
+    <Branch>
+      <P Name="ZOrder">1876</P>
+      <P Name="Points">[28, 0; 0, -60]</P>
+      <P Name="Dst">2868#in:1</P>
+    </Branch>
+    <Branch>
+      <P Name="ZOrder">1875</P>
+      <P Name="Dst">1568#in:1</P>
+    </Branch>
+  </Line>
+  <Line>
+    <P Name="ZOrder">1943</P>
+    <P Name="Src">1992#out:1</P>
+    <P Name="Dst">2388#in:1</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">1934</P>
+    <P Name="Src">2836#out:1</P>
+    <P Name="Points">[23, 0; 0, -80]</P>
+    <P Name="Dst">2880#in:1</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">1933</P>
+    <P Name="Src">2836#out:2</P>
+    <P Name="Dst">2866#in:1</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">1937</P>
+    <P Name="Src">2875#out:1</P>
+    <P Name="Points">[22, 0]</P>
+    <Branch>
+      <P Name="ZOrder">1998</P>
+      <P Name="Dst">2876#in:1</P>
+    </Branch>
+    <Branch>
+      <P Name="ZOrder">1862</P>
+      <P Name="Points">[0, 225]</P>
+      <P Name="Dst">2743#in:1</P>
+    </Branch>
+  </Line>
+  <Line>
+    <P Name="ZOrder">1938</P>
+    <P Name="Src">2876#out:1</P>
+    <P Name="Dst">2763#in:1</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">1939</P>
+    <P Name="Src">2877#out:1</P>
+    <P Name="Dst">2763#in:2</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">1940</P>
+    <P Name="Src">2878#out:1</P>
+    <P Name="Dst">2763#in:3</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">1941</P>
+    <P Name="Src">2879#out:1</P>
+    <P Name="Dst">2763#in:4</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">1942</P>
+    <P Name="Src">2880#out:1</P>
+    <P Name="Dst">2763#in:5</P>
+  </Line>
+  <Annotation SID="2881">
+    <P Name="Position">[1367, 59, 1678, 232]</P>
+    <P Name="InternalMargins">[0, 0, 0, 0]</P>
+    <P Name="ImagePath">[$unpackedFolder]/simulink/resources/mwimg_5032d4ee-db49-412c-8cef-29efcb5e1595.png</P>
+    <P Name="FixedHeight">on</P>
+    <P Name="FixedWidth">on</P>
+    <P Name="AnnotationType">image_annotation</P>
+    <P Name="ZOrder">-1</P>
+  </Annotation>
+  <Annotation SID="2313">
+    <P Name="Name">Monitor Timing for 600Hz, 120Hz and 100Hz loops</P>
+    <P Name="Position">[2282, 474, 2592, 734]</P>
+    <P Name="InternalMargins">[0, 0, 0, 0]</P>
+    <P Name="FixedHeight">on</P>
+    <P Name="FixedWidth">on</P>
+    <P Name="ForegroundColor">[0.992157, 0.937255, 0.913725]</P>
+    <P Name="BackgroundColor">[0.992157, 0.937255, 0.913725]</P>
+    <P Name="DropShadow">on</P>
+    <P Name="AnnotationType">area_annotation</P>
+    <P Name="ZOrder">20106</P>
+    <P Name="FontSize">12</P>
+  </Annotation>
+  <Annotation SID="1860">
+    <P Name="Name">Manage the lighting based on system commands </P>
+    <P Name="Position">[1694, 950, 1964, 1040]</P>
+    <P Name="InternalMargins">[0, 0, 0, 0]</P>
+    <P Name="FixedHeight">on</P>
+    <P Name="FixedWidth">on</P>
+    <P Name="ForegroundColor">[0.996078, 0.968627, 0.909804]</P>
+    <P Name="BackgroundColor">[0.996078, 0.968627, 0.909804]</P>
+    <P Name="DropShadow">on</P>
+    <P Name="AnnotationType">area_annotation</P>
+    <P Name="ZOrder">20111</P>
+    <P Name="FontSize">12</P>
+  </Annotation>
+  <Annotation SID="1612">
+    <P Name="Name">Calculate car speed based on odometry</P>
+    <P Name="Position">[1979, 1050, 2239, 1145]</P>
+    <P Name="InternalMargins">[0, 0, 0, 0]</P>
+    <P Name="FixedHeight">on</P>
+    <P Name="FixedWidth">on</P>
+    <P Name="ForegroundColor">[0.956863, 0.980392, 0.921569]</P>
+    <P Name="BackgroundColor">[0.956863, 0.980392, 0.921569]</P>
+    <P Name="DropShadow">on</P>
+    <P Name="AnnotationType">area_annotation</P>
+    <P Name="ZOrder">20112</P>
+    <P Name="FontSize">12</P>
+  </Annotation>
+  <Annotation SID="1611">
+    <P Name="Name">QCar I/O</P>
+    <P Name="Position">[1978, 869, 2238, 1044]</P>
+    <P Name="InternalMargins">[0, 0, 0, 0]</P>
+    <P Name="FixedHeight">on</P>
+    <P Name="FixedWidth">on</P>
+    <P Name="ForegroundColor">[0.992157, 0.937255, 0.913725]</P>
+    <P Name="BackgroundColor">[0.992157, 0.937255, 0.913725]</P>
+    <P Name="DropShadow">on</P>
+    <P Name="AnnotationType">area_annotation</P>
+    <P Name="ZOrder">20109</P>
+    <P Name="FontSize">12</P>
+  </Annotation>
+  <Annotation SID="1610">
+    <P Name="Name">Automate the driving via adaptive cruise control (automatedDriving), reduce speed setpoint when turning, and then control speed based on feedback</P>
+    <P Name="Position">[666, 860, 1681, 1050]</P>
+    <P Name="InternalMargins">[0, 0, 0, 0]</P>
+    <P Name="FixedHeight">on</P>
+    <P Name="FixedWidth">on</P>
+    <P Name="ForegroundColor">[0.901961, 0.960784, 1.000000]</P>
+    <P Name="BackgroundColor">[0.901961, 0.960784, 1.000000]</P>
+    <P Name="DropShadow">on</P>
+    <P Name="AnnotationType">area_annotation</P>
+    <P Name="ZOrder">20108</P>
+    <P Name="FontSize">12</P>
+  </Annotation>
+  <Annotation SID="2128">
+    <P Name="Position">[345, 336, 2120, 766]</P>
+    <P Name="InternalMargins">[0, 0, 0, 0]</P>
+    <P Name="FixedHeight">on</P>
+    <P Name="FixedWidth">on</P>
+    <P Name="ForegroundColor">[0.956863, 0.980392, 0.921569]</P>
+    <P Name="BackgroundColor">[0.956863, 0.980392, 0.921569]</P>
+    <P Name="DropShadow">on</P>
+    <P Name="AnnotationType">area_annotation</P>
+    <P Name="ZOrder">20105</P>
+    <P Name="FontSize">12</P>
+  </Annotation>
+  <Annotation SID="2725">
+    <P Name="Name">Speed</P>
+    <P Name="Position">[293, 946, 558, 1066]</P>
+    <P Name="InternalMargins">[0, 0, 0, 0]</P>
+    <P Name="FixedHeight">on</P>
+    <P Name="FixedWidth">on</P>
+    <P Name="ForegroundColor">[0.901961, 0.901961, 1.000000]</P>
+    <P Name="BackgroundColor">[0.901961, 0.901961, 1.000000]</P>
+    <P Name="DropShadow">on</P>
+    <P Name="AnnotationType">area_annotation</P>
+    <P Name="ZOrder">20110</P>
+    <P Name="FontSize">12</P>
+  </Annotation>
+  <Annotation SID="2726">
+    <P Name="Name">QCar Start/Stop</P>
+    <P Name="Position">[293, 845, 448, 930]</P>
+    <P Name="InternalMargins">[0, 0, 0, 0]</P>
+    <P Name="FixedHeight">on</P>
+    <P Name="FixedWidth">on</P>
+    <P Name="ForegroundColor">[0.901961, 0.901961, 1.000000]</P>
+    <P Name="BackgroundColor">[0.901961, 0.901961, 1.000000]</P>
+    <P Name="DropShadow">on</P>
+    <P Name="AnnotationType">area_annotation</P>
+    <P Name="ZOrder">20107</P>
+    <P Name="FontSize">12</P>
+  </Annotation>
+</System>

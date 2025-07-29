@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Stateflow>
+  <machine id="12">
+    <P Name="sfVersion">80000046</P>
+    <Children>
+      <target id="129" name="sfun">
+        <P Name="description">Default Simulink S-Function Target.</P>
+      </target>
+      <target id="130" name="rtw"/>
+      <chart Ref="chart_13"/>
+      <chart Ref="chart_22"/>
+      <chart Ref="chart_29"/>
+      <chart Ref="chart_38"/>
+      <chart Ref="chart_47"/>
+      <chart Ref="chart_57"/>
+      <chart Ref="chart_64"/>
+      <chart Ref="chart_72"/>
+      <chart Ref="chart_81"/>
+      <chart Ref="chart_90"/>
+      <chart Ref="chart_97"/>
+      <chart Ref="chart_104"/>
+      <chart Ref="chart_113"/>
+      <chart Ref="chart_120"/>
+    </Children>
+  </machine>
+  <instance id="21">
+    <P Name="machine">12</P>
+    <P Name="name">obstacleDetection/Draw Lines Module</P>
+    <P Name="chart">13</P>
+  </instance>
+  <instance id="28">
+    <P Name="machine">12</P>
+    <P Name="name">MATLAB Function</P>
+    <P Name="chart">22</P>
+  </instance>
+  <instance id="37">
+    <P Name="machine">12</P>
+    <P Name="name">obstacleDetection/MATLAB Function</P>
+    <P Name="chart">29</P>
+  </instance>
+  <instance id="46">
+    <P Name="machine">12</P>
+    <P Name="name">obstacleDetection/Steering based 
+image subselector</P>
+    <P Name="chart">38</P>
+  </instance>
+  <instance id="56">
+    <P Name="machine">12</P>
+    <P Name="name">automatedDriving/MATLAB Function</P>
+    <P Name="chart">47</P>
+  </instance>
+  <instance id="63">
+    <P Name="machine">12</P>
+    <P Name="name">Diagnostics/MATLAB Function2</P>
+    <P Name="chart">57</P>
+  </instance>
+  <instance id="71">
+    <P Name="machine">12</P>
+    <P Name="name">Diagnostics/MATLAB Function</P>
+    <P Name="chart">64</P>
+  </instance>
+  <instance id="80">
+    <P Name="machine">12</P>
+    <P Name="name">Diagnostics/Draw Lines Module1</P>
+    <P Name="chart">72</P>
+  </instance>
+  <instance id="89">
+    <P Name="machine">12</P>
+    <P Name="name">Diagnostics/Draw Lines Module3</P>
+    <P Name="chart">81</P>
+  </instance>
+  <instance id="96">
+    <P Name="machine">12</P>
+    <P Name="name">Diagnostics/MATLAB Function1</P>
+    <P Name="chart">90</P>
+  </instance>
+  <instance id="103">
+    <P Name="machine">12</P>
+    <P Name="name">ROI Mask/Mask</P>
+    <P Name="chart">97</P>
+  </instance>
+  <instance id="112">
+    <P Name="machine">12</P>
+    <P Name="name">Lane Location/MATLAB Function</P>
+    <P Name="chart">104</P>
+  </instance>
+  <instance id="119">
+    <P Name="machine">12</P>
+    <P Name="name">Diagnostics/MATLAB Function3</P>
+    <P Name="chart">113</P>
+  </instance>
+  <instance id="128">
+    <P Name="machine">12</P>
+    <P Name="name">Diagnostics/Draw Lines Module2</P>
+    <P Name="chart">120</P>
+  </instance>
+</Stateflow>

@@ -1,0 +1,761 @@
+<?xml version="1.0" encoding="utf-8"?>
+<System>
+  <P Name="Location">[-8, -8, 1928, 1040]</P>
+  <P Name="SystemRect">[0.000000, 0.000000, 0.000000, 0.000000]</P>
+  <P Name="SetExecutionDomain">off</P>
+  <P Name="ExecutionDomainType">Deduce</P>
+  <P Name="SimulinkSubDomain">Simulink</P>
+  <Block BlockType="Inport" Name="imageRGB" SID="2744">
+    <P Name="Position">[-135, 318, -105, 332]</P>
+    <P Name="ZOrder">1182</P>
+  </Block>
+  <Block BlockType="SubSystem" Name="Combined&#xA; Displays" SID="2745">
+    <P Name="Ports">[1]</P>
+    <P Name="Position">[445, 259, 545, 311]</P>
+    <P Name="ZOrder">4608</P>
+    <P Name="Commented">on</P>
+    <P Name="CopyFcn">set_param(gcbh, &apos;UserData&apos;, gcb);
+set_param(gcbh, &apos;LinkStatus&apos;, &apos;none&apos;);</P>
+    <P Name="UndoDeleteFcn">set_param(gcbh, &apos;UserData&apos;, gcb);</P>
+    <P Name="LoadFcn">set_param(gcbh, &apos;UserData&apos;, gcb);</P>
+    <P Name="StartFcn">video_display_show([gcb, &apos;/Video Display&apos;], &apos;add&apos;, gcb);</P>
+    <P Name="NameChangeFcn">video_display_show([get_param(gcbh, &apos;UserData&apos;), &apos;/Video Display&apos;], &apos;rename&apos;, [gcb, &apos;/Video Display&apos;]);
+video_display_show([gcb, &apos;/Video Display&apos;], &apos;add&apos;, gcb);
+set_param(gcbh, &apos;UserData&apos;, gcb);
+</P>
+    <P Name="OpenFcn">video_display_show([gcb, &apos;/Video Display&apos;], &apos;show&apos;, gcb);</P>
+    <P Name="PreDeleteFcn">video_display_show([gcb, &apos;/Video Display&apos;], &apos;delete&apos;);</P>
+    <P Name="RequestExecContextInheritance">off</P>
+    <P Name="ContentPreviewEnabled">on</P>
+    <Mask SelfModifiable="on">
+      <Type>Video Compressed Display</Type>
+      <Display>patch([0.98591 0.98591 0.62618 0.59072 0.56147   0.536   0.536  0.5441 0.56912 0.59207 0.60881 0.62276 0.63527 0.64364  0.6485  0.6485 0.64706 0.64499 0.63662 0.62411 0.61232 0.59837 0.58307 0.56147   0.536   0.536  0.5441  0.5747 0.60953 0.63662 0.67001  0.7034 0.72851 0.75425 0.77927 0.80294 0.82454 0.84119 0.85865 0.87395 0.88574 0.89339  0.8969 0.89969 0.89969 0.89267  0.8816 0.87044 0.85649  0.8384 0.81824 0.80294 0.78764 0.77513 0.76676 0.75776 0.76397 0.77513 0.79178 0.80987 0.82796 0.84326 0.86207 0.98528],[0.18689 0.05522 0.05522 0.05171 0.05171    0.05 0.18338 0.18338 0.19148 0.20435 0.22298 0.24863 0.28589 0.33125 0.38138 0.55139 0.59801 0.63761 0.68189 0.72149 0.74939 0.76694 0.77855 0.79367 0.79952 0.92768 0.92768 0.92768 0.92417 0.92066 0.91364  0.9032 0.89384 0.88106 0.86594 0.85073 0.82634 0.80537 0.77855 0.74363 0.70403 0.65858 0.61079 0.59099 0.41513 0.37202 0.31847 0.29048 0.25556 0.23342  0.2102 0.19382 0.18221 0.17285 0.16943 0.16124  0.1589 0.16241 0.16709 0.17168  0.1787 0.18221 0.18689 0.18689],[0.9,0.90,0.91])
+patch([0.536 0.52601 0.46823 0.44528 0.41603 0.39101 0.35555 0.33116 0.31451 0.29291  0.2804 0.26717 0.25322 0.23999 0.22406 0.20732 0.19337 0.17528 0.15935 0.14396 0.13217 0.11759 0.10922 0.10085 0.09671 0.09392 0.09041 0.08906 0.08906 0.09464  0.0995 0.10778 0.11894 0.13145 0.14675 0.16349 0.17672 0.19409 0.20732 0.22406 0.23999 0.26159 0.27833 0.29849 0.31793 0.33602 0.35411 0.37085 0.39245 0.41603   0.536   0.536 0.53159 0.46409   0.446 0.42026 0.39587 0.37571 0.36113 0.34925 0.34088 0.33809 0.33809 0.34088 0.34583 0.35627 0.36392 0.38129 0.39587 0.41117 0.42719 0.44672  0.4676 0.48353 0.48353 0.52394   0.536],[0.05 0.04829 0.04712 0.04712 0.04829 0.05063 0.05405 0.05873 0.06107 0.06692 0.07043 0.07619 0.08087 0.08672 0.09482 0.10652 0.11696 0.13325  0.1508 0.17168 0.19499 0.22415 0.25439 0.28472 0.31379 0.35456 0.38489 0.41513 0.58055 0.63878 0.68774 0.72149 0.75641 0.78089 0.80537 0.82859 0.84029 0.85658 0.86594 0.87404  0.8834 0.89267 0.90086 0.90788 0.91247 0.91832 0.92066   0.923 0.92651 0.92768 0.92768 0.79952 0.79952 0.79952 0.79718 0.78899 0.77153 0.75056 0.72149 0.68072 0.62249  0.5549 0.41396 0.37085 0.33242 0.28121 0.25205 0.22181 0.20552 0.19499 0.18572 0.18221 0.17753 0.17636 0.17753  0.1787  0.1787],[0.9,0.90,0.91])
+disp(&apos;Video\nCompressed\nDisplay&apos;);
+</Display>
+      <Description>Displays a video stream on the host, using compression to minimize bandwidth.</Description>
+      <Initialization>qc_set_display(&apos;Video\nCompressed\nDisplay&apos;);</Initialization>
+      <Help>web(qc_get_block_help_path(gcb));</Help>
+      <MaskParameter Name="algorithm" Type="promote" Tunable="off">
+        <Prompt>Compression algorithm:</Prompt>
+        <Value>JPEG</Value>
+        <TypeOptions>
+          <Option>Image Compress/algorithm</Option>
+        </TypeOptions>
+      </MaskParameter>
+      <MaskParameter Name="quality" Type="promote" Tunable="off">
+        <Prompt>Compression quality (0-100):</Prompt>
+        <Value>50</Value>
+        <TypeOptions>
+          <Option>Image Compress/quality</Option>
+        </TypeOptions>
+      </MaskParameter>
+      <MaskParameter Name="sample_time" Type="promote" Tunable="off">
+        <Prompt>Sample time (seconds):</Prompt>
+        <Value>-1</Value>
+        <TypeOptions>
+          <Option>Video Display/sample_time</Option>
+        </TypeOptions>
+      </MaskParameter>
+      <MaskParameter Name="use_hardware" Type="promote" Tunable="off">
+        <Prompt>Use hardware acceleration for video display</Prompt>
+        <Value>on</Value>
+        <TypeOptions>
+          <Option>Video Display/use_hardware</Option>
+        </TypeOptions>
+      </MaskParameter>
+    </Mask>
+    <System Ref="system_2745"/>
+  </Block>
+  <Block BlockType="Constant" Name="Constant6" SID="2746">
+    <P Name="Position">[-205, 525, -175, 555]</P>
+    <P Name="ZOrder">4601</P>
+  </Block>
+  <Block BlockType="SubSystem" Name="Filtered Image" SID="2829">
+    <P Name="Ports">[1]</P>
+    <P Name="Position">[695, 259, 795, 311]</P>
+    <P Name="ZOrder">4613</P>
+    <P Name="CopyFcn">set_param(gcbh, &apos;UserData&apos;, gcb);
+set_param(gcbh, &apos;LinkStatus&apos;, &apos;none&apos;);</P>
+    <P Name="UndoDeleteFcn">set_param(gcbh, &apos;UserData&apos;, gcb);</P>
+    <P Name="LoadFcn">set_param(gcbh, &apos;UserData&apos;, gcb);</P>
+    <P Name="StartFcn">video_display_show([gcb, &apos;/Video Display&apos;], &apos;add&apos;, gcb);</P>
+    <P Name="NameChangeFcn">video_display_show([get_param(gcbh, &apos;UserData&apos;), &apos;/Video Display&apos;], &apos;rename&apos;, [gcb, &apos;/Video Display&apos;]);
+video_display_show([gcb, &apos;/Video Display&apos;], &apos;add&apos;, gcb);
+set_param(gcbh, &apos;UserData&apos;, gcb);
+</P>
+    <P Name="OpenFcn">video_display_show([gcb, &apos;/Video Display&apos;], &apos;show&apos;, gcb);</P>
+    <P Name="PreDeleteFcn">video_display_show([gcb, &apos;/Video Display&apos;], &apos;delete&apos;);</P>
+    <P Name="RequestExecContextInheritance">off</P>
+    <P Name="ContentPreviewEnabled">on</P>
+    <Mask SelfModifiable="on">
+      <Type>Video Compressed Display</Type>
+      <Display>patch([0.98591 0.98591 0.62618 0.59072 0.56147   0.536   0.536  0.5441 0.56912 0.59207 0.60881 0.62276 0.63527 0.64364  0.6485  0.6485 0.64706 0.64499 0.63662 0.62411 0.61232 0.59837 0.58307 0.56147   0.536   0.536  0.5441  0.5747 0.60953 0.63662 0.67001  0.7034 0.72851 0.75425 0.77927 0.80294 0.82454 0.84119 0.85865 0.87395 0.88574 0.89339  0.8969 0.89969 0.89969 0.89267  0.8816 0.87044 0.85649  0.8384 0.81824 0.80294 0.78764 0.77513 0.76676 0.75776 0.76397 0.77513 0.79178 0.80987 0.82796 0.84326 0.86207 0.98528],[0.18689 0.05522 0.05522 0.05171 0.05171    0.05 0.18338 0.18338 0.19148 0.20435 0.22298 0.24863 0.28589 0.33125 0.38138 0.55139 0.59801 0.63761 0.68189 0.72149 0.74939 0.76694 0.77855 0.79367 0.79952 0.92768 0.92768 0.92768 0.92417 0.92066 0.91364  0.9032 0.89384 0.88106 0.86594 0.85073 0.82634 0.80537 0.77855 0.74363 0.70403 0.65858 0.61079 0.59099 0.41513 0.37202 0.31847 0.29048 0.25556 0.23342  0.2102 0.19382 0.18221 0.17285 0.16943 0.16124  0.1589 0.16241 0.16709 0.17168  0.1787 0.18221 0.18689 0.18689],[0.9,0.90,0.91])
+patch([0.536 0.52601 0.46823 0.44528 0.41603 0.39101 0.35555 0.33116 0.31451 0.29291  0.2804 0.26717 0.25322 0.23999 0.22406 0.20732 0.19337 0.17528 0.15935 0.14396 0.13217 0.11759 0.10922 0.10085 0.09671 0.09392 0.09041 0.08906 0.08906 0.09464  0.0995 0.10778 0.11894 0.13145 0.14675 0.16349 0.17672 0.19409 0.20732 0.22406 0.23999 0.26159 0.27833 0.29849 0.31793 0.33602 0.35411 0.37085 0.39245 0.41603   0.536   0.536 0.53159 0.46409   0.446 0.42026 0.39587 0.37571 0.36113 0.34925 0.34088 0.33809 0.33809 0.34088 0.34583 0.35627 0.36392 0.38129 0.39587 0.41117 0.42719 0.44672  0.4676 0.48353 0.48353 0.52394   0.536],[0.05 0.04829 0.04712 0.04712 0.04829 0.05063 0.05405 0.05873 0.06107 0.06692 0.07043 0.07619 0.08087 0.08672 0.09482 0.10652 0.11696 0.13325  0.1508 0.17168 0.19499 0.22415 0.25439 0.28472 0.31379 0.35456 0.38489 0.41513 0.58055 0.63878 0.68774 0.72149 0.75641 0.78089 0.80537 0.82859 0.84029 0.85658 0.86594 0.87404  0.8834 0.89267 0.90086 0.90788 0.91247 0.91832 0.92066   0.923 0.92651 0.92768 0.92768 0.79952 0.79952 0.79952 0.79718 0.78899 0.77153 0.75056 0.72149 0.68072 0.62249  0.5549 0.41396 0.37085 0.33242 0.28121 0.25205 0.22181 0.20552 0.19499 0.18572 0.18221 0.17753 0.17636 0.17753  0.1787  0.1787],[0.9,0.90,0.91])
+disp(&apos;Video\nCompressed\nDisplay&apos;);
+</Display>
+      <Description>Displays a video stream on the host, using compression to minimize bandwidth.</Description>
+      <Initialization>qc_set_display(&apos;Video\nCompressed\nDisplay&apos;);</Initialization>
+      <Help>web(qc_get_block_help_path(gcb));</Help>
+      <MaskParameter Name="algorithm" Type="promote" Tunable="off">
+        <Prompt>Compression algorithm:</Prompt>
+        <Value>JPEG</Value>
+        <TypeOptions>
+          <Option>Image Compress/algorithm</Option>
+        </TypeOptions>
+      </MaskParameter>
+      <MaskParameter Name="quality" Type="promote" Tunable="off">
+        <Prompt>Compression quality (0-100):</Prompt>
+        <Value>50</Value>
+        <TypeOptions>
+          <Option>Image Compress/quality</Option>
+        </TypeOptions>
+      </MaskParameter>
+      <MaskParameter Name="sample_time" Type="promote" Tunable="off">
+        <Prompt>Sample time (seconds):</Prompt>
+        <Value>-1</Value>
+        <TypeOptions>
+          <Option>Video Display/sample_time</Option>
+        </TypeOptions>
+      </MaskParameter>
+      <MaskParameter Name="use_hardware" Type="promote" Tunable="off">
+        <Prompt>Use hardware acceleration for video display</Prompt>
+        <Value>on</Value>
+        <TypeOptions>
+          <Option>Video Display/use_hardware</Option>
+        </TypeOptions>
+      </MaskParameter>
+    </Mask>
+    <System Ref="system_2829"/>
+  </Block>
+  <Block BlockType="Reference" Name="HSV Color Thresholding1" SID="2747">
+    <P Name="Ports">[3, 3]</P>
+    <P Name="Position">[80, 449, 185, 611]</P>
+    <P Name="ZOrder">4595</P>
+    <P Name="LibraryVersion">1.2129</P>
+    <P Name="SourceBlock">quarc_library/Image Processing/Generic/Image Compare</P>
+    <P Name="SourceType">Image Compare</P>
+    <P Name="SourceProductName">QUARC Targets</P>
+    <InstanceData>
+      <P Name="MultithreadedSim">auto</P>
+      <P Name="output_type">Separate planes (three HxW outputs)</P>
+      <P Name="source">External input ports</P>
+      <P Name="r_comparison">min &lt;= pixel and pixel &lt;= max with wrapping</P>
+      <P Name="r_minimum">30</P>
+      <P Name="r_maximum">70</P>
+      <P Name="g_comparison">min &lt;= pixel and pixel &lt;= max</P>
+      <P Name="g_minimum">60</P>
+      <P Name="g_maximum">100</P>
+      <P Name="b_comparison">min &lt;= pixel and pixel &lt;= max</P>
+      <P Name="b_minimum">40</P>
+      <P Name="b_maximum">80</P>
+    </InstanceData>
+  </Block>
+  <Block BlockType="Reference" Name="Image Filter" SID="2827">
+    <P Name="Ports">[1, 1]</P>
+    <P Name="Position">[430, 356, 485, 414]</P>
+    <P Name="ZOrder">4611</P>
+    <P Name="AttributesFormatString">(%&lt;filter_type&gt;)</P>
+    <P Name="LibraryVersion">1.2129</P>
+    <P Name="SourceBlock">quarc_library/Image Processing/Generic/Image Filter</P>
+    <P Name="SourceType">Image Filter</P>
+    <P Name="SourceProductName">QUARC Targets</P>
+    <InstanceData>
+      <P Name="MultithreadedSim">auto</P>
+      <P Name="filter_type">Minimum</P>
+      <P Name="source_of_roi">Internal dialog parameter</P>
+      <P Name="roi_style">[top, left, height, width]</P>
+      <P Name="roi">[]</P>
+      <P Name="maximum_roi">[]</P>
+      <P Name="roi_zone">Operate inside region of interest</P>
+      <P Name="border_type">Replicate</P>
+      <P Name="border_value">[0 0 0]</P>
+      <P Name="kernel_size">5</P>
+      <P Name="sigma">10</P>
+      <P Name="mask_size">[3 3]</P>
+      <P Name="kernel">int16([-2 -1 0; -1 1 1; 0 1 2])</P>
+      <P Name="divisor">1</P>
+      <P Name="offset">0</P>
+      <P Name="rounding">Nearest</P>
+      <P Name="algorithm_hint">None</P>
+      <P Name="threshold">100</P>
+      <P Name="alpha">0.9</P>
+      <P Name="num_frames">8</P>
+      <P Name="num_valid">1</P>
+      <P Name="gap_threshold">10</P>
+      <P Name="depth_threshold">255</P>
+      <P Name="iterations">2</P>
+    </InstanceData>
+  </Block>
+  <Block BlockType="Reference" Name="Image Filter1" SID="2828">
+    <P Name="Ports">[1, 1]</P>
+    <P Name="Position">[535, 356, 590, 414]</P>
+    <P Name="ZOrder">4612</P>
+    <P Name="AttributesFormatString">(%&lt;filter_type&gt;)</P>
+    <P Name="LibraryVersion">1.2129</P>
+    <P Name="SourceBlock">quarc_library/Image Processing/Generic/Image Filter</P>
+    <P Name="SourceType">Image Filter</P>
+    <P Name="SourceProductName">QUARC Targets</P>
+    <InstanceData>
+      <P Name="MultithreadedSim">auto</P>
+      <P Name="filter_type">Maximum</P>
+      <P Name="source_of_roi">Internal dialog parameter</P>
+      <P Name="roi_style">[top, left, height, width]</P>
+      <P Name="roi">[]</P>
+      <P Name="maximum_roi">[]</P>
+      <P Name="roi_zone">Operate inside region of interest</P>
+      <P Name="border_type">Replicate</P>
+      <P Name="border_value">[0 0 0]</P>
+      <P Name="kernel_size">5</P>
+      <P Name="sigma">10</P>
+      <P Name="mask_size">[7 7]</P>
+      <P Name="kernel">int16([-2 -1 0; -1 1 1; 0 1 2])</P>
+      <P Name="divisor">1</P>
+      <P Name="offset">0</P>
+      <P Name="rounding">Nearest</P>
+      <P Name="algorithm_hint">None</P>
+      <P Name="threshold">100</P>
+      <P Name="alpha">0.9</P>
+      <P Name="num_frames">8</P>
+      <P Name="num_valid">1</P>
+      <P Name="gap_threshold">10</P>
+      <P Name="depth_threshold">255</P>
+      <P Name="iterations">2</P>
+    </InstanceData>
+  </Block>
+  <Block BlockType="Reference" Name="Image Logic" SID="2748">
+    <P Name="Ports">[2, 1]</P>
+    <P Name="Position">[230, 356, 280, 389]</P>
+    <P Name="ZOrder">4609</P>
+    <P Name="AttributesFormatString">(%&lt;algorithm&gt;)</P>
+    <P Name="LibraryVersion">1.2129</P>
+    <P Name="SourceBlock">quarc_library/Image Processing/Generic/Image Logic</P>
+    <P Name="SourceType">Image Logic</P>
+    <P Name="SourceProductName">QUARC Targets</P>
+    <InstanceData>
+      <P Name="MultithreadedSim">auto</P>
+      <P Name="algorithm">AND</P>
+      <P Name="source">Internal dialog parameter</P>
+      <P Name="row">0</P>
+      <P Name="column">0</P>
+    </InstanceData>
+  </Block>
+  <Block BlockType="Reference" Name="Image Logic1" SID="2749">
+    <P Name="Ports">[2, 1]</P>
+    <P Name="Position">[305, 366, 355, 399]</P>
+    <P Name="ZOrder">4610</P>
+    <P Name="AttributesFormatString">(%&lt;algorithm&gt;)</P>
+    <P Name="LibraryVersion">1.2129</P>
+    <P Name="SourceBlock">quarc_library/Image Processing/Generic/Image Logic</P>
+    <P Name="SourceType">Image Logic</P>
+    <P Name="SourceProductName">QUARC Targets</P>
+    <InstanceData>
+      <P Name="MultithreadedSim">auto</P>
+      <P Name="algorithm">AND</P>
+      <P Name="source">Internal dialog parameter</P>
+      <P Name="row">0</P>
+      <P Name="column">0</P>
+    </InstanceData>
+  </Block>
+  <Block BlockType="Reference" Name="Image Transform1" SID="2750">
+    <P Name="Ports">[1, 1]</P>
+    <P Name="Position">[5, 370, 85, 420]</P>
+    <P Name="ZOrder">4597</P>
+    <P Name="BlockRotation">270</P>
+    <P Name="BlockMirror">on</P>
+    <P Name="NameLocation">right</P>
+    <P Name="AttributesFormatString">(%&lt;algorithm&gt;)</P>
+    <P Name="LibraryVersion">1.2129</P>
+    <P Name="SourceBlock">quarc_library/Image Processing/Generic/Image Transform</P>
+    <P Name="SourceType">Image Transform</P>
+    <P Name="SourceProductName">QUARC Targets</P>
+    <InstanceData>
+      <P Name="MultithreadedSim">auto</P>
+      <P Name="algorithm">RGB to HSV</P>
+      <P Name="color_theme">KRYGCBMW</P>
+      <P Name="min_pixel">0</P>
+      <P Name="max_pixel">4000</P>
+      <P Name="focal_length">308</P>
+      <P Name="principal_point">[262 334]</P>
+      <P Name="radial_coeffs">[-0.3129 0.0907]</P>
+      <P Name="tangential_coeffs">[]</P>
+      <P Name="extrapolated_pixel">0</P>
+      <P Name="interpolation">nearest</P>
+      <P Name="row_coords">0</P>
+      <P Name="column_coords">0</P>
+      <P Name="output_height">480</P>
+      <P Name="output_width">640</P>
+      <P Name="angle">0</P>
+      <P Name="origin">[240 320]</P>
+      <P Name="output_origin">[240 320]</P>
+    </InstanceData>
+  </Block>
+  <Block BlockType="Concatenate" Name="Matrix&#xA;Concatenate" SID="2751">
+    <P Name="Ports">[3, 1]</P>
+    <P Name="Position">[225, 449, 285, 611]</P>
+    <P Name="ZOrder">4607</P>
+    <P Name="NumInputs">3</P>
+    <P Name="Mode">Multidimensional array</P>
+    <P Name="ConcatenateDimension">2</P>
+  </Block>
+  <Block BlockType="Mux" Name="Mux2" SID="2752">
+    <P Name="Ports">[3, 1]</P>
+    <P Name="Position">[-25, 411, -20, 529]</P>
+    <P Name="ZOrder">4598</P>
+    <P Name="Inputs">3</P>
+    <P Name="DisplayOption">bar</P>
+  </Block>
+  <Block BlockType="Mux" Name="Mux3" SID="2753">
+    <P Name="Ports">[3, 1]</P>
+    <P Name="Position">[-25, 551, -20, 669]</P>
+    <P Name="ZOrder">4600</P>
+    <P Name="Inputs">3</P>
+    <P Name="DisplayOption">bar</P>
+  </Block>
+  <Block BlockType="SubSystem" Name="Separate HSV Thresholds" SID="2754">
+    <P Name="Ports">[1]</P>
+    <P Name="Position">[430, 504, 530, 556]</P>
+    <P Name="ZOrder">4596</P>
+    <P Name="CopyFcn">set_param(gcbh, &apos;UserData&apos;, gcb);
+set_param(gcbh, &apos;LinkStatus&apos;, &apos;none&apos;);</P>
+    <P Name="UndoDeleteFcn">set_param(gcbh, &apos;UserData&apos;, gcb);</P>
+    <P Name="LoadFcn">set_param(gcbh, &apos;UserData&apos;, gcb);</P>
+    <P Name="StartFcn">video_display_show([gcb, &apos;/Video Display&apos;], &apos;add&apos;, gcb);</P>
+    <P Name="NameChangeFcn">video_display_show([get_param(gcbh, &apos;UserData&apos;), &apos;/Video Display&apos;], &apos;rename&apos;, [gcb, &apos;/Video Display&apos;]);
+video_display_show([gcb, &apos;/Video Display&apos;], &apos;add&apos;, gcb);
+set_param(gcbh, &apos;UserData&apos;, gcb);
+</P>
+    <P Name="OpenFcn">video_display_show([gcb, &apos;/Video Display&apos;], &apos;show&apos;, gcb);</P>
+    <P Name="PreDeleteFcn">video_display_show([gcb, &apos;/Video Display&apos;], &apos;delete&apos;);</P>
+    <P Name="RequestExecContextInheritance">off</P>
+    <P Name="ContentPreviewEnabled">on</P>
+    <Mask SelfModifiable="on">
+      <Type>Video Compressed Display</Type>
+      <Display>patch([0.98591 0.98591 0.62618 0.59072 0.56147   0.536   0.536  0.5441 0.56912 0.59207 0.60881 0.62276 0.63527 0.64364  0.6485  0.6485 0.64706 0.64499 0.63662 0.62411 0.61232 0.59837 0.58307 0.56147   0.536   0.536  0.5441  0.5747 0.60953 0.63662 0.67001  0.7034 0.72851 0.75425 0.77927 0.80294 0.82454 0.84119 0.85865 0.87395 0.88574 0.89339  0.8969 0.89969 0.89969 0.89267  0.8816 0.87044 0.85649  0.8384 0.81824 0.80294 0.78764 0.77513 0.76676 0.75776 0.76397 0.77513 0.79178 0.80987 0.82796 0.84326 0.86207 0.98528],[0.18689 0.05522 0.05522 0.05171 0.05171    0.05 0.18338 0.18338 0.19148 0.20435 0.22298 0.24863 0.28589 0.33125 0.38138 0.55139 0.59801 0.63761 0.68189 0.72149 0.74939 0.76694 0.77855 0.79367 0.79952 0.92768 0.92768 0.92768 0.92417 0.92066 0.91364  0.9032 0.89384 0.88106 0.86594 0.85073 0.82634 0.80537 0.77855 0.74363 0.70403 0.65858 0.61079 0.59099 0.41513 0.37202 0.31847 0.29048 0.25556 0.23342  0.2102 0.19382 0.18221 0.17285 0.16943 0.16124  0.1589 0.16241 0.16709 0.17168  0.1787 0.18221 0.18689 0.18689],[0.9,0.90,0.91])
+patch([0.536 0.52601 0.46823 0.44528 0.41603 0.39101 0.35555 0.33116 0.31451 0.29291  0.2804 0.26717 0.25322 0.23999 0.22406 0.20732 0.19337 0.17528 0.15935 0.14396 0.13217 0.11759 0.10922 0.10085 0.09671 0.09392 0.09041 0.08906 0.08906 0.09464  0.0995 0.10778 0.11894 0.13145 0.14675 0.16349 0.17672 0.19409 0.20732 0.22406 0.23999 0.26159 0.27833 0.29849 0.31793 0.33602 0.35411 0.37085 0.39245 0.41603   0.536   0.536 0.53159 0.46409   0.446 0.42026 0.39587 0.37571 0.36113 0.34925 0.34088 0.33809 0.33809 0.34088 0.34583 0.35627 0.36392 0.38129 0.39587 0.41117 0.42719 0.44672  0.4676 0.48353 0.48353 0.52394   0.536],[0.05 0.04829 0.04712 0.04712 0.04829 0.05063 0.05405 0.05873 0.06107 0.06692 0.07043 0.07619 0.08087 0.08672 0.09482 0.10652 0.11696 0.13325  0.1508 0.17168 0.19499 0.22415 0.25439 0.28472 0.31379 0.35456 0.38489 0.41513 0.58055 0.63878 0.68774 0.72149 0.75641 0.78089 0.80537 0.82859 0.84029 0.85658 0.86594 0.87404  0.8834 0.89267 0.90086 0.90788 0.91247 0.91832 0.92066   0.923 0.92651 0.92768 0.92768 0.79952 0.79952 0.79952 0.79718 0.78899 0.77153 0.75056 0.72149 0.68072 0.62249  0.5549 0.41396 0.37085 0.33242 0.28121 0.25205 0.22181 0.20552 0.19499 0.18572 0.18221 0.17753 0.17636 0.17753  0.1787  0.1787],[0.9,0.90,0.91])
+disp(&apos;Video\nCompressed\nDisplay&apos;);
+</Display>
+      <Description>Displays a video stream on the host, using compression to minimize bandwidth.</Description>
+      <Initialization>qc_set_display(&apos;Video\nCompressed\nDisplay&apos;);</Initialization>
+      <Help>web(qc_get_block_help_path(gcb));</Help>
+      <MaskParameter Name="algorithm" Type="promote" Tunable="off">
+        <Prompt>Compression algorithm:</Prompt>
+        <Value>JPEG</Value>
+        <TypeOptions>
+          <Option>Image Compress/algorithm</Option>
+        </TypeOptions>
+      </MaskParameter>
+      <MaskParameter Name="quality" Type="promote" Tunable="off">
+        <Prompt>Compression quality (0-100):</Prompt>
+        <Value>50</Value>
+        <TypeOptions>
+          <Option>Image Compress/quality</Option>
+        </TypeOptions>
+      </MaskParameter>
+      <MaskParameter Name="sample_time" Type="promote" Tunable="off">
+        <Prompt>Sample time (seconds):</Prompt>
+        <Value>-1</Value>
+        <TypeOptions>
+          <Option>Video Display/sample_time</Option>
+        </TypeOptions>
+      </MaskParameter>
+      <MaskParameter Name="use_hardware" Type="promote" Tunable="off">
+        <Prompt>Use hardware acceleration for video display</Prompt>
+        <Value>on</Value>
+        <TypeOptions>
+          <Option>Video Display/use_hardware</Option>
+        </TypeOptions>
+      </MaskParameter>
+    </Mask>
+    <System Ref="system_2754"/>
+  </Block>
+  <Block BlockType="Reference" Name="Slider&#xA;Gain" SID="2755">
+    <P Name="Ports">[1, 1]</P>
+    <P Name="Position">[-135, 415, -105, 445]</P>
+    <P Name="ZOrder">4599</P>
+    <P Name="BackgroundColor">lightBlue</P>
+    <P Name="LibraryVersion">1.488</P>
+    <P Name="SourceBlock">simulink/Math
+Operations/Slider
+Gain</P>
+    <P Name="SourceType">Slider Gain</P>
+    <P Name="SourceProductBaseCode">SL</P>
+    <InstanceData>
+      <P Name="RTWMemSecFuncInitTerm">Inherit from model</P>
+      <P Name="RTWMemSecFuncExecute">Inherit from model</P>
+      <P Name="RTWMemSecDataConstants">Inherit from model</P>
+      <P Name="RTWMemSecDataInternal">Inherit from model</P>
+      <P Name="RTWMemSecDataParameters">Inherit from model</P>
+      <P Name="ContentPreviewEnabled">on</P>
+      <P Name="gain">1</P>
+      <P Name="low">0</P>
+      <P Name="high">255</P>
+    </InstanceData>
+    <Port>
+      <P Name="PortNumber">1</P>
+      <P Name="Name">min hue</P>
+    </Port>
+  </Block>
+  <Block BlockType="Reference" Name="Slider&#xA;Gain1" SID="2756">
+    <P Name="Ports">[1, 1]</P>
+    <P Name="Position">[-135, 455, -105, 485]</P>
+    <P Name="ZOrder">4602</P>
+    <P Name="LibraryVersion">1.488</P>
+    <P Name="SourceBlock">simulink/Math
+Operations/Slider
+Gain</P>
+    <P Name="SourceType">Slider Gain</P>
+    <P Name="SourceProductBaseCode">SL</P>
+    <InstanceData>
+      <P Name="RTWMemSecFuncInitTerm">Inherit from model</P>
+      <P Name="RTWMemSecFuncExecute">Inherit from model</P>
+      <P Name="RTWMemSecDataConstants">Inherit from model</P>
+      <P Name="RTWMemSecDataInternal">Inherit from model</P>
+      <P Name="RTWMemSecDataParameters">Inherit from model</P>
+      <P Name="ContentPreviewEnabled">on</P>
+      <P Name="gain">8</P>
+      <P Name="low">0</P>
+      <P Name="high">255</P>
+    </InstanceData>
+    <Port>
+      <P Name="PortNumber">1</P>
+      <P Name="Name">min sat</P>
+    </Port>
+  </Block>
+  <Block BlockType="Reference" Name="Slider&#xA;Gain2" SID="2757">
+    <P Name="Ports">[1, 1]</P>
+    <P Name="Position">[-135, 495, -105, 525]</P>
+    <P Name="ZOrder">4603</P>
+    <P Name="LibraryVersion">1.488</P>
+    <P Name="SourceBlock">simulink/Math
+Operations/Slider
+Gain</P>
+    <P Name="SourceType">Slider Gain</P>
+    <P Name="SourceProductBaseCode">SL</P>
+    <InstanceData>
+      <P Name="RTWMemSecFuncInitTerm">Inherit from model</P>
+      <P Name="RTWMemSecFuncExecute">Inherit from model</P>
+      <P Name="RTWMemSecDataConstants">Inherit from model</P>
+      <P Name="RTWMemSecDataInternal">Inherit from model</P>
+      <P Name="RTWMemSecDataParameters">Inherit from model</P>
+      <P Name="ContentPreviewEnabled">on</P>
+      <P Name="gain">150</P>
+      <P Name="low">0</P>
+      <P Name="high">255</P>
+    </InstanceData>
+    <Port>
+      <P Name="PortNumber">1</P>
+      <P Name="Name">min val</P>
+    </Port>
+  </Block>
+  <Block BlockType="Reference" Name="Slider&#xA;Gain3" SID="2758">
+    <P Name="Ports">[1, 1]</P>
+    <P Name="Position">[-135, 555, -105, 585]</P>
+    <P Name="ZOrder">4604</P>
+    <P Name="BackgroundColor">lightBlue</P>
+    <P Name="LibraryVersion">1.488</P>
+    <P Name="SourceBlock">simulink/Math
+Operations/Slider
+Gain</P>
+    <P Name="SourceType">Slider Gain</P>
+    <P Name="SourceProductBaseCode">SL</P>
+    <InstanceData>
+      <P Name="RTWMemSecFuncInitTerm">Inherit from model</P>
+      <P Name="RTWMemSecFuncExecute">Inherit from model</P>
+      <P Name="RTWMemSecDataConstants">Inherit from model</P>
+      <P Name="RTWMemSecDataInternal">Inherit from model</P>
+      <P Name="RTWMemSecDataParameters">Inherit from model</P>
+      <P Name="ContentPreviewEnabled">on</P>
+      <P Name="gain">255</P>
+      <P Name="low">0</P>
+      <P Name="high">255</P>
+    </InstanceData>
+    <Port>
+      <P Name="PortNumber">1</P>
+      <P Name="Name">max hue</P>
+    </Port>
+  </Block>
+  <Block BlockType="Reference" Name="Slider&#xA;Gain4" SID="2759">
+    <P Name="Ports">[1, 1]</P>
+    <P Name="Position">[-135, 595, -105, 625]</P>
+    <P Name="ZOrder">4605</P>
+    <P Name="LibraryVersion">1.488</P>
+    <P Name="SourceBlock">simulink/Math
+Operations/Slider
+Gain</P>
+    <P Name="SourceType">Slider Gain</P>
+    <P Name="SourceProductBaseCode">SL</P>
+    <InstanceData>
+      <P Name="RTWMemSecFuncInitTerm">Inherit from model</P>
+      <P Name="RTWMemSecFuncExecute">Inherit from model</P>
+      <P Name="RTWMemSecDataConstants">Inherit from model</P>
+      <P Name="RTWMemSecDataInternal">Inherit from model</P>
+      <P Name="RTWMemSecDataParameters">Inherit from model</P>
+      <P Name="ContentPreviewEnabled">on</P>
+      <P Name="gain">60</P>
+      <P Name="low">0</P>
+      <P Name="high">255</P>
+    </InstanceData>
+    <Port>
+      <P Name="PortNumber">1</P>
+      <P Name="Name">max sat</P>
+    </Port>
+  </Block>
+  <Block BlockType="Reference" Name="Slider&#xA;Gain5" SID="2760">
+    <P Name="Ports">[1, 1]</P>
+    <P Name="Position">[-135, 635, -105, 665]</P>
+    <P Name="ZOrder">4606</P>
+    <P Name="LibraryVersion">1.488</P>
+    <P Name="SourceBlock">simulink/Math
+Operations/Slider
+Gain</P>
+    <P Name="SourceType">Slider Gain</P>
+    <P Name="SourceProductBaseCode">SL</P>
+    <InstanceData>
+      <P Name="RTWMemSecFuncInitTerm">Inherit from model</P>
+      <P Name="RTWMemSecFuncExecute">Inherit from model</P>
+      <P Name="RTWMemSecDataConstants">Inherit from model</P>
+      <P Name="RTWMemSecDataInternal">Inherit from model</P>
+      <P Name="RTWMemSecDataParameters">Inherit from model</P>
+      <P Name="ContentPreviewEnabled">on</P>
+      <P Name="gain">255</P>
+      <P Name="low">0</P>
+      <P Name="high">255</P>
+    </InstanceData>
+    <Port>
+      <P Name="PortNumber">1</P>
+      <P Name="Name">max val</P>
+    </Port>
+  </Block>
+  <Block BlockType="Outport" Name="imageBinary" SID="2761">
+    <P Name="Position">[730, 378, 760, 392]</P>
+    <P Name="ZOrder">1181</P>
+    <P Name="VectorParamsAs1DForOutWhenUnconnected">off</P>
+  </Block>
+  <Line>
+    <P Name="ZOrder">1</P>
+    <P Name="Src">2747#out:3</P>
+    <P Name="Points">[3, 0]</P>
+    <Branch>
+      <P Name="ZOrder">2</P>
+      <P Name="Points">[0, -220]</P>
+      <P Name="Dst">2748#in:1</P>
+    </Branch>
+    <Branch>
+      <P Name="ZOrder">3</P>
+      <P Name="Dst">2751#in:3</P>
+    </Branch>
+  </Line>
+  <Line>
+    <P Name="ZOrder">4</P>
+    <P Name="Src">2749#out:1</P>
+    <P Name="Points">[20, 0]</P>
+    <Branch>
+      <P Name="ZOrder">41</P>
+      <P Name="Points">[0, -100]</P>
+      <P Name="Dst">2745#in:1</P>
+    </Branch>
+    <Branch>
+      <P Name="ZOrder">40</P>
+      <P Name="Dst">2827#in:1</P>
+    </Branch>
+  </Line>
+  <Line>
+    <P Name="ZOrder">7</P>
+    <P Name="Src">2748#out:1</P>
+    <P Name="Dst">2749#in:1</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">8</P>
+    <P Name="Src">2751#out:1</P>
+    <P Name="Dst">2754#in:1</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">9</P>
+    <P Name="Src">2752#out:1</P>
+    <P Name="Points">[34, 0; 0, 60]</P>
+    <P Name="Dst">2747#in:2</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">10</P>
+    <P Name="Src">2750#out:1</P>
+    <P Name="Points">[0, 50]</P>
+    <P Name="Dst">2747#in:1</P>
+  </Line>
+  <Line>
+    <P Name="Name">min hue</P>
+    <P Name="ZOrder">11</P>
+    <P Name="Labels">[1, 1]</P>
+    <P Name="Src">2755#out:1</P>
+    <P Name="Dst">2752#in:1</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">12</P>
+    <P Name="Src">2747#out:2</P>
+    <P Name="Points">[9, 0]</P>
+    <Branch>
+      <P Name="ZOrder">13</P>
+      <P Name="Points">[0, -150]</P>
+      <P Name="Dst">2748#in:2</P>
+    </Branch>
+    <Branch>
+      <P Name="ZOrder">14</P>
+      <P Name="Dst">2751#in:2</P>
+    </Branch>
+  </Line>
+  <Line>
+    <P Name="Name">max val</P>
+    <P Name="ZOrder">15</P>
+    <P Name="Labels">[1, 1]</P>
+    <P Name="Src">2760#out:1</P>
+    <P Name="Dst">2753#in:3</P>
+  </Line>
+  <Line>
+    <P Name="Name">min val</P>
+    <P Name="ZOrder">16</P>
+    <P Name="Labels">[1, 1]</P>
+    <P Name="Src">2757#out:1</P>
+    <P Name="Dst">2752#in:3</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">17</P>
+    <P Name="Src">2753#out:1</P>
+    <P Name="Points">[45, 0; 0, -25]</P>
+    <P Name="Dst">2747#in:3</P>
+  </Line>
+  <Line>
+    <P Name="Name">min sat</P>
+    <P Name="ZOrder">18</P>
+    <P Name="Labels">[1, 1]</P>
+    <P Name="Src">2756#out:1</P>
+    <P Name="Dst">2752#in:2</P>
+  </Line>
+  <Line>
+    <P Name="Name">max sat</P>
+    <P Name="ZOrder">19</P>
+    <P Name="Labels">[1, 1]</P>
+    <P Name="Src">2759#out:1</P>
+    <P Name="Dst">2753#in:2</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">20</P>
+    <P Name="Src">2747#out:1</P>
+    <P Name="Points">[20, 0]</P>
+    <Branch>
+      <P Name="ZOrder">21</P>
+      <P Name="Points">[0, -50; 77, 0; 0, -35]</P>
+      <P Name="Dst">2749#in:2</P>
+    </Branch>
+    <Branch>
+      <P Name="ZOrder">22</P>
+      <P Name="Dst">2751#in:1</P>
+    </Branch>
+  </Line>
+  <Line>
+    <P Name="ZOrder">23</P>
+    <P Name="Src">2746#out:1</P>
+    <P Name="Points">[9, 0]</P>
+    <Branch>
+      <P Name="ZOrder">24</P>
+      <P Name="Points">[0, -30]</P>
+      <Branch>
+        <P Name="ZOrder">25</P>
+        <P Name="Points">[0, -40]</P>
+        <Branch>
+          <P Name="ZOrder">26</P>
+          <P Name="Points">[0, -40]</P>
+          <P Name="Dst">2755#in:1</P>
+        </Branch>
+        <Branch>
+          <P Name="ZOrder">27</P>
+          <P Name="Dst">2756#in:1</P>
+        </Branch>
+      </Branch>
+      <Branch>
+        <P Name="ZOrder">28</P>
+        <P Name="Dst">2757#in:1</P>
+      </Branch>
+    </Branch>
+    <Branch>
+      <P Name="ZOrder">29</P>
+      <P Name="Points">[0, 30]</P>
+      <Branch>
+        <P Name="ZOrder">30</P>
+        <P Name="Dst">2758#in:1</P>
+      </Branch>
+      <Branch>
+        <P Name="ZOrder">31</P>
+        <P Name="Points">[0, 40]</P>
+        <Branch>
+          <P Name="ZOrder">32</P>
+          <P Name="Points">[0, 40]</P>
+          <P Name="Dst">2760#in:1</P>
+        </Branch>
+        <Branch>
+          <P Name="ZOrder">33</P>
+          <P Name="Dst">2759#in:1</P>
+        </Branch>
+      </Branch>
+    </Branch>
+  </Line>
+  <Line>
+    <P Name="ZOrder">34</P>
+    <P Name="Src">2744#out:1</P>
+    <P Name="Points">[145, 0]</P>
+    <P Name="Dst">2750#in:1</P>
+  </Line>
+  <Line>
+    <P Name="Name">max hue</P>
+    <P Name="ZOrder">35</P>
+    <P Name="Labels">[1, 1]</P>
+    <P Name="Src">2758#out:1</P>
+    <P Name="Dst">2753#in:1</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">36</P>
+    <P Name="Src">2827#out:1</P>
+    <P Name="Dst">2828#in:1</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">37</P>
+    <P Name="Src">2828#out:1</P>
+    <P Name="Points">[47, 0]</P>
+    <Branch>
+      <P Name="ZOrder">43</P>
+      <P Name="Points">[0, -100]</P>
+      <P Name="Dst">2829#in:1</P>
+    </Branch>
+    <Branch>
+      <P Name="ZOrder">42</P>
+      <P Name="Dst">2761#in:1</P>
+    </Branch>
+  </Line>
+  <Annotation SID="2762">
+    <P Name="Name">&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;Helvetica&apos;; font-size:10px; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:12px; font-weight:600; text-decoration: underline;&quot;&gt;HSV-Color Thresholding Module:&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:12px; font-weight:600;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:12px;&quot;&gt;This subsystem thresholds a given RGB image based on the desired colour and hue &lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:12px; font-weight:600;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:12px; text-decoration: underline;&quot;&gt;Inputs:&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:12px;&quot;&gt;imageRGB 	 				(uint8)		{0,255}			:	Input RGB Image to be thresholded&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:12px; text-decoration: underline;&quot;&gt;Outputs:&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:12px;&quot;&gt;imageBinary		 			(uint8)		{0,255}			:	Binary Image (0 or 255 and no other value) representing the thresholding output&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:12px; text-decoration: underline;&quot;&gt;Usage:&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:12px;&quot;&gt;This module can be used when you are interested in thresholding for a certain hue regardless of the luminance. Compared to RGB thresholding which does not work well when the lighting conditions vary, HSV thresholding will correctly threshold for a hue (color) and allow you to specify a broad range of illuminance via the saturation and value thresholds. &lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:12px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:12px;&quot;&gt;The Separate HSV Thresholds display can help you tune the hue, saturation, and value separately.  The final output is the logical and of the three images. The image filter sizes can be used to remove noise (Minimum) and fill holes (Maximum).&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</P>
+    <P Name="Position">[-140, -1, 767, 249]</P>
+    <P Name="InternalMargins">[0, 0, 0, 0]</P>
+    <P Name="FixedHeight">on</P>
+    <P Name="FixedWidth">on</P>
+    <P Name="Interpreter">rich</P>
+    <P Name="ZOrder">-1</P>
+  </Annotation>
+</System>

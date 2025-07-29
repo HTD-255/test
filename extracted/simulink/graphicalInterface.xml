@@ -1,0 +1,359 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GraphicalInterface>
+  <P Name="NumRootInports">0</P>
+  <P Name="NumRootOutports">0</P>
+  <P Name="ParameterArgumentNames"/>
+  <P Name="NumModelReferences">0</P>
+  <P Name="NumTestPointedSignals">0</P>
+  <P Name="NumProvidedFunctions">0</P>
+  <P Name="NumRequiredFunctions">0</P>
+  <P Name="NumResetEvents">0</P>
+  <P Name="HasInitializeEvent">0</P>
+  <P Name="HasTerminateEvent">0</P>
+  <P Name="PreCompExecutionDomainType">Unset</P>
+  <P Name="IsExportFunctionModel">0</P>
+  <P Name="SimulinkSubDomainType">Simulink</P>
+  <P Name="NumParameterArguments">0</P>
+  <P Name="NumExternalFileReferences">52</P>
+  <ExternalFileReference>
+    <P Name="Reference">quarc_library/Sources/Time/Computation Time</P>
+    <P Name="Path">$bdroot/ CSI Timing/Computation Time</P>
+    <P Name="SID">2316</P>
+    <P Name="Type">LIBRARY_BLOCK</P>
+  </ExternalFileReference>
+  <ExternalFileReference>
+    <P Name="Reference">quarc_library/Sources/Time/Sample Time</P>
+    <P Name="Path">$bdroot/ CSI Timing/Sample Time</P>
+    <P Name="SID">2320</P>
+    <P Name="Type">LIBRARY_BLOCK</P>
+  </ExternalFileReference>
+  <ExternalFileReference>
+    <P Name="Reference">quarc_library/Sources/Time/Computation Time</P>
+    <P Name="Path">$bdroot/ Depth Timing/Computation Time</P>
+    <P Name="SID">2331</P>
+    <P Name="Type">LIBRARY_BLOCK</P>
+  </ExternalFileReference>
+  <ExternalFileReference>
+    <P Name="Reference">quarc_library/Sources/Time/Sample Time</P>
+    <P Name="Path">$bdroot/ Depth Timing/Sample Time</P>
+    <P Name="SID">2335</P>
+    <P Name="Type">LIBRARY_BLOCK</P>
+  </ExternalFileReference>
+  <ExternalFileReference>
+    <P Name="Reference">quarc_library/Sources/Time/Computation Time</P>
+    <P Name="Path">$bdroot/Control Loop Timing /Computation Time</P>
+    <P Name="SID">2255</P>
+    <P Name="Type">LIBRARY_BLOCK</P>
+  </ExternalFileReference>
+  <ExternalFileReference>
+    <P Name="Reference">quarc_library/Sources/Time/Sample Time</P>
+    <P Name="Path">$bdroot/Control Loop Timing /Sample Time</P>
+    <P Name="SID">2259</P>
+    <P Name="Type">LIBRARY_BLOCK</P>
+  </ExternalFileReference>
+  <ExternalFileReference>
+    <P Name="Reference">quarc_library/Signal Routing/Channel</P>
+    <P Name="Path">$bdroot/Display Depth/Channel</P>
+    <P Name="SID">2688:14426</P>
+    <P Name="Type">LIBRARY_BLOCK</P>
+  </ExternalFileReference>
+  <ExternalFileReference>
+    <P Name="Reference">quarc_library/Image Processing/Generic/Image Compress</P>
+    <P Name="Path">$bdroot/Display Depth/Image Compress</P>
+    <P Name="SID">2688:14427</P>
+    <P Name="Type">LIBRARY_BLOCK</P>
+  </ExternalFileReference>
+  <ExternalFileReference>
+    <P Name="Reference">quarc_library/Multimedia/Video Display</P>
+    <P Name="Path">$bdroot/Display Depth/Video Display</P>
+    <P Name="SID">2688:14428</P>
+    <P Name="Type">LIBRARY_BLOCK</P>
+  </ExternalFileReference>
+  <ExternalFileReference>
+    <P Name="Reference">quarc_library/Signal Routing/Channel</P>
+    <P Name="Path">$bdroot/Display Tracking Diagnostics/Channel</P>
+    <P Name="SID">2793:14426</P>
+    <P Name="Type">LIBRARY_BLOCK</P>
+  </ExternalFileReference>
+  <ExternalFileReference>
+    <P Name="Reference">quarc_library/Image Processing/Generic/Image Compress</P>
+    <P Name="Path">$bdroot/Display Tracking Diagnostics/Image Compress</P>
+    <P Name="SID">2793:14427</P>
+    <P Name="Type">LIBRARY_BLOCK</P>
+  </ExternalFileReference>
+  <ExternalFileReference>
+    <P Name="Reference">quarc_library/Multimedia/Video Display</P>
+    <P Name="Path">$bdroot/Display Tracking Diagnostics/Video Display</P>
+    <P Name="SID">2793:14428</P>
+    <P Name="Type">LIBRARY_BLOCK</P>
+  </ExternalFileReference>
+  <ExternalFileReference>
+    <P Name="Reference">quarc_library/Image Processing/Generic/Image Find Objects</P>
+    <P Name="Path">$bdroot/Lane Location/Image Find Objects</P>
+    <P Name="SID">2832</P>
+    <P Name="Type">LIBRARY_BLOCK</P>
+  </ExternalFileReference>
+  <ExternalFileReference>
+    <P Name="Reference">quarc_library/Logos/Powered by QUARC</P>
+    <P Name="Path">$bdroot/Powered by QUARC</P>
+    <P Name="SID">1862</P>
+    <P Name="Type">LIBRARY_BLOCK</P>
+  </ExternalFileReference>
+  <ExternalFileReference>
+    <P Name="Reference">quarc_library/Image Processing/Generic/Image Logic</P>
+    <P Name="Path">$bdroot/ROI Mask/Image Logic2</P>
+    <P Name="SID">2824</P>
+    <P Name="Type">LIBRARY_BLOCK</P>
+  </ExternalFileReference>
+  <ExternalFileReference>
+    <P Name="Reference">quarc_library/Data Acquisition/Generic/Configuration/HIL Initialize</P>
+    <P Name="Path">$bdroot/basicQCarIO/HIL Initialize</P>
+    <P Name="SID">1876</P>
+    <P Name="Type">LIBRARY_BLOCK</P>
+  </ExternalFileReference>
+  <ExternalFileReference>
+    <P Name="Reference">quarc_library/Data Acquisition/Generic/Immediate I//O/HIL Read</P>
+    <P Name="Path">$bdroot/basicQCarIO/HIL Read</P>
+    <P Name="SID">1877</P>
+    <P Name="Type">LIBRARY_BLOCK</P>
+  </ExternalFileReference>
+  <ExternalFileReference>
+    <P Name="Reference">quarc_library/Data Acquisition/Generic/Immediate I//O/HIL Write</P>
+    <P Name="Path">$bdroot/basicQCarIO/HIL Write</P>
+    <P Name="SID">1878</P>
+    <P Name="Type">LIBRARY_BLOCK</P>
+  </ExternalFileReference>
+  <ExternalFileReference>
+    <P Name="Reference">quarc_library/Continuous/Second-Order
+Low-Pass Filter</P>
+    <P Name="Path">$bdroot/basicQCarIO/Second-Order Low-Pass Filter</P>
+    <P Name="SID">1880</P>
+    <P Name="Type">LIBRARY_BLOCK</P>
+  </ExternalFileReference>
+  <ExternalFileReference>
+    <P Name="Reference">quarc_library/Continuous/Second-Order
+Low-Pass Filter</P>
+    <P Name="Path">$bdroot/basicQCarIO/Second-Order Low-Pass Filter1</P>
+    <P Name="SID">1881</P>
+    <P Name="Type">LIBRARY_BLOCK</P>
+  </ExternalFileReference>
+  <ExternalFileReference>
+    <P Name="Reference">quarc_library/Continuous/Second-Order
+Low-Pass Filter</P>
+    <P Name="Path">$bdroot/basicQCarIO/Second-Order Low-Pass Filter2</P>
+    <P Name="SID">1882</P>
+    <P Name="Type">LIBRARY_BLOCK</P>
+  </ExternalFileReference>
+  <ExternalFileReference>
+    <P Name="Reference">quarc_library/Discontinuities/Inverse
+Modulus</P>
+    <P Name="Path">$bdroot/basicQCarIO/Unwrap 2^24</P>
+    <P Name="SID">1887</P>
+    <P Name="Type">LIBRARY_BLOCK</P>
+  </ExternalFileReference>
+  <ExternalFileReference>
+    <P Name="Reference">quarc_library/Multimedia/Video Capture</P>
+    <P Name="Path">$bdroot/captureCSI/Video Capture</P>
+    <P Name="SID">2121</P>
+    <P Name="Type">LIBRARY_BLOCK</P>
+  </ExternalFileReference>
+  <ExternalFileReference>
+    <P Name="Reference">quarc_library/Multimedia/Video3D Capture</P>
+    <P Name="Path">$bdroot/captureDepth/Depth</P>
+    <P Name="SID">2052</P>
+    <P Name="Type">LIBRARY_BLOCK</P>
+  </ExternalFileReference>
+  <ExternalFileReference>
+    <P Name="Reference">quarc_library/Multimedia/Video3D Initialize</P>
+    <P Name="Path">$bdroot/captureDepth/Video3D Initialize</P>
+    <P Name="SID">2056</P>
+    <P Name="Type">LIBRARY_BLOCK</P>
+  </ExternalFileReference>
+  <ExternalFileReference>
+    <P Name="Reference">quarc_library/Signal Routing/Channel</P>
+    <P Name="Path">$bdroot/colorThresholdingHSV/Filtered Image/Channel</P>
+    <P Name="SID">2829:14426</P>
+    <P Name="Type">LIBRARY_BLOCK</P>
+  </ExternalFileReference>
+  <ExternalFileReference>
+    <P Name="Reference">quarc_library/Image Processing/Generic/Image Compress</P>
+    <P Name="Path">$bdroot/colorThresholdingHSV/Filtered Image/Image Compress</P>
+    <P Name="SID">2829:14427</P>
+    <P Name="Type">LIBRARY_BLOCK</P>
+  </ExternalFileReference>
+  <ExternalFileReference>
+    <P Name="Reference">quarc_library/Multimedia/Video Display</P>
+    <P Name="Path">$bdroot/colorThresholdingHSV/Filtered Image/Video Display</P>
+    <P Name="SID">2829:14428</P>
+    <P Name="Type">LIBRARY_BLOCK</P>
+  </ExternalFileReference>
+  <ExternalFileReference>
+    <P Name="Reference">quarc_library/Image Processing/Generic/Image Compare</P>
+    <P Name="Path">$bdroot/colorThresholdingHSV/HSV Color Thresholding1</P>
+    <P Name="SID">2747</P>
+    <P Name="Type">LIBRARY_BLOCK</P>
+  </ExternalFileReference>
+  <ExternalFileReference>
+    <P Name="Reference">quarc_library/Image Processing/Generic/Image Filter</P>
+    <P Name="Path">$bdroot/colorThresholdingHSV/Image Filter</P>
+    <P Name="SID">2827</P>
+    <P Name="Type">LIBRARY_BLOCK</P>
+  </ExternalFileReference>
+  <ExternalFileReference>
+    <P Name="Reference">quarc_library/Image Processing/Generic/Image Filter</P>
+    <P Name="Path">$bdroot/colorThresholdingHSV/Image Filter1</P>
+    <P Name="SID">2828</P>
+    <P Name="Type">LIBRARY_BLOCK</P>
+  </ExternalFileReference>
+  <ExternalFileReference>
+    <P Name="Reference">quarc_library/Image Processing/Generic/Image Logic</P>
+    <P Name="Path">$bdroot/colorThresholdingHSV/Image Logic</P>
+    <P Name="SID">2748</P>
+    <P Name="Type">LIBRARY_BLOCK</P>
+  </ExternalFileReference>
+  <ExternalFileReference>
+    <P Name="Reference">quarc_library/Image Processing/Generic/Image Logic</P>
+    <P Name="Path">$bdroot/colorThresholdingHSV/Image Logic1</P>
+    <P Name="SID">2749</P>
+    <P Name="Type">LIBRARY_BLOCK</P>
+  </ExternalFileReference>
+  <ExternalFileReference>
+    <P Name="Reference">quarc_library/Image Processing/Generic/Image Transform</P>
+    <P Name="Path">$bdroot/colorThresholdingHSV/Image Transform1</P>
+    <P Name="SID">2750</P>
+    <P Name="Type">LIBRARY_BLOCK</P>
+  </ExternalFileReference>
+  <ExternalFileReference>
+    <P Name="Reference">quarc_library/Signal Routing/Channel</P>
+    <P Name="Path">$bdroot/colorThresholdingHSV/Separate HSV Thresholds/Channel</P>
+    <P Name="SID">2754:14426</P>
+    <P Name="Type">LIBRARY_BLOCK</P>
+  </ExternalFileReference>
+  <ExternalFileReference>
+    <P Name="Reference">quarc_library/Image Processing/Generic/Image Compress</P>
+    <P Name="Path">$bdroot/colorThresholdingHSV/Separate HSV Thresholds/Image Compress</P>
+    <P Name="SID">2754:14427</P>
+    <P Name="Type">LIBRARY_BLOCK</P>
+  </ExternalFileReference>
+  <ExternalFileReference>
+    <P Name="Reference">quarc_library/Multimedia/Video Display</P>
+    <P Name="Path">$bdroot/colorThresholdingHSV/Separate HSV Thresholds/Video Display</P>
+    <P Name="SID">2754:14428</P>
+    <P Name="Type">LIBRARY_BLOCK</P>
+  </ExternalFileReference>
+  <ExternalFileReference>
+    <P Name="Reference">simulink/Math
+Operations/Slider
+Gain</P>
+    <P Name="Path">$bdroot/colorThresholdingHSV/Slider Gain</P>
+    <P Name="SID">2755</P>
+    <P Name="Type">LIBRARY_BLOCK</P>
+  </ExternalFileReference>
+  <ExternalFileReference>
+    <P Name="Reference">simulink/Math
+Operations/Slider
+Gain</P>
+    <P Name="Path">$bdroot/colorThresholdingHSV/Slider Gain1</P>
+    <P Name="SID">2756</P>
+    <P Name="Type">LIBRARY_BLOCK</P>
+  </ExternalFileReference>
+  <ExternalFileReference>
+    <P Name="Reference">simulink/Math
+Operations/Slider
+Gain</P>
+    <P Name="Path">$bdroot/colorThresholdingHSV/Slider Gain2</P>
+    <P Name="SID">2757</P>
+    <P Name="Type">LIBRARY_BLOCK</P>
+  </ExternalFileReference>
+  <ExternalFileReference>
+    <P Name="Reference">simulink/Math
+Operations/Slider
+Gain</P>
+    <P Name="Path">$bdroot/colorThresholdingHSV/Slider Gain3</P>
+    <P Name="SID">2758</P>
+    <P Name="Type">LIBRARY_BLOCK</P>
+  </ExternalFileReference>
+  <ExternalFileReference>
+    <P Name="Reference">simulink/Math
+Operations/Slider
+Gain</P>
+    <P Name="Path">$bdroot/colorThresholdingHSV/Slider Gain4</P>
+    <P Name="SID">2759</P>
+    <P Name="Type">LIBRARY_BLOCK</P>
+  </ExternalFileReference>
+  <ExternalFileReference>
+    <P Name="Reference">simulink/Math
+Operations/Slider
+Gain</P>
+    <P Name="Path">$bdroot/colorThresholdingHSV/Slider Gain5</P>
+    <P Name="SID">2760</P>
+    <P Name="Type">LIBRARY_BLOCK</P>
+  </ExternalFileReference>
+  <ExternalFileReference>
+    <P Name="Reference">simulink/Logic and Bit
+Operations/Compare
+To Constant</P>
+    <P Name="Path">$bdroot/indicatorAndLamps/Compare To Constant1</P>
+    <P Name="SID">1795</P>
+    <P Name="Type">LIBRARY_BLOCK</P>
+  </ExternalFileReference>
+  <ExternalFileReference>
+    <P Name="Reference">simulink/Logic and Bit
+Operations/Compare
+To Constant</P>
+    <P Name="Path">$bdroot/indicatorAndLamps/Compare To Constant2</P>
+    <P Name="SID">1766</P>
+    <P Name="Type">LIBRARY_BLOCK</P>
+  </ExternalFileReference>
+  <ExternalFileReference>
+    <P Name="Reference">simulink/Logic and Bit
+Operations/Compare
+To Constant</P>
+    <P Name="Path">$bdroot/indicatorAndLamps/Compare To Constant3</P>
+    <P Name="SID">1767</P>
+    <P Name="Type">LIBRARY_BLOCK</P>
+  </ExternalFileReference>
+  <ExternalFileReference>
+    <P Name="Reference">simulink/Logic and Bit
+Operations/Compare
+To Constant</P>
+    <P Name="Path">$bdroot/indicatorAndLamps/Left Steering Limit</P>
+    <P Name="SID">1775</P>
+    <P Name="Type">LIBRARY_BLOCK</P>
+  </ExternalFileReference>
+  <ExternalFileReference>
+    <P Name="Reference">quarc_library/Discontinuities/One Shot</P>
+    <P Name="Path">$bdroot/indicatorAndLamps/One Shot</P>
+    <P Name="SID">1779</P>
+    <P Name="Type">LIBRARY_BLOCK</P>
+  </ExternalFileReference>
+  <ExternalFileReference>
+    <P Name="Reference">simulink/Logic and Bit
+Operations/Compare
+To Constant</P>
+    <P Name="Path">$bdroot/indicatorAndLamps/Right Steering Limit</P>
+    <P Name="SID">1781</P>
+    <P Name="Type">LIBRARY_BLOCK</P>
+  </ExternalFileReference>
+  <ExternalFileReference>
+    <P Name="Reference">quarc_library/Logic Operations/Compare</P>
+    <P Name="Path">$bdroot/obstacleDetection/Compare</P>
+    <P Name="SID">2513</P>
+    <P Name="Type">LIBRARY_BLOCK</P>
+  </ExternalFileReference>
+  <ExternalFileReference>
+    <P Name="Reference">quarc_library/Logic Operations/Compare</P>
+    <P Name="Path">$bdroot/obstacleDetection/Compare1</P>
+    <P Name="SID">2517</P>
+    <P Name="Type">LIBRARY_BLOCK</P>
+  </ExternalFileReference>
+  <ExternalFileReference>
+    <P Name="Reference">simulink/Logic and Bit
+Operations/Compare
+To Zero</P>
+    <P Name="Path">$bdroot/speedController/Compare To Zero</P>
+    <P Name="SID">2226</P>
+    <P Name="Type">LIBRARY_BLOCK</P>
+  </ExternalFileReference>
+  <P Name="OrderedModelArguments">1</P>
+</GraphicalInterface>

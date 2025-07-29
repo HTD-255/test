@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<System>
+  <P Name="Location">[223, 338, 826, 833]</P>
+  <P Name="SystemRect">[0.000000, 0.000000, 0.000000, 0.000000]</P>
+  <P Name="SetExecutionDomain">off</P>
+  <P Name="ExecutionDomainType">Deduce</P>
+  <P Name="SIDHighWatermark">28</P>
+  <P Name="SimulinkSubDomain">Simulink</P>
+  <Block BlockType="Inport" Name="NumberOfObjects" SID="2841::24">
+    <P Name="Position">[20, 101, 40, 119]</P>
+    <P Name="ZOrder">15</P>
+  </Block>
+  <Block BlockType="Inport" Name="u" SID="2841::1">
+    <P Name="Position">[20, 136, 40, 154]</P>
+    <P Name="ZOrder">-1</P>
+    <P Name="Port">2</P>
+  </Block>
+  <Block BlockType="Inport" Name="reference" SID="2841::22">
+    <P Name="Position">[20, 171, 40, 189]</P>
+    <P Name="ZOrder">13</P>
+    <P Name="Port">3</P>
+  </Block>
+  <Block BlockType="Demux" Name=" Demux " SID="2841::27">
+    <P Name="Ports">[1, 1]</P>
+    <P Name="Position">[270, 230, 320, 270]</P>
+    <P Name="ZOrder">17</P>
+    <P Name="Outputs">1</P>
+  </Block>
+  <Block BlockType="S-Function" Name=" SFunction " SID="2841::26">
+    <P Name="Tag">Stateflow S-Function 19</P>
+    <P Name="Ports">[3, 2]</P>
+    <P Name="Position">[180, 100, 230, 180]</P>
+    <P Name="ZOrder">16</P>
+    <P Name="FunctionName">sf_sfun</P>
+    <P Name="PortCounts">[3 2]</P>
+    <P Name="SFunctionDeploymentMode">off</P>
+    <P Name="EnableBusSupport">on</P>
+    <P Name="SFcnIsStateOwnerBlock">off</P>
+    <Port>
+      <P Name="PortNumber">2</P>
+      <P Name="Name">location</P>
+    </Port>
+  </Block>
+  <Block BlockType="Terminator" Name=" Terminator " SID="2841::28">
+    <P Name="Position">[460, 241, 480, 259]</P>
+    <P Name="ZOrder">18</P>
+  </Block>
+  <Block BlockType="Outport" Name="location" SID="2841::5">
+    <P Name="Position">[460, 101, 480, 119]</P>
+    <P Name="ZOrder">-5</P>
+    <P Name="VectorParamsAs1DForOutWhenUnconnected">off</P>
+  </Block>
+  <Line>
+    <P Name="ZOrder">68</P>
+    <P Name="Src">2841::24#out:1</P>
+    <P Name="Dst">2841::26#in:1</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">69</P>
+    <P Name="Src">2841::1#out:1</P>
+    <P Name="Dst">2841::26#in:2</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">70</P>
+    <P Name="Src">2841::22#out:1</P>
+    <P Name="Dst">2841::26#in:3</P>
+  </Line>
+  <Line>
+    <P Name="Name">location</P>
+    <P Name="ZOrder">71</P>
+    <P Name="Labels">[0, 0]</P>
+    <P Name="Src">2841::26#out:2</P>
+    <P Name="Dst">2841::5#in:1</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">72</P>
+    <P Name="Src">2841::27#out:1</P>
+    <P Name="Dst">2841::28#in:1</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">73</P>
+    <P Name="Src">2841::26#out:1</P>
+    <P Name="Points">[20, 0]</P>
+    <P Name="Dst">2841::27#in:1</P>
+  </Line>
+</System>

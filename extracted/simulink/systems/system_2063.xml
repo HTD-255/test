@@ -1,0 +1,342 @@
+<?xml version="1.0" encoding="utf-8"?>
+<System>
+  <P Name="Location">[34, 298, 1307, 1020]</P>
+  <P Name="SystemRect">[0.000000, 0.000000, 0.000000, 0.000000]</P>
+  <P Name="SetExecutionDomain">off</P>
+  <P Name="ExecutionDomainType">Deduce</P>
+  <P Name="ZoomFactor">80</P>
+  <P Name="SimulinkSubDomain">Simulink</P>
+  <Block BlockType="Inport" Name="imageDepth" SID="2064">
+    <P Name="Position">[-370, 333, -340, 347]</P>
+    <P Name="ZOrder">2017</P>
+  </Block>
+  <Block BlockType="Inport" Name="steering (rad)" SID="2065">
+    <P Name="Position">[-370, 378, -340, 392]</P>
+    <P Name="ZOrder">2038</P>
+    <P Name="Port">2</P>
+  </Block>
+  <Block BlockType="Inport" Name="Stop Distance" SID="2657">
+    <P Name="Position">[210, 423, 240, 437]</P>
+    <P Name="ZOrder">4300</P>
+    <P Name="Port">3</P>
+  </Block>
+  <Block BlockType="EnablePort" Name="Enable" SID="2066">
+    <P Name="Ports">[]</P>
+    <P Name="Position">[120, -110, 140, -90]</P>
+    <P Name="ZOrder">2018</P>
+    <P Name="PropagateVarSize">During execution</P>
+  </Block>
+  <Block BlockType="Logic" Name="AND" SID="2516">
+    <P Name="Ports">[2, 1]</P>
+    <P Name="Position">[345, 411, 380, 444]</P>
+    <P Name="ZOrder">4296</P>
+    <P Name="AllPortsSameDT">off</P>
+    <P Name="OutDataTypeStr">boolean</P>
+  </Block>
+  <Block BlockType="Reference" Name="Compare" SID="2513">
+    <P Name="Ports">[2, 1]</P>
+    <P Name="Position">[275, 402, 305, 438]</P>
+    <P Name="ZOrder">4293</P>
+    <P Name="LibraryVersion">1.2129</P>
+    <P Name="SourceBlock">quarc_library/Logic Operations/Compare</P>
+    <P Name="SourceType">Compare</P>
+    <P Name="SourceProductName">QUARC Targets</P>
+    <InstanceData>
+      <P Name="MultithreadedSim">auto</P>
+      <P Name="operator">&gt;=</P>
+      <P Name="output_data_type">boolean</P>
+    </InstanceData>
+  </Block>
+  <Block BlockType="Reference" Name="Compare1" SID="2517">
+    <P Name="Ports">[2, 1]</P>
+    <P Name="Position">[275, 452, 305, 488]</P>
+    <P Name="ZOrder">4297</P>
+    <P Name="LibraryVersion">1.2129</P>
+    <P Name="SourceBlock">quarc_library/Logic Operations/Compare</P>
+    <P Name="SourceType">Compare</P>
+    <P Name="SourceProductName">QUARC Targets</P>
+    <InstanceData>
+      <P Name="MultithreadedSim">auto</P>
+      <P Name="operator">&lt;</P>
+      <P Name="output_data_type">boolean</P>
+    </InstanceData>
+  </Block>
+  <Block BlockType="Constant" Name="Constant" SID="2069">
+    <P Name="Position">[-55, 395, -25, 425]</P>
+    <P Name="ZOrder">2032</P>
+    <P Name="Value">0.05</P>
+  </Block>
+  <Block BlockType="Constant" Name="Constant1" SID="2070">
+    <P Name="Position">[-55, 435, -25, 465]</P>
+    <P Name="ZOrder">2033</P>
+    <P Name="Value">2</P>
+  </Block>
+  <Block BlockType="Constant" Name="Constant2" SID="2518">
+    <P Name="Position">[225, 465, 255, 495]</P>
+    <P Name="ZOrder">4298</P>
+    <P Name="Value">Inf</P>
+  </Block>
+  <Block BlockType="Constant" Name="Constant3" SID="2072">
+    <P Name="Position">[60, 295, 130, 325]</P>
+    <P Name="ZOrder">2044</P>
+    <P Name="Value">[255 0 0]</P>
+  </Block>
+  <Block BlockType="DataTypeConversion" Name="Data Type Conversion" SID="2133">
+    <P Name="Position">[-105, 215, -55, 245]</P>
+    <P Name="ZOrder">4279</P>
+    <P Name="NameLocation">top</P>
+    <P Name="OutDataTypeStr">uint8</P>
+    <P Name="RndMeth">Floor</P>
+    <P Name="SaturateOnIntegerOverflow">off</P>
+  </Block>
+  <Block BlockType="Product" Name="Divide" SID="2462">
+    <P Name="Ports">[2, 1]</P>
+    <P Name="Position">[15, 262, 45, 293]</P>
+    <P Name="ZOrder">4285</P>
+    <P Name="Inputs">*/</P>
+    <P Name="OutDataTypeStr">Inherit: Inherit via back propagation</P>
+  </Block>
+  <Block BlockType="SubSystem" Name="Draw Lines Module" SID="2218">
+    <P Name="Ports">[3, 1]</P>
+    <P Name="Position">[185, 238, 325, 322]</P>
+    <P Name="ZOrder">4284</P>
+    <P Name="ErrorFcn">Stateflow.Translate.translate</P>
+    <P Name="PermitHierarchicalResolution">ExplicitOnly</P>
+    <P Name="TreatAsAtomicUnit">on</P>
+    <P Name="RequestExecContextInheritance">off</P>
+    <P Name="SFBlockType">MATLAB Function</P>
+    <P Name="ContentPreviewEnabled">on</P>
+    <System Ref="system_2218"/>
+  </Block>
+  <Block BlockType="Gain" Name="Gain" SID="2132">
+    <P Name="Position">[-210, 215, -135, 245]</P>
+    <P Name="ZOrder">4278</P>
+    <P Name="NameLocation">top</P>
+    <P Name="Gain">255/4</P>
+  </Block>
+  <Block BlockType="SubSystem" Name="MATLAB Function" SID="2075">
+    <P Name="Ports">[3, 1]</P>
+    <P Name="Position">[0, 348, 140, 472]</P>
+    <P Name="ZOrder">2021</P>
+    <P Name="ErrorFcn">Stateflow.Translate.translate</P>
+    <P Name="PermitHierarchicalResolution">ExplicitOnly</P>
+    <P Name="TreatAsAtomicUnit">on</P>
+    <P Name="RequestExecContextInheritance">off</P>
+    <P Name="SFBlockType">MATLAB Function</P>
+    <P Name="ContentPreviewEnabled">on</P>
+    <System Ref="system_2075"/>
+  </Block>
+  <Block BlockType="Product" Name="Multiply" SID="2519">
+    <P Name="Ports">[2, 1]</P>
+    <P Name="Position">[400, 422, 430, 453]</P>
+    <P Name="ZOrder">4299</P>
+  </Block>
+  <Block BlockType="Selector" Name="Selector" SID="2469">
+    <P Name="Ports">[1, 1]</P>
+    <P Name="Position">[40, 213, 150, 247]</P>
+    <P Name="ZOrder">4292</P>
+    <P Name="NumberOfDimensions">2</P>
+    <P Name="InputPortWidth">3</P>
+    <P Name="IndexOptions">Index vector (dialog),Index vector (dialog)</P>
+    <P Name="Indices">[1:3:360],[1:3:640]</P>
+    <P Name="OutputSizes">1,1</P>
+  </Block>
+  <Block BlockType="SubSystem" Name="Steering based &#xA;image subselector" SID="2078">
+    <P Name="Ports">[2, 2]</P>
+    <P Name="Position">[-220, 327, -105, 383]</P>
+    <P Name="ZOrder">2039</P>
+    <P Name="ErrorFcn">Stateflow.Translate.translate</P>
+    <P Name="PermitHierarchicalResolution">ExplicitOnly</P>
+    <P Name="TreatAsAtomicUnit">on</P>
+    <P Name="RequestExecContextInheritance">off</P>
+    <P Name="SFBlockType">MATLAB Function</P>
+    <P Name="ContentPreviewEnabled">on</P>
+    <System Ref="system_2078"/>
+  </Block>
+  <Block BlockType="Constant" Name="scale" SID="2463">
+    <P Name="Position">[-40, 285, -10, 315]</P>
+    <P Name="ZOrder">4286</P>
+    <P Name="Value">3</P>
+  </Block>
+  <Block BlockType="Outport" Name="imageDepthForDisplay" SID="2160">
+    <P Name="Position">[485, 273, 515, 287]</P>
+    <P Name="ZOrder">4282</P>
+    <P Name="VectorParamsAs1DForOutWhenUnconnected">off</P>
+  </Block>
+  <Block BlockType="Outport" Name="distance (m)" SID="2080">
+    <P Name="Position">[485, 433, 515, 447]</P>
+    <P Name="ZOrder">2036</P>
+    <P Name="Port">2</P>
+    <P Name="VectorParamsAs1DForOutWhenUnconnected">off</P>
+  </Block>
+  <Line>
+    <P Name="ZOrder">35</P>
+    <P Name="Src">2072#out:1</P>
+    <P Name="Dst">2218#in:3</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">65</P>
+    <P Name="Src">2078#out:1</P>
+    <P Name="Points">[37, 0; 0, -70]</P>
+    <P Name="Dst">2462#in:1</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">4</P>
+    <P Name="Src">2078#out:2</P>
+    <P Name="Dst">2075#in:1</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">6</P>
+    <P Name="Src">2065#out:1</P>
+    <P Name="Points">[55, 0; 0, -15]</P>
+    <P Name="Dst">2078#in:2</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">93</P>
+    <P Name="Src">2519#out:1</P>
+    <P Name="Dst">2080#in:1</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">12</P>
+    <P Name="Src">2070#out:1</P>
+    <P Name="Dst">2075#in:3</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">13</P>
+    <P Name="Src">2069#out:1</P>
+    <P Name="Dst">2075#in:2</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">85</P>
+    <P Name="Src">2075#out:1</P>
+    <P Name="Points">[27, 0]</P>
+    <Branch>
+      <P Name="ZOrder">98</P>
+      <P Name="Dst">2513#in:1</P>
+    </Branch>
+    <Branch>
+      <P Name="ZOrder">90</P>
+      <P Name="Points">[0, 50]</P>
+      <Branch>
+        <P Name="ZOrder">100</P>
+        <P Name="Points">[0, 42; 213, 0]</P>
+        <P Name="Dst">2519#in:2</P>
+      </Branch>
+      <Branch>
+        <P Name="ZOrder">99</P>
+        <P Name="Dst">2517#in:1</P>
+      </Branch>
+    </Branch>
+  </Line>
+  <Line>
+    <P Name="ZOrder">15</P>
+    <P Name="Src">2064#out:1</P>
+    <P Name="Points">[76, 0]</P>
+    <Branch>
+      <P Name="ZOrder">16</P>
+      <P Name="Dst">2078#in:1</P>
+    </Branch>
+    <Branch>
+      <P Name="ZOrder">17</P>
+      <P Name="Points">[0, -110]</P>
+      <P Name="Dst">2132#in:1</P>
+    </Branch>
+  </Line>
+  <Line>
+    <P Name="ZOrder">73</P>
+    <P Name="Src">2469#out:1</P>
+    <P Name="Points">[13, 0; 0, 20]</P>
+    <P Name="Dst">2218#in:1</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">31</P>
+    <P Name="Src">2133#out:1</P>
+    <P Name="Dst">2469#in:1</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">55</P>
+    <P Name="Src">2462#out:1</P>
+    <P Name="Dst">2218#in:2</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">36</P>
+    <P Name="Src">2218#out:1</P>
+    <P Name="Dst">2160#in:1</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">57</P>
+    <P Name="Src">2463#out:1</P>
+    <P Name="Points">[5, 0]</P>
+    <P Name="Dst">2462#in:2</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">20</P>
+    <P Name="Src">2132#out:1</P>
+    <P Name="Dst">2133#in:1</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">101</P>
+    <P Name="Src">2657#out:1</P>
+    <P Name="Dst">2513#in:2</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">87</P>
+    <P Name="Src">2513#out:1</P>
+    <P Name="Dst">2516#in:1</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">91</P>
+    <P Name="Src">2517#out:1</P>
+    <P Name="Points">[15, 0; 0, -35]</P>
+    <P Name="Dst">2516#in:2</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">92</P>
+    <P Name="Src">2518#out:1</P>
+    <P Name="Dst">2517#in:2</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">94</P>
+    <P Name="Src">2516#out:1</P>
+    <P Name="Dst">2519#in:1</P>
+  </Line>
+  <Annotation SID="2454">
+    <P Name="Position">[-292, 171, 443, 516]</P>
+    <P Name="InternalMargins">[0, 0, 0, 0]</P>
+    <P Name="FixedHeight">on</P>
+    <P Name="FixedWidth">on</P>
+    <P Name="ForegroundColor">[0.956863, 0.980392, 0.921569]</P>
+    <P Name="BackgroundColor">[0.956863, 0.980392, 0.921569]</P>
+    <P Name="DropShadow">on</P>
+    <P Name="AnnotationType">area_annotation</P>
+    <P Name="ZOrder">130</P>
+    <P Name="FontSize">12</P>
+  </Annotation>
+  <Annotation SID="2457">
+    <P Name="Name">&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;Helvetica&apos;; font-size:10px; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:12px; font-weight:600;&quot;&gt;obstacleDetection&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:12px;&quot;&gt;This subsystem calculates an obstacle distance based on a steering angle command and a source depth image. &lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:12px; font-weight:600;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:12px; text-decoration: underline;&quot;&gt;Inputs:&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:12px;&quot;&gt;imageBinary	 					(uint8)		{0,255}			:	Binary Image (0 or 255 and no other value) representing the thresholding output&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:12px;&quot;&gt;steering							(double)	{}				:	Angle in rad representing a desired heading.   &lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:12px; text-decoration: underline;&quot;&gt;Outputs:&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:12px;&quot;&gt;imageDepthForDisplay 			(uint8)		{0,255}		      :	Scaled RGB Image with mask of the lane currently being tracked&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:12px;&quot;&gt;distance 							(double)	{0.05, 2}		:	An average distance value, in meters, of an object within a region of interest based on a minimum and maximum distance.&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:12px; text-decoration: underline;&quot;&gt;Usage:&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:12px;&quot;&gt;You can use this subsystem to determine if the desired heading angle will cause the car to colllide with an obstacle by examining the distances from a region of interest within the depth image and calculating how far the obstacle is. &lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</P>
+    <P Name="Position">[-292, -65, 615, 155]</P>
+    <P Name="InternalMargins">[0, 0, 0, 0]</P>
+    <P Name="FixedHeight">on</P>
+    <P Name="FixedWidth">on</P>
+    <P Name="Interpreter">rich</P>
+    <P Name="ZOrder">-2</P>
+  </Annotation>
+</System>
