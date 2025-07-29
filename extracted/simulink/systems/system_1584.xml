@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<System>
+  <P Name="Location">[60, 67, 1536, 972]</P>
+  <P Name="SystemRect">[0.000000, 0.000000, 0.000000, 0.000000]</P>
+  <P Name="SetExecutionDomain">off</P>
+  <P Name="ExecutionDomainType">Deduce</P>
+  <P Name="SimulinkSubDomain">Simulink</P>
+  <Block BlockType="Inport" Name="systemCommand (m/s, rad) [2]" SID="1585">
+    <P Name="Position">[220, 563, 250, 577]</P>
+    <P Name="ZOrder">1951</P>
+  </Block>
+  <Block BlockType="Inport" Name="enable" SID="1586">
+    <P Name="Position">[220, 488, 250, 502]</P>
+    <P Name="ZOrder">1955</P>
+    <P Name="Port">2</P>
+  </Block>
+  <Block BlockType="Constant" Name="Constant" SID="2301">
+    <P Name="Position">[420, 607, 435, 623]</P>
+    <P Name="ZOrder">1958</P>
+    <P Name="Value">8</P>
+  </Block>
+  <Block BlockType="Trigonometry" Name="Cos" SID="1587">
+    <P Name="Ports">[1, 1]</P>
+    <P Name="Position">[410, 570, 440, 600]</P>
+    <P Name="ZOrder">1947</P>
+    <P Name="Operator">cos</P>
+  </Block>
+  <Block BlockType="Demux" Name="Demux1" SID="1588">
+    <P Name="Ports">[1, 2]</P>
+    <P Name="Position">[335, 521, 340, 619]</P>
+    <P Name="ZOrder">1949</P>
+    <P Name="ShowName">off</P>
+    <P Name="Outputs">2</P>
+    <Port>
+      <P Name="PortNumber">1</P>
+      <P Name="Name">Speed Command (m/s)</P>
+    </Port>
+  </Block>
+  <Block BlockType="Product" Name="Product" SID="1589">
+    <P Name="Ports">[2, 1]</P>
+    <P Name="Position">[730, 537, 760, 568]</P>
+    <P Name="ZOrder">1950</P>
+  </Block>
+  <Block BlockType="Saturate" Name="Saturation" SID="1590">
+    <P Name="Position">[605, 580, 635, 610]</P>
+    <P Name="ZOrder">1948</P>
+    <P Name="UpperLimit">1</P>
+    <P Name="LowerLimit">0.5</P>
+  </Block>
+  <Block BlockType="Scope" Name="Scope" SID="1591">
+    <P Name="Ports">[2]</P>
+    <P Name="Position">[995, 451, 1025, 484]</P>
+    <P Name="ZOrder">1956</P>
+    <P Name="BackgroundColor">cyan</P>
+    <P Name="ScopeSpecificationString">Simulink.scopes.TimeScopeBlockCfg(&apos;CurrentConfiguration&apos;, extmgr.ConfigurationSet(extmgr.Configuration(&apos;Core&apos;,&apos;General UI&apos;,true),extmgr.Configuration(&apos;Core&apos;,&apos;Source UI&apos;,true),extmgr.Configuration(&apos;Sources&apos;,&apos;WiredSimulink&apos;,true,&apos;DataLoggingVariableName&apos;,&apos;ScopeData2&apos;),extmgr.Configuration(&apos;Visuals&apos;,&apos;Time Domain&apos;,true,&apos;SerializedDisplays&apos;,{struct(&apos;MinYLimReal&apos;,&apos;-2&apos;,&apos;MaxYLimReal&apos;,&apos;2&apos;,&apos;YLabelReal&apos;,&apos;m/s&apos;,&apos;MinYLimMag&apos;,&apos;0&apos;,&apos;MaxYLimMag&apos;,&apos;10&apos;,&apos;LegendVisibility&apos;,&apos;On&apos;,&apos;XGrid&apos;,true,&apos;YGrid&apos;,true,&apos;PlotMagPhase&apos;,false,&apos;AxesColor&apos;,[0 0 0],&apos;AxesTickColor&apos;,[0.686274509803922 0.686274509803922 0.686274509803922],&apos;ColorOrder&apos;,[1 1 0.0666666666666667;0.0745098039215686 0.623529411764706 1;1 0.411764705882353 0.16078431372549;0.392156862745098 0.831372549019608 0.0745098039215686;0.717647058823529 0.274509803921569 1;0.0588235294117647 1 1;1 0.0745098039215686 0.650980392156863],&apos;Title&apos;,&apos;Turn-Speed Handling&apos;,&apos;LinePropertiesCache&apos;,{{}},&apos;UserDefinedChannelNames&apos;,{{}},&apos;NumLines&apos;,0,&apos;LineNames&apos;,{{[]}},&apos;ShowContent&apos;,true,&apos;Placement&apos;,1)},&apos;DisplayPropertyDefaults&apos;,struct(&apos;MinYLimReal&apos;,&apos;-2&apos;,&apos;MaxYLimReal&apos;,&apos;2&apos;,&apos;YLabelReal&apos;,&apos;m/s&apos;,&apos;MinYLimMag&apos;,&apos;0&apos;,&apos;MaxYLimMag&apos;,&apos;10&apos;,&apos;LegendVisibility&apos;,&apos;On&apos;,&apos;XGrid&apos;,true,&apos;YGrid&apos;,true,&apos;PlotMagPhase&apos;,false,&apos;AxesColor&apos;,[0 0 0],&apos;AxesTickColor&apos;,[0.686274509803922 0.686274509803922 0.686274509803922],&apos;ColorOrder&apos;,[0.0745098039215686 0.623529411764706 1;1 0.411764705882353 0.16078431372549;1 1 0.0666666666666667;0.717647058823529 0.274509803921569 1;0.392156862745098 0.831372549019608 0.0745098039215686;0.0588235294117647 1 1;1 0.0745098039215686 0.650980392156863],&apos;Title&apos;,&apos;Turn-Speed Handling&apos;)),extmgr.Configuration(&apos;Tools&apos;,&apos;Plot Navigation&apos;,true,&apos;OnceAtStop&apos;,false),extmgr.Configuration(&apos;Tools&apos;,&apos;Measurements&apos;,true,&apos;Version&apos;,&apos;2019b&apos;)),&apos;Version&apos;,&apos;2020a&apos;,&apos;Position&apos;,[274 48 1920 973])</P>
+    <P Name="NumInputPorts">2</P>
+    <P Name="Floating">off</P>
+  </Block>
+  <Block BlockType="Math" Name="Square" SID="2300">
+    <P Name="Ports">[2, 1]</P>
+    <P Name="Position">[500, 577, 530, 608]</P>
+    <P Name="ZOrder">1957</P>
+    <P Name="Operator">pow</P>
+    <P Name="SignedPower">on</P>
+  </Block>
+  <Block BlockType="Switch" Name="Switch" SID="1592">
+    <P Name="Position">[795, 550, 845, 590]</P>
+    <P Name="ZOrder">1954</P>
+    <P Name="Criteria">u2 &gt; Threshold</P>
+    <P Name="Threshold">0.5</P>
+    <P Name="InputSameDT">off</P>
+    <P Name="SaturateOnIntegerOverflow">off</P>
+    <Port>
+      <P Name="PortNumber">1</P>
+      <P Name="Name">Desired Speed (m/s)</P>
+    </Port>
+  </Block>
+  <Block BlockType="Outport" Name="desiredSpeed (m/s)" SID="1594">
+    <P Name="Position">[975, 563, 1005, 577]</P>
+    <P Name="ZOrder">1952</P>
+    <P Name="VectorParamsAs1DForOutWhenUnconnected">off</P>
+  </Block>
+  <Block BlockType="Outport" Name="steering (rad)" SID="1593">
+    <P Name="Position">[975, 643, 1005, 657]</P>
+    <P Name="ZOrder">1953</P>
+    <P Name="Port">2</P>
+    <P Name="VectorParamsAs1DForOutWhenUnconnected">off</P>
+  </Block>
+  <Line>
+    <P Name="ZOrder">41</P>
+    <P Name="Src">1587#out:1</P>
+    <P Name="Dst">2300#in:1</P>
+  </Line>
+  <Line>
+    <P Name="Name">Desired Speed (m/s)</P>
+    <P Name="ZOrder">5</P>
+    <P Name="Src">1592#out:1</P>
+    <P Name="Points">[40, 0]</P>
+    <Branch>
+      <P Name="ZOrder">156</P>
+      <P Name="Dst">1594#in:1</P>
+    </Branch>
+    <Branch>
+      <P Name="ZOrder">7</P>
+      <P Name="Labels">[2, 1]</P>
+      <P Name="Points">[0, -95]</P>
+      <P Name="Dst">1591#in:2</P>
+    </Branch>
+  </Line>
+  <Line>
+    <P Name="ZOrder">8</P>
+    <P Name="Src">1589#out:1</P>
+    <P Name="Dst">1592#in:1</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">9</P>
+    <P Name="Src">1590#out:1</P>
+    <P Name="Points">[45, 0; 0, -35]</P>
+    <P Name="Dst">1589#in:2</P>
+  </Line>
+  <Line>
+    <P Name="Name">Speed Command (m/s)</P>
+    <P Name="ZOrder">10</P>
+    <P Name="Src">1588#out:1</P>
+    <P Name="Points">[42, 0]</P>
+    <Branch>
+      <P Name="ZOrder">153</P>
+      <P Name="Points">[322, 0]</P>
+      <Branch>
+        <P Name="ZOrder">12</P>
+        <P Name="Dst">1589#in:1</P>
+      </Branch>
+      <Branch>
+        <P Name="ZOrder">13</P>
+        <P Name="Points">[0, 40]</P>
+        <P Name="Dst">1592#in:3</P>
+      </Branch>
+    </Branch>
+    <Branch>
+      <P Name="ZOrder">14</P>
+      <P Name="Labels">[-1, 1]</P>
+      <P Name="Points">[0, -85]</P>
+      <P Name="Dst">1591#in:1</P>
+    </Branch>
+  </Line>
+  <Line>
+    <P Name="ZOrder">15</P>
+    <P Name="Src">1585#out:1</P>
+    <P Name="Dst">1588#in:1</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">16</P>
+    <P Name="Src">1586#out:1</P>
+    <P Name="Points">[523, 0; 0, 75]</P>
+    <P Name="Dst">1592#in:2</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">43</P>
+    <P Name="Src">2301#out:1</P>
+    <P Name="Points">[43, 0; 0, -15]</P>
+    <P Name="Dst">2300#in:2</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">2</P>
+    <P Name="Src">1588#out:2</P>
+    <P Name="Points">[41, 0]</P>
+    <Branch>
+      <P Name="ZOrder">155</P>
+      <P Name="Points">[0, 55]</P>
+      <P Name="Dst">1593#in:1</P>
+    </Branch>
+    <Branch>
+      <P Name="ZOrder">61</P>
+      <P Name="Points">[0, -10]</P>
+      <P Name="Dst">1587#in:1</P>
+    </Branch>
+  </Line>
+  <Line>
+    <P Name="ZOrder">157</P>
+    <P Name="Src">2300#out:1</P>
+    <P Name="Dst">1590#in:1</P>
+  </Line>
+  <Annotation SID="1596">
+    <P Name="Name">&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body align=&quot;left&quot; style=&quot; font-family:&apos;Helvetica&apos;; font-size:10px; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p align=&quot;left&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:12px; font-weight:600; text-decoration: underline;&quot;&gt;turnSpeedHandling Module:&lt;/span&gt;&lt;/p&gt;
+&lt;p align=&quot;left&quot; style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:12px; font-weight:600;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p align=&quot;left&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:12px;&quot;&gt;This subsystem provides a speed reduction when steering, so as to prevent skidding.&lt;/span&gt;&lt;/p&gt;
+&lt;p align=&quot;left&quot; style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:12px; font-weight:600;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p align=&quot;left&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:12px; text-decoration: underline;&quot;&gt;Inputs:&lt;/span&gt;&lt;/p&gt;
+&lt;p align=&quot;left&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:12px;&quot;&gt;enable						(bool)		{0,1}		:	Binary enable input&lt;/span&gt;&lt;/p&gt;
+&lt;p align=&quot;left&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:12px;&quot;&gt;systemCommand 			(m/s, rad)	n/a			:	Vector input for the speed command (m/s) as well as steering command (in rad)&lt;/span&gt;&lt;/p&gt;
+&lt;p align=&quot;left&quot; style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p align=&quot;left&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:12px; text-decoration: underline;&quot;&gt;Outputs:&lt;/span&gt;&lt;/p&gt;
+&lt;p align=&quot;left&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:12px;&quot;&gt;desiredSpeed					(m/s)		n/a			:	Desired speed command to be sent to a controller&lt;/span&gt;&lt;/p&gt;
+&lt;p align=&quot;left&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:12px;&quot;&gt;steering 						(rad) 		n/a 		: 	Desired steering command to be sent to the IO module&lt;/span&gt;&lt;/p&gt;
+&lt;p align=&quot;left&quot; style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p align=&quot;left&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:12px; text-decoration: underline;&quot;&gt;Usage:&lt;/span&gt;&lt;/p&gt;
+&lt;p align=&quot;left&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:12px;&quot;&gt;1. To ignore speed reduction, set the Enable? input low (0). &lt;/span&gt;&lt;/p&gt;
+&lt;p align=&quot;left&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:12px;&quot;&gt;2. When Enable? is high (1), the Desired Speed output will be the System Command&apos;s first input multiplied by the cosine of the steering. Note that the lower limit of this reduction is set to 50% of the speed command input. &lt;/span&gt;&lt;/p&gt;
+&lt;p align=&quot;left&quot; style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p align=&quot;left&quot; style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</P>
+    <P Name="Position">[200, 202, 1037, 427]</P>
+    <P Name="InternalMargins">[0, 0, 0, 0]</P>
+    <P Name="FixedHeight">on</P>
+    <P Name="FixedWidth">on</P>
+    <P Name="Interpreter">rich</P>
+    <P Name="ZOrder">-1</P>
+  </Annotation>
+  <Annotation SID="1595">
+    <P Name="Name">Steering-based speed cmd reduction</P>
+    <P Name="Position">[391, 473, 881, 637]</P>
+    <P Name="InternalMargins">[0, 0, 0, 0]</P>
+    <P Name="FixedHeight">on</P>
+    <P Name="FixedWidth">on</P>
+    <P Name="ForegroundColor">[0.901961, 0.960784, 1.000000]</P>
+    <P Name="BackgroundColor">[0.901961, 0.960784, 1.000000]</P>
+    <P Name="DropShadow">on</P>
+    <P Name="AnnotationType">area_annotation</P>
+    <P Name="ZOrder">146</P>
+    <P Name="FontSize">12</P>
+  </Annotation>
+</System>

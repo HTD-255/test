@@ -1,0 +1,615 @@
+<?xml version="1.0" encoding="utf-8"?>
+<System>
+  <P Name="Location">[-8, -8, 1928, 1040]</P>
+  <P Name="SystemRect">[0.000000, 0.000000, 0.000000, 0.000000]</P>
+  <P Name="SetExecutionDomain">off</P>
+  <P Name="ExecutionDomainType">Deduce</P>
+  <P Name="ZoomFactor">104</P>
+  <P Name="SimulinkSubDomain">Simulink</P>
+  <Block BlockType="Inport" Name="motorCmd (%, rad) [2]" SID="1761">
+    <P Name="Position">[180, 488, 210, 502]</P>
+    <P Name="ZOrder">1975</P>
+  </Block>
+  <Block BlockType="Logic" Name="AND1" SID="1762">
+    <P Name="Ports">[2, 1]</P>
+    <P Name="Position">[1085, 603, 1115, 627]</P>
+    <P Name="ZOrder">1971</P>
+    <P Name="IconShape">distinctive</P>
+    <P Name="AllPortsSameDT">off</P>
+    <P Name="OutDataTypeStr">boolean</P>
+  </Block>
+  <Block BlockType="Logic" Name="AND2" SID="1794">
+    <P Name="Ports">[2, 1]</P>
+    <P Name="Position">[1060, 368, 1090, 392]</P>
+    <P Name="ZOrder">1995</P>
+    <P Name="Operator">OR</P>
+    <P Name="IconShape">distinctive</P>
+    <P Name="AllPortsSameDT">off</P>
+    <P Name="OutDataTypeStr">boolean</P>
+  </Block>
+  <Block BlockType="Logic" Name="AND3" SID="1763">
+    <P Name="Ports">[2, 1]</P>
+    <P Name="Position">[1085, 513, 1115, 537]</P>
+    <P Name="ZOrder">1977</P>
+    <P Name="IconShape">distinctive</P>
+    <P Name="AllPortsSameDT">off</P>
+    <P Name="OutDataTypeStr">boolean</P>
+  </Block>
+  <Block BlockType="Abs" Name="Abs" SID="1764">
+    <P Name="Position">[480, 330, 510, 360]</P>
+    <P Name="ZOrder">1983</P>
+    <P Name="SaturateOnIntegerOverflow">off</P>
+  </Block>
+  <Block BlockType="Abs" Name="Abs1" SID="1765">
+    <P Name="Position">[480, 295, 510, 325]</P>
+    <P Name="ZOrder">1984</P>
+    <P Name="SaturateOnIntegerOverflow">off</P>
+  </Block>
+  <Block BlockType="Reference" Name="Compare&#xA;To Constant1" SID="1795">
+    <P Name="Ports">[1, 1]</P>
+    <P Name="Position">[720, 430, 750, 460]</P>
+    <P Name="ZOrder">1996</P>
+    <P Name="LibraryVersion">1.488</P>
+    <P Name="SourceBlock">simulink/Logic and Bit
+Operations/Compare
+To Constant</P>
+    <P Name="SourceType">Compare To Constant</P>
+    <P Name="SourceProductBaseCode">SL</P>
+    <InstanceData>
+      <P Name="RTWMemSecFuncInitTerm">Inherit from model</P>
+      <P Name="RTWMemSecFuncExecute">Inherit from model</P>
+      <P Name="RTWMemSecDataConstants">Inherit from model</P>
+      <P Name="RTWMemSecDataInternal">Inherit from model</P>
+      <P Name="RTWMemSecDataParameters">Inherit from model</P>
+      <P Name="ContentPreviewEnabled">off</P>
+      <P Name="relop">==</P>
+      <P Name="const">0</P>
+      <P Name="OutDataTypeStr">uint8</P>
+      <P Name="ZeroCross">on</P>
+    </InstanceData>
+  </Block>
+  <Block BlockType="Reference" Name="Compare&#xA;To Constant2" SID="1766">
+    <P Name="Ports">[1, 1]</P>
+    <P Name="Position">[485, 455, 515, 485]</P>
+    <P Name="ZOrder">1985</P>
+    <P Name="LibraryVersion">1.488</P>
+    <P Name="SourceBlock">simulink/Logic and Bit
+Operations/Compare
+To Constant</P>
+    <P Name="SourceType">Compare To Constant</P>
+    <P Name="SourceProductBaseCode">SL</P>
+    <InstanceData>
+      <P Name="RTWMemSecFuncInitTerm">Inherit from model</P>
+      <P Name="RTWMemSecFuncExecute">Inherit from model</P>
+      <P Name="RTWMemSecDataConstants">Inherit from model</P>
+      <P Name="RTWMemSecDataInternal">Inherit from model</P>
+      <P Name="RTWMemSecDataParameters">Inherit from model</P>
+      <P Name="ContentPreviewEnabled">off</P>
+      <P Name="relop">&lt;</P>
+      <P Name="const">0</P>
+      <P Name="OutDataTypeStr">boolean</P>
+      <P Name="ZeroCross">on</P>
+    </InstanceData>
+    <Port>
+      <P Name="PortNumber">1</P>
+      <P Name="Name">reversing, hold all indicators high</P>
+    </Port>
+  </Block>
+  <Block BlockType="Reference" Name="Compare&#xA;To Constant3" SID="1767">
+    <P Name="Ports">[1, 1]</P>
+    <P Name="Position">[595, 305, 640, 335]</P>
+    <P Name="ZOrder">1987</P>
+    <P Name="LibraryVersion">1.488</P>
+    <P Name="SourceBlock">simulink/Logic and Bit
+Operations/Compare
+To Constant</P>
+    <P Name="SourceType">Compare To Constant</P>
+    <P Name="SourceProductBaseCode">SL</P>
+    <InstanceData>
+      <P Name="RTWMemSecFuncInitTerm">Inherit from model</P>
+      <P Name="RTWMemSecFuncExecute">Inherit from model</P>
+      <P Name="RTWMemSecDataConstants">Inherit from model</P>
+      <P Name="RTWMemSecDataInternal">Inherit from model</P>
+      <P Name="RTWMemSecDataParameters">Inherit from model</P>
+      <P Name="ContentPreviewEnabled">off</P>
+      <P Name="relop">&lt;</P>
+      <P Name="const">-0.002</P>
+      <P Name="OutDataTypeStr">boolean</P>
+      <P Name="ZeroCross">on</P>
+    </InstanceData>
+  </Block>
+  <Block BlockType="Constant" Name="Constant" SID="1768">
+    <P Name="Position">[660, 335, 685, 355]</P>
+    <P Name="ZOrder">1989</P>
+    <P Name="Value">0</P>
+  </Block>
+  <Block BlockType="Constant" Name="Constant1" SID="1769">
+    <P Name="Position">[660, 360, 685, 380]</P>
+    <P Name="ZOrder">1990</P>
+  </Block>
+  <Block BlockType="Constant" Name="Constant2" SID="1770">
+    <P Name="Position">[660, 385, 685, 405]</P>
+    <P Name="ZOrder">1991</P>
+    <P Name="Value">5</P>
+  </Block>
+  <Block BlockType="DataTypeConversion" Name="Data Type Conversion" SID="1771">
+    <P Name="Position">[935, 615, 990, 625]</P>
+    <P Name="ZOrder">1969</P>
+    <P Name="RndMeth">Floor</P>
+    <P Name="SaturateOnIntegerOverflow">off</P>
+  </Block>
+  <Block BlockType="DataTypeConversion" Name="Data Type Conversion1" SID="1772">
+    <P Name="Position">[1400, 610, 1450, 620]</P>
+    <P Name="ZOrder">1978</P>
+    <P Name="RndMeth">Floor</P>
+    <P Name="SaturateOnIntegerOverflow">off</P>
+  </Block>
+  <Block BlockType="DataTypeConversion" Name="Data Type Conversion2" SID="1773">
+    <P Name="Position">[935, 670, 990, 680]</P>
+    <P Name="ZOrder">1993</P>
+    <P Name="RndMeth">Floor</P>
+    <P Name="SaturateOnIntegerOverflow">off</P>
+  </Block>
+  <Block BlockType="Demux" Name="Demux" SID="1774">
+    <P Name="Ports">[1, 2]</P>
+    <P Name="Position">[295, 443, 300, 547]</P>
+    <P Name="ZOrder">1979</P>
+    <P Name="ShowName">off</P>
+    <P Name="Outputs">2</P>
+  </Block>
+  <Block BlockType="Reference" Name="Left Steering Limit" SID="1775">
+    <P Name="Ports">[1, 1]</P>
+    <P Name="Position">[485, 505, 515, 535]</P>
+    <P Name="ZOrder">1980</P>
+    <P Name="BackgroundColor">red</P>
+    <P Name="LibraryVersion">1.488</P>
+    <P Name="SourceBlock">simulink/Logic and Bit
+Operations/Compare
+To Constant</P>
+    <P Name="SourceType">Compare To Constant</P>
+    <P Name="SourceProductBaseCode">SL</P>
+    <InstanceData>
+      <P Name="RTWMemSecFuncInitTerm">Inherit from model</P>
+      <P Name="RTWMemSecFuncExecute">Inherit from model</P>
+      <P Name="RTWMemSecDataConstants">Inherit from model</P>
+      <P Name="RTWMemSecDataInternal">Inherit from model</P>
+      <P Name="RTWMemSecDataParameters">Inherit from model</P>
+      <P Name="ContentPreviewEnabled">off</P>
+      <P Name="relop">&gt;</P>
+      <P Name="const">0.3</P>
+      <P Name="OutDataTypeStr">boolean</P>
+      <P Name="ZeroCross">on</P>
+    </InstanceData>
+    <Port>
+      <P Name="PortNumber">1</P>
+      <P Name="Name">turning left</P>
+    </Port>
+  </Block>
+  <Block BlockType="Constant" Name="Light Off" SID="1776">
+    <P Name="Position">[830, 662, 860, 688]</P>
+    <P Name="ZOrder">1994</P>
+    <P Name="BackgroundColor">green</P>
+    <P Name="Value">0</P>
+    <P Name="OutDataTypeStr">boolean</P>
+  </Block>
+  <Block BlockType="Memory" Name="Memory" SID="1777">
+    <P Name="Position">[430, 330, 460, 360]</P>
+    <P Name="ZOrder">1982</P>
+  </Block>
+  <Block BlockType="Mux" Name="Mux" SID="1778">
+    <P Name="Ports">[8, 1]</P>
+    <P Name="Position">[1355, 495, 1360, 735]</P>
+    <P Name="ZOrder">1970</P>
+    <P Name="ShowName">off</P>
+    <P Name="Inputs">8</P>
+    <P Name="DisplayOption">bar</P>
+  </Block>
+  <Block BlockType="Reference" Name="One Shot" SID="1779">
+    <P Name="Ports">[4, 1]</P>
+    <P Name="Position">[700, 311, 890, 404]</P>
+    <P Name="ZOrder">1988</P>
+    <P Name="LibraryVersion">1.2129</P>
+    <P Name="SourceBlock">quarc_library/Discontinuities/One Shot</P>
+    <P Name="SourceType">One Shot</P>
+    <P Name="SourceProductName">QUARC Targets</P>
+    <InstanceData>
+      <P Name="RTWMemSecFuncInitTerm">Inherit from model</P>
+      <P Name="RTWMemSecFuncExecute">Inherit from model</P>
+      <P Name="RTWMemSecDataConstants">Inherit from model</P>
+      <P Name="RTWMemSecDataInternal">Inherit from model</P>
+      <P Name="RTWMemSecDataParameters">Inherit from model</P>
+      <P Name="ContentPreviewEnabled">off</P>
+      <P Name="trigger_type">Falling edge</P>
+      <P Name="redun_pulse">Ignore extraneous pulse</P>
+      <P Name="width_source">External input port</P>
+      <P Name="pulse_width">100</P>
+    </InstanceData>
+  </Block>
+  <Block BlockType="DiscretePulseGenerator" Name="Pulsing Light" SID="1780">
+    <P Name="Ports">[0, 1]</P>
+    <P Name="Position">[830, 604, 860, 636]</P>
+    <P Name="ZOrder">1968</P>
+    <P Name="BackgroundColor">red</P>
+    <P Name="Period">0.5/qc_get_step_size</P>
+    <P Name="PulseWidth">0.5/2/qc_get_step_size</P>
+    <P Name="SampleTime">qc_get_step_size</P>
+  </Block>
+  <Block BlockType="Reference" Name="Right Steering Limit" SID="1781">
+    <P Name="Ports">[1, 1]</P>
+    <P Name="Position">[485, 570, 515, 600]</P>
+    <P Name="ZOrder">1981</P>
+    <P Name="BackgroundColor">red</P>
+    <P Name="LibraryVersion">1.488</P>
+    <P Name="SourceBlock">simulink/Logic and Bit
+Operations/Compare
+To Constant</P>
+    <P Name="SourceType">Compare To Constant</P>
+    <P Name="SourceProductBaseCode">SL</P>
+    <InstanceData>
+      <P Name="RTWMemSecFuncInitTerm">Inherit from model</P>
+      <P Name="RTWMemSecFuncExecute">Inherit from model</P>
+      <P Name="RTWMemSecDataConstants">Inherit from model</P>
+      <P Name="RTWMemSecDataInternal">Inherit from model</P>
+      <P Name="RTWMemSecDataParameters">Inherit from model</P>
+      <P Name="ContentPreviewEnabled">off</P>
+      <P Name="relop">&lt;</P>
+      <P Name="const">-0.3</P>
+      <P Name="OutDataTypeStr">boolean</P>
+      <P Name="ZeroCross">on</P>
+    </InstanceData>
+    <Port>
+      <P Name="PortNumber">1</P>
+      <P Name="Name">turning right</P>
+    </Port>
+  </Block>
+  <Block BlockType="Constant" Name="Steady Light" SID="1782">
+    <P Name="Position">[830, 707, 860, 733]</P>
+    <P Name="ZOrder">1972</P>
+    <P Name="BackgroundColor">green</P>
+    <P Name="OutDataTypeStr">boolean</P>
+  </Block>
+  <Block BlockType="Sum" Name="Subtract" SID="1783">
+    <P Name="Ports">[2, 1]</P>
+    <P Name="Position">[540, 302, 570, 333]</P>
+    <P Name="ZOrder">1986</P>
+    <P Name="IconShape">rectangular</P>
+    <P Name="Inputs">+-</P>
+  </Block>
+  <Block BlockType="Switch" Name="Switch2" SID="1786">
+    <P Name="Position">[1190, 640, 1240, 680]</P>
+    <P Name="ZOrder">1992</P>
+    <P Name="Criteria">u2 &gt; Threshold</P>
+    <P Name="InputSameDT">off</P>
+    <P Name="SaturateOnIntegerOverflow">off</P>
+  </Block>
+  <Block BlockType="Outport" Name="indicatorsAndLamps (%) [8]" SID="1787">
+    <P Name="Position">[1525, 608, 1555, 622]</P>
+    <P Name="ZOrder">1976</P>
+    <P Name="VectorParamsAs1DForOutWhenUnconnected">off</P>
+  </Block>
+  <Line>
+    <P Name="ZOrder">1</P>
+    <P Name="Src">1773#out:1</P>
+    <P Name="Dst">1786#in:3</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">2</P>
+    <P Name="Src">1774#out:2</P>
+    <P Name="Points">[106, 0]</P>
+    <Branch>
+      <P Name="ZOrder">3</P>
+      <P Name="Points">[0, 65]</P>
+      <P Name="Dst">1781#in:1</P>
+    </Branch>
+    <Branch>
+      <P Name="ZOrder">4</P>
+      <P Name="Dst">1775#in:1</P>
+    </Branch>
+  </Line>
+  <Line>
+    <P Name="ZOrder">5</P>
+    <P Name="Src">1776#out:1</P>
+    <P Name="Dst">1773#in:1</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">56</P>
+    <P Name="Src">1779#out:1</P>
+    <P Name="Points">[141, 0; 0, 15]</P>
+    <P Name="Dst">1794#in:1</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">7</P>
+    <P Name="Src">1782#out:1</P>
+    <P Name="Points">[205, 0]</P>
+    <Branch>
+      <P Name="ZOrder">8</P>
+      <P Name="Points">[254, 0]</P>
+      <Branch>
+        <P Name="ZOrder">9</P>
+        <P Name="Points">[0, -30]</P>
+        <P Name="Dst">1778#in:7</P>
+      </Branch>
+      <Branch>
+        <P Name="ZOrder">10</P>
+        <P Name="Dst">1778#in:8</P>
+      </Branch>
+    </Branch>
+    <Branch>
+      <P Name="ZOrder">11</P>
+      <P Name="Points">[0, -75]</P>
+      <P Name="Dst">1786#in:1</P>
+    </Branch>
+  </Line>
+  <Line>
+    <P Name="ZOrder">16</P>
+    <P Name="Src">1767#out:1</P>
+    <P Name="Dst">1779#in:1</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">20</P>
+    <P Name="Src">1770#out:1</P>
+    <P Name="Dst">1779#in:4</P>
+  </Line>
+  <Line>
+    <P Name="Name">turning right</P>
+    <P Name="ZOrder">21</P>
+    <P Name="Labels">[1, 1]</P>
+    <P Name="Src">1781#out:1</P>
+    <P Name="Points">[515, 0; 0, 25]</P>
+    <P Name="Dst">1762#in:1</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">22</P>
+    <P Name="Src">1778#out:1</P>
+    <P Name="Dst">1772#in:1</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">23</P>
+    <P Name="Src">1768#out:1</P>
+    <P Name="Dst">1779#in:2</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">24</P>
+    <P Name="Src">1780#out:1</P>
+    <P Name="Dst">1771#in:1</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">25</P>
+    <P Name="Src">1764#out:1</P>
+    <P Name="Points">[10, 0]</P>
+    <P Name="Dst">1783#in:2</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">26</P>
+    <P Name="Src">1777#out:1</P>
+    <P Name="Dst">1764#in:1</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">27</P>
+    <P Name="Src">1765#out:1</P>
+    <P Name="Dst">1783#in:1</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">28</P>
+    <P Name="Src">1771#out:1</P>
+    <P Name="Points">[58, 0]</P>
+    <Branch>
+      <P Name="ZOrder">29</P>
+      <P Name="Points">[0, -90]</P>
+      <P Name="Dst">1763#in:2</P>
+    </Branch>
+    <Branch>
+      <P Name="ZOrder">30</P>
+      <P Name="Dst">1762#in:2</P>
+    </Branch>
+  </Line>
+  <Line>
+    <P Name="ZOrder">31</P>
+    <P Name="Src">1772#out:1</P>
+    <P Name="Dst">1787#in:1</P>
+  </Line>
+  <Line>
+    <P Name="Name">turning left</P>
+    <P Name="ZOrder">32</P>
+    <P Name="Labels">[1, 1]</P>
+    <P Name="Src">1775#out:1</P>
+    <P Name="Dst">1763#in:1</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">33</P>
+    <P Name="Src">1786#out:1</P>
+    <P Name="Points">[78, 0; 0, -30]</P>
+    <P Name="Dst">1778#in:5</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">36</P>
+    <P Name="Src">1769#out:1</P>
+    <P Name="Dst">1779#in:3</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">37</P>
+    <P Name="Src">1774#out:1</P>
+    <P Name="Points">[104, 0]</P>
+    <Branch>
+      <P Name="ZOrder">38</P>
+      <P Name="Points">[56, 0]</P>
+      <Branch>
+        <P Name="ZOrder">59</P>
+        <P Name="Points">[0, -25]</P>
+        <P Name="Dst">1795#in:1</P>
+      </Branch>
+      <Branch>
+        <P Name="ZOrder">58</P>
+        <P Name="Dst">1766#in:1</P>
+      </Branch>
+    </Branch>
+    <Branch>
+      <P Name="ZOrder">39</P>
+      <P Name="Points">[0, -125]</P>
+      <Branch>
+        <P Name="ZOrder">40</P>
+        <P Name="Dst">1777#in:1</P>
+      </Branch>
+      <Branch>
+        <P Name="ZOrder">41</P>
+        <P Name="Points">[0, -35]</P>
+        <P Name="Dst">1765#in:1</P>
+      </Branch>
+    </Branch>
+  </Line>
+  <Line>
+    <P Name="ZOrder">52</P>
+    <P Name="Src">1763#out:1</P>
+    <P Name="Points">[184, 0]</P>
+    <Branch>
+      <P Name="ZOrder">53</P>
+      <P Name="Points">[0, -15]</P>
+      <P Name="Dst">1778#in:1</P>
+    </Branch>
+    <Branch>
+      <P Name="ZOrder">43</P>
+      <P Name="Points">[0, 45]</P>
+      <P Name="Dst">1778#in:3</P>
+    </Branch>
+  </Line>
+  <Line>
+    <P Name="ZOrder">45</P>
+    <P Name="Src">1761#out:1</P>
+    <P Name="Dst">1774#in:1</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">47</P>
+    <P Name="Src">1783#out:1</P>
+    <P Name="Dst">1767#in:1</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">54</P>
+    <P Name="Src">1762#out:1</P>
+    <P Name="Points">[172, 0; 0, -15]</P>
+    <Branch>
+      <P Name="ZOrder">50</P>
+      <P Name="Points">[0, -60]</P>
+      <P Name="Dst">1778#in:2</P>
+    </Branch>
+    <Branch>
+      <P Name="ZOrder">51</P>
+      <P Name="Dst">1778#in:4</P>
+    </Branch>
+  </Line>
+  <Line>
+    <P Name="Name">reversing, hold all indicators high</P>
+    <P Name="ZOrder">55</P>
+    <P Name="Labels">[0, 0]</P>
+    <P Name="Src">1766#out:1</P>
+    <P Name="Points">[819, 0; 0, 190]</P>
+    <P Name="Dst">1778#in:6</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">60</P>
+    <P Name="Src">1795#out:1</P>
+    <P Name="Points">[177, 0; 0, -60]</P>
+    <P Name="Dst">1794#in:2</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">61</P>
+    <P Name="Src">1794#out:1</P>
+    <P Name="Points">[58, 0; 0, 280]</P>
+    <P Name="Dst">1786#in:2</P>
+  </Line>
+  <Annotation SID="1792">
+    <P Name="Name">&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;Arial&apos;; font-size:12px; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:&apos;Helvetica&apos;; font-size:12px; font-weight:600; text-decoration: underline;&quot;&gt;Indicators and Lamps Module:&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:&apos;Helvetica&apos;; font-weight:600;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:&apos;Helvetica&apos;; font-size:12px;&quot;&gt;This subsystem outputs the correct state for the 4 indicator LEDs and lamp LEDs based on the motor drive and steering commands for the QCar platform.   &lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:&apos;Helvetica&apos;; font-weight:600;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:&apos;Helvetica&apos;; font-size:12px; text-decoration: underline;&quot;&gt;Inputs:&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:&apos;Helvetica&apos;; font-size:12px;&quot;&gt;motorCmd		 				(%, rad)	n/a			:	Vector input for the motor drive command (percentage throttle) as well as steering command (in rad)&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:&apos;Helvetica&apos;; font-size:10px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:&apos;Helvetica&apos;; font-size:12px; text-decoration: underline;&quot;&gt;Outputs:&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:&apos;Helvetica&apos;; font-size:12px;&quot;&gt;indicatorsAndLamps 			(%)			{0,1}		:	Percentage brightness command sent to the 8 LEDs on the QCar platform.&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:&apos;Helvetica&apos;; font-size:10px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:&apos;Helvetica&apos;; font-size:12px; text-decoration: underline;&quot;&gt;Usage:&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:&apos;Helvetica&apos;; font-size:12px;&quot;&gt;1. When the absolute steering angle is greater than 0.1 radians, the corresponding indicator signal will pulse at 2 Hz. Adjust this using the blocks highlighted in &lt;/span&gt;&lt;span style=&quot; font-family:&apos;Helvetica&apos;; font-size:12px; color:#ff0000;&quot;&gt;RED&lt;/span&gt;&lt;span style=&quot; font-family:&apos;Helvetica&apos;; font-size:12px;&quot;&gt;.&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:&apos;Helvetica&apos;; font-size:12px;&quot;&gt;2. When the absolute motor drive command approaches 0, the brake lamps will receive 100% brightness command, and 0% brightness otherwise. Adjust this using the blocks highlighted in &lt;/span&gt;&lt;span style=&quot; font-family:&apos;Helvetica&apos;; font-size:12px; color:#00b050;&quot;&gt;GREEN&lt;/span&gt;&lt;span style=&quot; font-family:&apos;Helvetica&apos;; font-size:12px;&quot;&gt;. &lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:&apos;Helvetica&apos;; font-size:10px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:&apos;Helvetica&apos;; font-size:10px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</P>
+    <P Name="Position">[155, 30, 1222, 220]</P>
+    <P Name="InternalMargins">[0, 0, 0, 0]</P>
+    <P Name="FixedHeight">on</P>
+    <P Name="FixedWidth">on</P>
+    <P Name="Interpreter">rich</P>
+    <P Name="ZOrder">-1</P>
+    <P Name="FontName">Arial</P>
+    <P Name="FontSize">12</P>
+  </Annotation>
+  <Annotation SID="1791">
+    <P Name="Name">Braking Lamps Logic: 
+Determine if the user is deliberately and actively braking (and ignore joystick jitter and noise)</P>
+    <P Name="Position">[393, 253, 908, 422]</P>
+    <P Name="InternalMargins">[0, 0, 0, 0]</P>
+    <P Name="FixedHeight">on</P>
+    <P Name="FixedWidth">on</P>
+    <P Name="ForegroundColor">[0.996078, 0.968627, 0.909804]</P>
+    <P Name="BackgroundColor">[0.996078, 0.968627, 0.909804]</P>
+    <P Name="DropShadow">on</P>
+    <P Name="AnnotationType">area_annotation</P>
+    <P Name="ZOrder">13</P>
+    <P Name="FontSize">12</P>
+  </Annotation>
+  <Annotation SID="1790">
+    <P Name="Name">LED states</P>
+    <P Name="Position">[1045, 436, 1455, 761]</P>
+    <P Name="InternalMargins">[0, 0, 0, 0]</P>
+    <P Name="FixedHeight">on</P>
+    <P Name="FixedWidth">on</P>
+    <P Name="ForegroundColor">[0.996078, 0.968627, 0.909804]</P>
+    <P Name="BackgroundColor">[0.996078, 0.968627, 0.909804]</P>
+    <P Name="DropShadow">on</P>
+    <P Name="AnnotationType">area_annotation</P>
+    <P Name="ZOrder">15</P>
+    <P Name="FontSize">12</P>
+  </Annotation>
+  <Annotation SID="1789">
+    <P Name="Name">&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;Arial&apos;; font-size:12px; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:&apos;Helvetica&apos;; font-size:12px; font-weight:600; text-decoration: underline;&quot;&gt;Turn Indicators:&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:&apos;Helvetica&apos;; font-size:12px; text-decoration: underline;&quot;&gt;#	Longditudal	Lateral		Color  &lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:&apos;Helvetica&apos;; font-size:12px;&quot;&gt;1	Rear 			Left		Amber&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:&apos;Helvetica&apos;; font-size:12px;&quot;&gt;2	Rear			Right		Amber&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:&apos;Helvetica&apos;; font-size:12px;&quot;&gt;3	Front			Left		Amber&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:&apos;Helvetica&apos;; font-size:12px;&quot;&gt;4	Front			Right		Amber&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:&apos;Helvetica&apos;;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:&apos;Helvetica&apos;; font-size:12px; font-weight:600; text-decoration: underline;&quot;&gt;Lamps:&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:&apos;Helvetica&apos;; font-size:12px; text-decoration: underline;&quot;&gt;#	Longditudal	Lateral		Color  &lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:&apos;Helvetica&apos;; font-size:12px;&quot;&gt;5	Rear			Left		Red&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:&apos;Helvetica&apos;; font-size:12px;&quot;&gt;6	Rear			Right		Red&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:&apos;Helvetica&apos;; font-size:12px;&quot;&gt;7	Front			Left		White&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:&apos;Helvetica&apos;; font-size:12px;&quot;&gt;8	Front			Right		White&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</P>
+    <P Name="Position">[1267, 230, 1525, 429]</P>
+    <P Name="InternalMargins">[0, 0, 0, 0]</P>
+    <P Name="FixedHeight">on</P>
+    <P Name="FixedWidth">on</P>
+    <P Name="Interpreter">rich</P>
+    <P Name="ZOrder">-4</P>
+    <P Name="FontName">Arial</P>
+    <P Name="FontSize">12</P>
+  </Annotation>
+  <Annotation SID="1788">
+    <P Name="Name">Indicator Logic:</P>
+    <P Name="Position">[445, 430, 555, 634]</P>
+    <P Name="InternalMargins">[0, 0, 0, 0]</P>
+    <P Name="FixedHeight">on</P>
+    <P Name="FixedWidth">on</P>
+    <P Name="ForegroundColor">[0.996078, 0.968627, 0.909804]</P>
+    <P Name="BackgroundColor">[0.996078, 0.968627, 0.909804]</P>
+    <P Name="DropShadow">on</P>
+    <P Name="AnnotationType">area_annotation</P>
+    <P Name="ZOrder">14</P>
+    <P Name="FontSize">12</P>
+  </Annotation>
+</System>

@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<System>
+  <P Name="Location">[34, 298, 1307, 1020]</P>
+  <P Name="SystemRect">[0.000000, 0.000000, 0.000000, 0.000000]</P>
+  <P Name="SetExecutionDomain">off</P>
+  <P Name="ExecutionDomainType">Deduce</P>
+  <P Name="SimulinkSubDomain">Simulink</P>
+  <Block BlockType="Reference" Name="Depth" SID="2052">
+    <P Name="Ports">[0, 4]</P>
+    <P Name="Position">[280, 164, 380, 246]</P>
+    <P Name="ZOrder">2007</P>
+    <P Name="LibraryVersion">1.2129</P>
+    <P Name="UserDataPersistent">on</P>
+    <P Name="UserData" Ref="bdmxdata:UserData_2052"/>
+    <P Name="SourceBlock">quarc_library/Multimedia/Video3D Capture</P>
+    <P Name="SourceType">Video3D Capture</P>
+    <P Name="SourceProductName">QUARC Targets</P>
+    <InstanceData>
+      <P Name="MultithreadedSim">auto</P>
+      <P Name="object_name">Video3D-1</P>
+      <P Name="stream_type">Depth</P>
+      <P Name="stream_index">0</P>
+      <P Name="resolution">640 x 360</P>
+      <P Name="width">640</P>
+      <P Name="height">360</P>
+      <P Name="output_format">Distance in meters (HxW)</P>
+      <P Name="data_type">single</P>
+      <P Name="sample_time">depth_rate</P>
+      <P Name="brightness_override">off</P>
+      <P Name="brightness">50.0</P>
+      <P Name="contrast_override">off</P>
+      <P Name="contrast">50.0</P>
+      <P Name="hue_override">off</P>
+      <P Name="hue">50.0</P>
+      <P Name="saturation_override">off</P>
+      <P Name="saturation">50.0</P>
+      <P Name="sharpness_override">off</P>
+      <P Name="sharpness">50.0</P>
+      <P Name="gamma_override">off</P>
+      <P Name="gamma">50.0</P>
+      <P Name="gain_override">off</P>
+      <P Name="gain">50.0</P>
+      <P Name="backlightcompensation_override">off</P>
+      <P Name="backlightcompensation">50.0</P>
+      <P Name="whitebalance_override">Automatic white balance</P>
+      <P Name="whitebalance">50.0</P>
+      <P Name="exposure_override">Automatic exposure</P>
+      <P Name="exposure">30.0</P>
+      <P Name="emitter">Enable laser emitter</P>
+      <P Name="preset">Do not set camera presets</P>
+    </InstanceData>
+  </Block>
+  <Block BlockType="Terminator" Name="Terminator2" SID="2053">
+    <P Name="Position">[405, 185, 425, 205]</P>
+    <P Name="ZOrder">2008</P>
+  </Block>
+  <Block BlockType="Terminator" Name="Terminator3" SID="2054">
+    <P Name="Position">[405, 205, 425, 225]</P>
+    <P Name="ZOrder">2009</P>
+  </Block>
+  <Block BlockType="Terminator" Name="Terminator4" SID="2055">
+    <P Name="Position">[220, 195, 240, 215]</P>
+    <P Name="ZOrder">2010</P>
+  </Block>
+  <Block BlockType="Reference" Name="Video3D Initialize" SID="2056">
+    <P Name="Ports">[0, 1]</P>
+    <P Name="Position">[95, 162, 195, 248]</P>
+    <P Name="ZOrder">2003</P>
+    <P Name="LibraryVersion">1.2129</P>
+    <P Name="SourceBlock">quarc_library/Multimedia/Video3D Initialize</P>
+    <P Name="SourceType">Video3D Initialize</P>
+    <P Name="SourceProductName">QUARC Targets</P>
+    <InstanceData>
+      <P Name="MultithreadedSim">auto</P>
+      <P Name="object_name">Video3D-1</P>
+      <P Name="source">Device</P>
+      <P Name="identifier">0</P>
+      <P Name="file">sample.bag</P>
+      <P Name="sample_time">depth_rate</P>
+      <P Name="active">on</P>
+    </InstanceData>
+  </Block>
+  <Block BlockType="Outport" Name="new" SID="2057">
+    <P Name="Position">[535, 228, 565, 242]</P>
+    <P Name="ZOrder">2014</P>
+    <P Name="VectorParamsAs1DForOutWhenUnconnected">off</P>
+  </Block>
+  <Block BlockType="Outport" Name="imageDepth [360 x 640]" SID="2058">
+    <P Name="Position">[535, 168, 565, 182]</P>
+    <P Name="ZOrder">2013</P>
+    <P Name="Port">2</P>
+    <P Name="VectorParamsAs1DForOutWhenUnconnected">off</P>
+  </Block>
+  <Line>
+    <P Name="ZOrder">1</P>
+    <P Name="Src">2052#out:4</P>
+    <P Name="Dst">2057#in:1</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">2</P>
+    <P Name="Src">2052#out:1</P>
+    <P Name="Dst">2058#in:1</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">3</P>
+    <P Name="Src">2056#out:1</P>
+    <P Name="Dst">2055#in:1</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">4</P>
+    <P Name="Src">2052#out:3</P>
+    <P Name="Dst">2054#in:1</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">5</P>
+    <P Name="Src">2052#out:2</P>
+    <P Name="Dst">2053#in:1</P>
+  </Line>
+  <Annotation SID="2060">
+    <P Name="Name">&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body align=&quot;left&quot; style=&quot; font-family:&apos;Arial&apos;; font-size:12px; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p align=&quot;left&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:&apos;Helvetica&apos;; font-size:12px; font-weight:600; text-decoration: underline;&quot;&gt;Depth Capture Module:&lt;/span&gt;&lt;/p&gt;
+&lt;p align=&quot;left&quot; style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:&apos;Helvetica&apos;; font-weight:600;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p align=&quot;left&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:&apos;Helvetica&apos;; font-size:12px;&quot;&gt;This subsystem outputs the RGB and Depth Images captured from the Intel Realsense device&lt;/span&gt;&lt;/p&gt;
+&lt;p align=&quot;left&quot; style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:&apos;Helvetica&apos;; font-weight:600;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p align=&quot;left&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:&apos;Helvetica&apos;; font-size:12px; text-decoration: underline;&quot;&gt;Outputs:&lt;/span&gt;&lt;/p&gt;
+&lt;p align=&quot;left&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:&apos;Helvetica&apos;; font-size:12px;&quot;&gt;Depth Data		(m)				:	Depth Data [height, width]&lt;/span&gt;&lt;/p&gt;
+&lt;p align=&quot;left&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:&apos;Helvetica&apos;; font-size:12px;&quot;&gt;Depth New?		(bool)			: 	Boolean flag that is high (1) when the data is new&lt;/span&gt;&lt;/p&gt;
+&lt;p align=&quot;left&quot; style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p align=&quot;left&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:&apos;Helvetica&apos;; font-size:12px; text-decoration: underline;&quot;&gt;Usage:&lt;/span&gt;&lt;/p&gt;
+&lt;p align=&quot;left&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:12px;&quot;&gt;Connect the New? ports to the Enable/Trigger port of Enabled/Triggered subsystems that contain your code when using the image data.&lt;/span&gt;&lt;/p&gt;
+&lt;p align=&quot;left&quot; style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p align=&quot;left&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:&apos;Helvetica&apos;; font-size:12px; text-decoration: underline;&quot;&gt;Sample Rate:&lt;/span&gt;&lt;/p&gt;
+&lt;p align=&quot;left&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:&apos;Helvetica&apos;; font-size:12px;&quot;&gt;The sample rate for this model is defined as the model workspace variable &lt;/span&gt;&lt;span style=&quot; font-family:&apos;Helvetica&apos;; font-size:12px; font-weight:600;&quot;&gt;depth_rate &lt;/span&gt;&lt;span style=&quot; font-family:&apos;Helvetica&apos;; font-size:12px;&quot;&gt;found under the &lt;/span&gt;&lt;span style=&quot; font-family:&apos;Helvetica&apos;; font-size:12px; font-style:italic;&quot;&gt;Model Explorer/Model Workspace&lt;/span&gt;&lt;span style=&quot; font-family:&apos;Helvetica&apos;; font-size:12px;&quot;&gt;. For this subsystem the image acquisition is done at a rate of 100 Hz.&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</P>
+    <P Name="Position">[77, -122, 679, 98]</P>
+    <P Name="InternalMargins">[0, 0, 0, 0]</P>
+    <P Name="FixedHeight">on</P>
+    <P Name="FixedWidth">on</P>
+    <P Name="Interpreter">rich</P>
+    <P Name="ZOrder">-1</P>
+    <P Name="FontName">Arial</P>
+    <P Name="FontSize">12</P>
+  </Annotation>
+  <Annotation SID="2059">
+    <P Name="Name">Capture Realsense Depth Information at 100 fps, 640 x 360</P>
+    <P Name="Position">[77, 121, 477, 271]</P>
+    <P Name="InternalMargins">[0, 0, 0, 0]</P>
+    <P Name="FixedHeight">on</P>
+    <P Name="FixedWidth">on</P>
+    <P Name="ForegroundColor">[0.992157, 0.937255, 0.913725]</P>
+    <P Name="BackgroundColor">[0.992157, 0.937255, 0.913725]</P>
+    <P Name="DropShadow">on</P>
+    <P Name="AnnotationType">area_annotation</P>
+    <P Name="ZOrder">10</P>
+    <P Name="FontSize">12</P>
+  </Annotation>
+</System>

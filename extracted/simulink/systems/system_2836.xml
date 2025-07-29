@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<System>
+  <P Name="Location">[-8, -8, 1928, 1040]</P>
+  <P Name="SystemRect">[0.000000, 0.000000, 0.000000, 0.000000]</P>
+  <P Name="SetExecutionDomain">off</P>
+  <P Name="ExecutionDomainType">Deduce</P>
+  <P Name="ZoomFactor">91</P>
+  <P Name="SimulinkSubDomain">Simulink</P>
+  <Block BlockType="Inport" Name="Binary Image" SID="2837">
+    <P Name="Position">[20, 58, 50, 72]</P>
+    <P Name="ZOrder">4620</P>
+  </Block>
+  <Block BlockType="Inport" Name="Nomimal Lane Location" SID="2842">
+    <P Name="Position">[20, 168, 50, 182]</P>
+    <P Name="ZOrder">4625</P>
+    <P Name="Port">2</P>
+  </Block>
+  <Block BlockType="Display" Name="Display" SID="2847">
+    <P Name="Ports">[1]</P>
+    <P Name="Position">[520, -20, 610, 10]</P>
+    <P Name="ZOrder">4628</P>
+    <P Name="Decimation">1</P>
+  </Block>
+  <Block BlockType="Reference" Name="Image Find Objects" SID="2832">
+    <P Name="Ports">[1, 5]</P>
+    <P Name="Position">[170, 24, 270, 106]</P>
+    <P Name="ZOrder">4616</P>
+    <P Name="LibraryVersion">1.2129</P>
+    <P Name="SourceBlock">quarc_library/Image Processing/Generic/Image Find Objects</P>
+    <P Name="SourceType">Image Find Objects</P>
+    <P Name="SourceProductName">QUARC Targets</P>
+    <InstanceData>
+      <P Name="MultithreadedSim">auto</P>
+      <P Name="num_objects">1</P>
+      <P Name="connectivity">4 directions (N, E, S, W)</P>
+      <P Name="sort_order">Sort by number of pixels</P>
+      <P Name="min_pixels">50</P>
+      <P Name="max_pixels">intmax(&apos;uint32&apos;)</P>
+      <P Name="largest">on</P>
+      <P Name="exclude_at_edges">off</P>
+      <P Name="variable_size">on</P>
+      <P Name="use_complex">off</P>
+    </InstanceData>
+  </Block>
+  <Block BlockType="SubSystem" Name="MATLAB Function" SID="2841">
+    <P Name="Ports">[3, 1]</P>
+    <P Name="Position">[505, 23, 625, 107]</P>
+    <P Name="ZOrder">4624</P>
+    <P Name="ErrorFcn">Stateflow.Translate.translate</P>
+    <P Name="PermitHierarchicalResolution">ExplicitOnly</P>
+    <P Name="TreatAsAtomicUnit">on</P>
+    <P Name="RequestExecContextInheritance">off</P>
+    <P Name="SFBlockType">MATLAB Function</P>
+    <P Name="ContentPreviewEnabled">on</P>
+    <System Ref="system_2841"/>
+  </Block>
+  <Block BlockType="Reshape" Name="Reshape" SID="2855">
+    <P Name="Ports">[1, 1]</P>
+    <P Name="Position">[390, 53, 420, 77]</P>
+    <P Name="ZOrder">4636</P>
+  </Block>
+  <Block BlockType="Selector" Name="Selector" SID="2858">
+    <P Name="Ports">[1, 1]</P>
+    <P Name="Position">[680, 106, 720, 144]</P>
+    <P Name="ZOrder">4639</P>
+    <P Name="InputPortWidth">2</P>
+    <P Name="IndexOptions">Index vector (dialog)</P>
+    <P Name="Indices">[2]</P>
+    <P Name="OutputSizes">1</P>
+  </Block>
+  <Block BlockType="Sum" Name="Sum" SID="2859">
+    <P Name="Ports">[2, 1]</P>
+    <P Name="Position">[745, 115, 765, 135]</P>
+    <P Name="ZOrder">4640</P>
+    <P Name="ShowName">off</P>
+    <P Name="Inputs">|-+</P>
+  </Block>
+  <Block BlockType="Width" Name="Width" SID="2854">
+    <P Name="Position">[335, 20, 365, 50]</P>
+    <P Name="ZOrder">4635</P>
+  </Block>
+  <Block BlockType="Outport" Name="Centroid" SID="2843">
+    <P Name="Position">[760, 58, 790, 72]</P>
+    <P Name="ZOrder">4626</P>
+    <P Name="VectorParamsAs1DForOutWhenUnconnected">off</P>
+  </Block>
+  <Block BlockType="Outport" Name="Error" SID="2844">
+    <P Name="Position">[810, 118, 840, 132]</P>
+    <P Name="ZOrder">4627</P>
+    <P Name="Port">2</P>
+    <P Name="VectorParamsAs1DForOutWhenUnconnected">off</P>
+  </Block>
+  <Line>
+    <P Name="ZOrder">1850</P>
+    <P Name="Src">2837#out:1</P>
+    <P Name="Dst">2832#in:1</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">1854</P>
+    <P Name="Src">2832#out:3</P>
+    <P Name="Points">[39, 0]</P>
+    <Branch>
+      <P Name="ZOrder">1876</P>
+      <P Name="Points">[0, -30]</P>
+      <P Name="Dst">2854#in:1</P>
+    </Branch>
+    <Branch>
+      <P Name="ZOrder">1875</P>
+      <P Name="Dst">2855#in:1</P>
+    </Branch>
+  </Line>
+  <Line>
+    <P Name="ZOrder">1855</P>
+    <P Name="Src">2842#out:1</P>
+    <P Name="Points">[253, 0]</P>
+    <Branch>
+      <P Name="ZOrder">1884</P>
+      <P Name="Points">[447, 0]</P>
+      <P Name="Dst">2859#in:2</P>
+    </Branch>
+    <Branch>
+      <P Name="ZOrder">1883</P>
+      <P Name="Points">[0, -80]</P>
+      <P Name="Dst">2841#in:3</P>
+    </Branch>
+  </Line>
+  <Line>
+    <P Name="ZOrder">1856</P>
+    <P Name="Src">2841#out:1</P>
+    <P Name="Points">[24, 0]</P>
+    <Branch>
+      <P Name="ZOrder">1881</P>
+      <P Name="Points">[0, 60]</P>
+      <P Name="Dst">2858#in:1</P>
+    </Branch>
+    <Branch>
+      <P Name="ZOrder">1880</P>
+      <P Name="Dst">2843#in:1</P>
+    </Branch>
+  </Line>
+  <Line>
+    <P Name="ZOrder">1874</P>
+    <P Name="Src">2854#out:1</P>
+    <P Name="Points">[120, 0]</P>
+    <Branch>
+      <P Name="ZOrder">1878</P>
+      <P Name="Points">[0, -40]</P>
+      <P Name="Dst">2847#in:1</P>
+    </Branch>
+    <Branch>
+      <P Name="ZOrder">1877</P>
+      <P Name="Dst">2841#in:1</P>
+    </Branch>
+  </Line>
+  <Line>
+    <P Name="ZOrder">1879</P>
+    <P Name="Src">2855#out:1</P>
+    <P Name="Dst">2841#in:2</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">1882</P>
+    <P Name="Src">2858#out:1</P>
+    <P Name="Dst">2859#in:1</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">1885</P>
+    <P Name="Src">2859#out:1</P>
+    <P Name="Dst">2844#in:1</P>
+  </Line>
+</System>
