@@ -31,7 +31,7 @@
     <P Name="SourceProductName">QUARC Targets</P>
     <InstanceData>
       <P Name="MultithreadedSim">auto</P>
-      <P Name="num_objects">1</P>
+      <P Name="num_objects">3</P>
       <P Name="connectivity">4 directions (N, E, S, W)</P>
       <P Name="sort_order">Sort by number of pixels</P>
       <P Name="min_pixels">50</P>
